@@ -108,8 +108,7 @@
       name: category.name,
       order: index + 1,
       caption: category.caption[currentLanguage()],
-      list: filterEmojisBy(category, "!emoji.diversity"),
-      diversity: filterEmojisBy(category, "!!emoji.diversity"),
+      list: filterEmojisBy(category, "true"),
     };
   })
 

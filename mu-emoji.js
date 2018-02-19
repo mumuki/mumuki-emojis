@@ -36,10 +36,6 @@
 
   }
 
-  function emojiGroup(emoji, category) {
-    return emoji.diversity ? 'diversity' : category.name;
-  }
-
   function diversitySelector(emoji) {
     return emoji.diversity ? [
       '<span class="mu-emojis-diversity-selector">h',
@@ -52,11 +48,8 @@
   }
 
   function searchQuery (querytext) {
-    return !querytext.trim() ? "!emoji.diversity" :  [
-      "!emoji.diversity && (",
-      "emoji.name.indexOf('" + querytext + "') >= 0 ||",
-      "[emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) { return s.indexOf('" + querytext + "') >= 0 }))",
-    ].join(' ');
+    return !querytext.trim() ? "true" :
+      "[emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) { return s.indexOf('" + querytext + "') >= 0 })";
   }
 
   function filterSearch() {
@@ -66,7 +59,6 @@
 
       window.muEmojis.categories.forEach(function (category) {
         category.list = muEmojis.filterEmojisBy(category, searchQuery(querytext));
-        category.diversity = muEmojis.filterEmojisBy(category, '!' + searchQuery(querytext));
       })
       updateEmojiList();
       $input.focus();
