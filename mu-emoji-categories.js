@@ -1,5 +1,7 @@
 (function (window) {
 
+  // Emoji icons provided free by [EmojiOne](https://www.emojione.com)
+
   window.muEmojis = window.muEmojis || {};
 
   var availableLanguages = ['en', 'es', 'pt'];
