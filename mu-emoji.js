@@ -21,7 +21,7 @@
         if (emoji.diversity) return;
         $list.append([
           '<span class="mu-emoji-list-item">',
-            emojiIcon(emoji, category.name),
+            emojiIcon(emoji, emoji.sprite_category || emoji.category),
             diversitySelector(emoji),
           '</span>'
         ].join(''));
