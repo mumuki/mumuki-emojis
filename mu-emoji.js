@@ -3,6 +3,7 @@
   window.muEmojis = window.muEmojis || {};
 
   var searchInterval;
+  var emojiTone;
 
   var $emojiList = $('.mu-emojis-selector');
   var $input = $('<input class="mu-emojis-search" type="text" autocomplete="off" placeholder="' + window.muEmojis.inputPlaceholder + '">');
@@ -22,7 +23,6 @@
         $list.append([
           '<span class="mu-emoji-list-item">',
             emojiIcon(emoji, emoji.sprite_category || emoji.category),
-            diversitySelector(emoji),
           '</span>'
         ].join(''));
       })
@@ -36,15 +36,25 @@
 
   }
 
-  function diversitySelector(emoji) {
-    return emoji.diversity ? [
-      '<span class="mu-emojis-diversity-selector">h',
-      '</span>',
-    ].join('') : '';
+  function generateDiversity(emoji) {
+    var original = '<li>' + emojiIcon(emoji, emoji.sprite_category || emoji.category) + '</li>';
+    return [original].concat(emoji.diversities.map(function (emojiKey) {
+      return '<li>' + emojiIcon(window.muEmojis.object[emojiKey], 'diversity') + '</li>';
+    }))
+  }
+
+  function toneIndex() {
+    return ['1f3fb', '1f3fc', '1f3fd', '1f3fe', '1f3ff'].indexOf(emojiTone);
+  }
+
+  function hasDiversity(emoji) {
+    return emoji.diversities.length == 0 || !emojiTone;
   }
 
   function emojiIcon(emoji, category_name) {
-    return '<i title="' + emoji.name + '" class="mu-emoji px24 ' + category_name + ' _' + emoji.code_points.base + '" data-code="' + emoji.shortname + '"/>';
+    var category = hasDiversity(emoji) ? category_name : 'diversity';
+    emoji = hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]]
+    return '<i title="' + emoji.name + '" class="mu-emoji px24 ' + category + ' _' + emoji.code_points.base + '" data-code="' + emoji.shortname + '"/>';
   }
 
   function searchQuery (querytext) {

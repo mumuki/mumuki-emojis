@@ -12,16 +12,15 @@
   background-repeat: no-repeat
 }
 
-.mu-emojis-selector * {
-  box-sizing: border-box;
-}
-
 .mu-emojis-selector {
   box-sizing: border-box;
   display: block;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+.mu-emojis-selector * {
+  box-sizing: border-box;
 }
 
 .mu-emojis-search {
@@ -38,13 +37,21 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 4px;
-  width: 4px;
-  min-height: 4px;
-  min-width: 4px;
-  max-height: 4px;
-  max-width: 4px;
-  background-color: lightgrey;
+  left: 0;
+  bottom: 0;
+}
+.mu-emojis-diversity-selector:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.mu-emojis-diversity-selector:after {
+  border-width: 4px;
+  border-right-color: lightgrey;
+  border-top-color: lightgrey;
 }
 
 .mu-emoji-list {
