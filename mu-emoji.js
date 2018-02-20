@@ -15,6 +15,8 @@
 
     $emojiList.append($input);
 
+    var $div = $('<div class="mu-emoji-list-area"></div>');
+
     window.muEmojis.categories.forEach(function (category) {
       var $list = $('<ul class="mu-emoji-list"></ul>');
 
@@ -28,12 +30,13 @@
       })
 
       if (category.list && category.list.length > 0) {
-        $emojiList.append('<h3>' + category.caption + '</h3>');
-        $emojiList.append($list);
+        $div.append('<h4>' + category.caption + '</h4>');
+        $div.append($list);
       }
 
     });
 
+    $emojiList.append($div);
   }
 
   function generateDiversity(emoji) {
@@ -44,7 +47,7 @@
   }
 
   function toneIndex() {
-    return ['1f3fb', '1f3fc', '1f3fd', '1f3fe', '1f3ff'].indexOf(emojiTone);
+    return ['1f3fa', '1f3fb', '1f3fc', '1f3fd', '1f3fe', '1f3ff'].indexOf(emojiTone);
   }
 
   function hasDiversity(emoji) {
