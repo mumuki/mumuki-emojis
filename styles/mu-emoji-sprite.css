@@ -36,6 +36,32 @@ body * {
   box-sizing: border-box;
 }
 
+.mu-emojis-selector .mu-emojis-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #AAAAAA;
+  margin-top: -5px;
+  margin-left: -6px;
+  margin-bottom: 10px;
+  width: calc(100% + 12px);
+}
+
+.mu-emojis-tabs .category-icon.active {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #AAAAAA;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+
+.mu-emojis-tabs .category-icon {
+  color: #AAAAAA;
+  border: none;
+  padding: 5px 0;
+}
+
 .mu-emojis-search {
   font-size: 88%;
   width: 100%;

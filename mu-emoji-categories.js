@@ -27,6 +27,7 @@
   window.muEmojis._categories_ = [
     {
       name: "people",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Smileys & People",
         es: "Sonrisas y gente",
@@ -35,6 +36,7 @@
     },
     {
       name: "nature",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Animals & Nature",
         es: "Animales y naturaleza",
@@ -43,6 +45,7 @@
     },
     {
       name: "food",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Food & Drink",
         es: "Comida y bebida",
@@ -51,6 +54,7 @@
     },
     {
       name: "activity",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Activity",
         es: "Actividad",
@@ -59,6 +63,7 @@
     },
     {
       name: "travel",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Travel & Places",
         es: "Viajes y lugares",
@@ -67,6 +72,7 @@
     },
     {
       name: "objects",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Objects",
         es: "Objetos",
@@ -75,6 +81,7 @@
     },
     {
       name: "symbols",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Symbols",
         es: "Símbolos",
@@ -83,6 +90,7 @@
     },
     {
       name: "flags",
+      icon_class: "fa fa-fw fa-circle",
       caption: {
         en: "Flags",
         es: "Banderas",
@@ -108,6 +116,7 @@
   window.muEmojis.categories = window.muEmojis._categories_.map(function (category, index) {
     return {
       name: category.name,
+      icon_class: category.icon_class,
       order: index + 1,
       caption: category.caption[currentLanguage()],
       list: filterEmojisBy(category, "true"),

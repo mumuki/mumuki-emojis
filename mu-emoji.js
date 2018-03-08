@@ -13,9 +13,10 @@
 
     $input.keyup(filterSearch);
 
-    $emojiList.append($input);
-
     var $div = $('<div class="mu-emoji-list-area"></div>');
+
+    tabs($emojiList, $div);
+    $emojiList.append($input);
 
     window.muEmojis.categories.forEach(function (category) {
       var $list = $('<ul class="mu-emoji-list"></ul>');
@@ -30,13 +31,18 @@
       })
 
       if (category.list && category.list.length > 0) {
-        $div.append('<h4>' + category.caption + '</h4>');
+        $div.append('<h4 id="' + categoryId(category) + '">' + category.caption + '</h4>');
         $div.append($list);
       }
 
     });
 
     $emojiList.append($div);
+
+  }
+
+  function categoryId(category) {
+    return 'category-' + category.name;
   }
 
   function generateDiversity(emoji) {
@@ -77,6 +83,37 @@
       $input.focus();
 
     }, 500);
+  }
+
+  function tabs($emojiList, $div) {
+    var categories = window.muEmojis.categories;
+    var maxWidth = $emojiList.width() / categories.length;
+    var firstId = categoryId(categories[0]);
+    var $tabs = $('<div class="mu-emojis-tabs"></div>')
+    categories.forEach(function (category, i) {
+      console.log(category, i);
+      var id = categoryId(category);
+      var $tab = $([
+        '<a class="category-icon ', i === 0 ? 'active' : '', '" title="' + category.caption + '">',
+        '  <i class="' + category.icon_class + '"></i>',
+        '</a>'
+      ].join(''));
+      $tab.click(function () {
+        $tab.parent().find('.category-icon').removeClass('active');
+        scrollToAnchor($div, id, firstId);
+        $tab.addClass('active');
+      });
+      $tab.width(maxWidth);
+      $tabs.append($tab);
+      $emojiList.append($tabs);
+    });
+  }
+
+  function scrollToAnchor($div, id, firstId) {
+    var $tag = $('#' + id);
+    var $firstTag = $('#' + firstId);
+    var scrollTop = $tag.position().top - $firstTag.position().top;
+    $div.animate({ scrollTop: scrollTop }, 'fast');
   }
 
   updateEmojiList();
