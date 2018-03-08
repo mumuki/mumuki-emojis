@@ -17,6 +17,7 @@
 
     tabs($emojiList, $div);
     $emojiList.append($input);
+    $emojiList.append('<div class="emoji-one-legend">' + window.emojiOneLegend + ' <a href="https://www.emojione.com" target="_blank">EmojiOne</a></div>');
 
     window.muEmojis.categories.forEach(function (category) {
       var $list = $('<ul class="mu-emoji-list"></ul>');

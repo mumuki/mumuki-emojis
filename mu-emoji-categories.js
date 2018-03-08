@@ -27,7 +27,7 @@
   window.muEmojis._categories_ = [
     {
       name: "people",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-smile-o",
       caption: {
         en: "Smileys & People",
         es: "Sonrisas y gente",
@@ -36,7 +36,7 @@
     },
     {
       name: "nature",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-leaf",
       caption: {
         en: "Animals & Nature",
         es: "Animales y naturaleza",
@@ -45,7 +45,7 @@
     },
     {
       name: "food",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-cutlery",
       caption: {
         en: "Food & Drink",
         es: "Comida y bebida",
@@ -54,7 +54,7 @@
     },
     {
       name: "activity",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-futbol-o",
       caption: {
         en: "Activity",
         es: "Actividad",
@@ -63,7 +63,7 @@
     },
     {
       name: "travel",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-plane",
       caption: {
         en: "Travel & Places",
         es: "Viajes y lugares",
@@ -72,7 +72,7 @@
     },
     {
       name: "objects",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-wrench",
       caption: {
         en: "Objects",
         es: "Objetos",
@@ -81,7 +81,7 @@
     },
     {
       name: "symbols",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-hashtag",
       caption: {
         en: "Symbols",
         es: "Símbolos",
@@ -90,7 +90,7 @@
     },
     {
       name: "flags",
-      icon_class: "fa fa-fw fa-circle",
+      icon_class: "fa fa-fw fa-flag-o",
       caption: {
         en: "Flags",
         es: "Banderas",
@@ -98,6 +98,12 @@
       }
     }
   ]
+
+  window._emojiOneLegend = {
+    en: 'Emoji icons provided free by',
+    es: 'Los emojis son proporcionados gratuitamente por',
+    pt: 'Emoji ícones fornecidos gratuitamente pelo',
+  }
 
   function compareEmojis(a, b) {
     return a.order < b.order ? -1 : (a.order == b.order ? 0 : 1);
@@ -124,5 +130,6 @@
   })
 
   window.muEmojis.inputPlaceholder = window.muEmojis._inputPlaceholder_[currentLanguage()];
+  window.emojiOneLegend = window._emojiOneLegend[currentLanguage()];
 
 })(window);
