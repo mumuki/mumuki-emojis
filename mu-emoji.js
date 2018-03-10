@@ -92,7 +92,6 @@
     var firstId = categoryId(categories[0]);
     var $tabs = $('<div class="mu-emojis-tabs"></div>')
     categories.forEach(function (category, i) {
-      console.log(category, i);
       var id = categoryId(category);
       var $tab = $([
         '<a class="category-icon ', i === 0 ? 'active' : '', '" title="' + category.caption + '">',
@@ -114,7 +113,7 @@
     var $tag = $('#' + id);
     var $firstTag = $('#' + firstId);
     var scrollTop = $tag.position().top - $firstTag.position().top;
-    $div.animate({ scrollTop: scrollTop }, 'fast');
+    $div.scrollTop(scrollTop);
   }
 
   updateEmojiList();
