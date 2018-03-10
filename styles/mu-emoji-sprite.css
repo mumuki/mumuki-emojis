@@ -73,6 +73,11 @@ body * {
   left: unset;
 }
 
+.mu-emojis-selector.dropdown-center {
+  right: -188px;
+  left: unset;
+}
+
 .mu-emojis-selector .mu-emojis-tabs {
   display: flex;
   justify-content: space-between;
@@ -89,8 +94,8 @@ body * {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: 1px solid #AAAAAA;
-  border-bottom: 1px solid white;
-  margin-bottom: -1px;
+  border-bottom: 3px solid #3498DB;
+  margin-bottom: -2px;
 }
 
 .mu-emojis-tabs .category-icon {

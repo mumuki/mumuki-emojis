@@ -7,9 +7,9 @@
 
   var $emojis = $('.mu-emojis-dropdown');
 
-  $emojis.each(function (i) {
+  $emojis.each(function (dropdownIndex) {
 
-    var $emojiDropdown = $($emojis[i]);
+    var $emojiDropdown = $($emojis[dropdownIndex]);
 
     var $emojiTrigger = $emojiDropdown.find('.mu-emojis-trigger');
     var $emojiList = $emojiDropdown.find('.mu-emojis-selector');
@@ -63,7 +63,7 @@
     }
 
     function categoryId(category) {
-      return 'category-' + category.name;
+      return 'category-' + category.name + '-' + dropdownIndex;
     }
 
     function generateDiversity(emoji) {
