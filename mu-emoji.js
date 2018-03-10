@@ -16,11 +16,15 @@
     var $input = $('<input class="mu-emojis-search" type="text" autocomplete="off" placeholder="' + window.muEmojis.inputPlaceholder + '">');
 
     var onEmojiClick = $emojiTrigger.data('on-emoji-click');
-    $emojiTrigger.click(function () {
+    $emojiTrigger.click(function (e) {
       var $emojisList = $('.mu-emojis-selector');
       var isOpen = $emojiList.hasClass('open');
       $emojisList.removeClass('open');
-      if (!isOpen) $emojiList.addClass('open');
+      if (!isOpen) {
+        $emojiList.addClass('open');
+        $emojiList.find('input').focus();
+        e.stopPropagation();
+      }
     })
 
     function updateEmojiList() {
@@ -122,6 +126,7 @@
           $tab.parent().find('.category-icon').removeClass('active');
           scrollToAnchor($div, id, firstId);
           $tab.addClass('active');
+          $emojiList.find('input').focus();
         });
         $tab.width(maxWidth);
         $tabs.append($tab);
@@ -139,5 +144,26 @@
     updateEmojiList();
 
   });
+
+  $(document).keydown(function (e) {
+    if (e.key === "Escape") $('.mu-emojis-selector').removeClass('open');
+  });
+
+  $(document).click(function (e) {
+    var $dds = $('.mu-emojis-selector');
+    $dds.each(function (i) {
+      var $dd = $($dds[i]);
+      if (!clickedInside(e, $dd)) {
+        $dd.removeClass('open');
+      }
+    });
+  });
+
+function clickedInside(e, $element) {
+  return (e.clientX >= $element.offset().left &&
+          e.clientX <= $element.offset().left + $element.width() &&
+          e.clientY >= $element.offset().top &&
+          e.clientY <= $element.offset().top + $element.height());
+}
 
 })(window);
