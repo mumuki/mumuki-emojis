@@ -12,10 +12,16 @@
     var $emojiDropdown = $($emojis[i]);
 
     var $emojiTrigger = $emojiDropdown.find('.mu-emojis-trigger');
-    var onEmojiClick = $emojiTrigger.data('on-emoji-click');
-
     var $emojiList = $emojiDropdown.find('.mu-emojis-selector');
     var $input = $('<input class="mu-emojis-search" type="text" autocomplete="off" placeholder="' + window.muEmojis.inputPlaceholder + '">');
+
+    var onEmojiClick = $emojiTrigger.data('on-emoji-click');
+    $emojiTrigger.click(function () {
+      var $emojisList = $('.mu-emojis-selector');
+      var isOpen = $emojiList.hasClass('open');
+      $emojisList.removeClass('open');
+      if (!isOpen) $emojiList.addClass('open');
+    })
 
     function updateEmojiList() {
       $emojiList.empty();
@@ -33,11 +39,16 @@
 
         category.list.forEach(function (emoji) {
           if (emoji.diversity) return;
-          $list.append([
+          var $emoji = $([
             '<span class="mu-emoji-list-item">',
               emojiIcon(emoji, emoji.sprite_category || emoji.category),
             '</span>'
           ].join(''));
+          $emoji.click(function () {
+            eval(onEmojiClick)(emoji);
+            $emojiList.removeClass('open');
+          })
+          $list.append($emoji);
         })
 
         if (category.list && category.list.length > 0) {

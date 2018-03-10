@@ -52,8 +52,25 @@ body * {
   width: 376px;
 }
 
+.mu-emojis-dropdown {
+  position: relative;
+  display: inline;
+}
+
 .mu-emojis-selector {
   box-sizing: border-box;
+  position: absolute;
+  display: none;
+  left: 0;
+}
+
+.mu-emojis-selector.open {
+  display: block;
+}
+
+.mu-emojis-selector.dropdown-right {
+  right: 0;
+  left: unset;
 }
 
 .mu-emojis-selector .mu-emojis-tabs {
