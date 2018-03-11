@@ -161,3 +161,91 @@
   });
 
 })(window);
+
+
+mumuki = {
+  load: function (callback) {
+    return callback();
+  }
+}
+
+mumuki.load(function () {
+
+  var MU_EMOJI_DROPDOWN = 'mu-emoji-dropdown';
+  var MU_EMOJI_DROPDOWN_TOGGLE = MU_EMOJI_DROPDOWN + '-toggle';
+  var MU_EMOJI_DROPDOWN_MENU = MU_EMOJI_DROPDOWN + '-menu';
+  var MU_EMOJI_DROPDOWN_MENU_TABS = MU_EMOJI_DROPDOWN_MENU + '-tabs';
+  var MU_EMOJI_DROPDOWN_MENU_CATEGORY = MU_EMOJI_DROPDOWN_MENU_TABS + '-item';
+  var MU_EMOJI_DROPDOWN_MENU_SEARCH = MU_EMOJI_DROPDOWN_MENU + '-search';
+  var MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT = MU_EMOJI_DROPDOWN_MENU_SEARCH + '-input';
+  var MU_EMOJI_DROPDOWN_MENU_SEARCH_ICON = MU_EMOJI_DROPDOWN_MENU_SEARCH + '-icon';
+
+  function $id(id) { return '#' + id }
+  function $class(clazz) { return '.' + clazz }
+  function categoryClass(category) { return MU_EMOJI_DROPDOWN_MENU + '-category-' + category.name }
+
+  function generateDropdownToggle($dd) {
+    var iconClass = $dd.data('icon-class') || 'fa fa-fw fa-smile-o';
+    return $([
+      '<a class="' + MU_EMOJI_DROPDOWN_TOGGLE + '">',
+      '  <i class="' + iconClass + '"></i>',
+      '</a>',
+    ].join(''));
+  }
+
+  function generateDropdownMenu($dd) {
+    return $('<div class="' + MU_EMOJI_DROPDOWN_MENU + '"></div>');
+  }
+
+  function generateTabs($ddm) {
+    var $ddmt = $('<ul class="' + MU_EMOJI_DROPDOWN_MENU_TABS + '"></ul>');
+    window.muEmojis.categories.forEach(function (category, i) {
+      $ddmt.append(generateTabFor(category, i === 0));
+    });
+    return $ddmt;
+  }
+
+  function generateTabFor(category, isFirstCategory) {
+    return $([
+      '<li class="' + MU_EMOJI_DROPDOWN_MENU_CATEGORY + (isFirstCategory ? ' active' : ''), '" title="' + category.caption + '">',
+      '  <i class="' + category.icon_class + '"></i>',
+      '</li>'
+    ].join(''));
+  }
+
+  function generateSearch($ddm) {
+    return $([
+      '<div class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH +'">',
+      '  <input class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT +'" placeholder="' + window.searchEmojiPlaceholder + '">',
+      '  <i class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_ICON +' fa fa-fw fa-search"></i>',
+      '</div>',
+    ].join(''));
+  }
+
+  function generateEmojiList($ddm) {
+    return '';
+  }
+
+
+  function populateDropdownMenu($ddm) {
+    $ddm.append(generateTabs($ddm));
+    $ddm.append(generateSearch($ddm));
+    $ddm.append(generateEmojiList($ddm));
+  }
+
+  $.fn.renderEmojis = function () {
+    var self = this;
+    self.each(function (i) {
+      var $dd = $(self[i]);
+      var $ddt = generateDropdownToggle($dd);
+      var $ddm = generateDropdownMenu($dd);
+      $dd.append($ddt);
+      populateDropdownMenu($ddm);
+      $dd.append($ddm);
+    });
+    return self;
+  }
+
+  $('.mu-emoji-dropdown').renderEmojis();
+
+});

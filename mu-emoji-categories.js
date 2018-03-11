@@ -105,6 +105,12 @@
     pt: 'Emoji ícones fornecidos gratuitamente pelo',
   }
 
+  window._searchEmojiPlaceholder = {
+    en: 'Search emoji',
+    es: 'Buscar emoticón',
+    pt: 'Pesquisar emoji',
+  }
+
   function compareEmojis(a, b) {
     return a.order < b.order ? -1 : (a.order == b.order ? 0 : 1);
   }
@@ -135,5 +141,6 @@
 
   window.muEmojis.inputPlaceholder = window.muEmojis._inputPlaceholder_[currentLanguage()];
   window.emojiOneLegend = window._emojiOneLegend[currentLanguage()];
+  window.searchEmojiPlaceholder = window._searchEmojiPlaceholder[currentLanguage()];
 
 })(window);
