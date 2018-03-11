@@ -92,8 +92,13 @@
     }
 
     function searchQuery (querytext) {
-      return !querytext.trim() ? "true" :
-        "[emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) { return s.indexOf('" + querytext + "') >= 0 })";
+      return function (emoji) {
+        return !querytext.trim() ? true :
+          [emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) {
+            return s.toLowerCase().indexOf(querytext.toLowerCase()) >= 0;
+          }
+        );
+      }
     }
 
     function filterSearch() {

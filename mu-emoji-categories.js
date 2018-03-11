@@ -110,11 +110,15 @@
   }
 
   function fromCategory(category, jsCriteria, emoji) {
-    return emoji.category === category.name && eval(jsCriteria);
+    return emoji.category === category.name && jsCriteria(emoji);
   }
 
   function filterEmojisBy(category, jsCriteria) {
     return window.muEmojis.list.filter(fromCategory.bind(window.muEmojis, category, jsCriteria));
+  }
+
+  function alwaysTrue(_emoji) {
+    return true;
   }
 
   window.muEmojis.filterEmojisBy = filterEmojisBy;
@@ -125,7 +129,7 @@
       icon_class: category.icon_class,
       order: index + 1,
       caption: category.caption[currentLanguage()],
-      list: filterEmojisBy(category, "true"),
+      list: filterEmojisBy(category, alwaysTrue),
     };
   })
 
