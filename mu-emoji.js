@@ -155,20 +155,9 @@
   });
 
   $(document).click(function (e) {
-    var $dds = $('.mu-emojis-selector');
-    $dds.each(function (i) {
-      var $dd = $($dds[i]);
-      if (!clickedInside(e, $dd)) {
-        $dd.removeClass('open');
-      }
-    });
+    if (!$(e.target).is('.mu-emojis-selector, .mu-emojis-selector *')) {
+      $('.mu-emojis-selector').removeClass('open');
+    }
   });
-
-  function clickedInside(e, $element) {
-    return (e.clientX >= $element.offset().left &&
-            e.clientX <= $element.offset().left + $element.width() &&
-            e.clientY >= $element.offset().top &&
-            e.clientY <= $element.offset().top + $element.height());
-  }
 
 })(window);
