@@ -164,11 +164,11 @@
     });
   });
 
-function clickedInside(e, $element) {
-  return (e.clientX >= $element.offset().left &&
-          e.clientX <= $element.offset().left + $element.width() &&
-          e.clientY >= $element.offset().top &&
-          e.clientY <= $element.offset().top + $element.height());
-}
+  function clickedInside(e, $element) {
+    return (e.clientX >= $element.offset().left &&
+            e.clientX <= $element.offset().left + $element.width() &&
+            e.clientY >= $element.offset().top &&
+            e.clientY <= $element.offset().top + $element.height());
+  }
 
 })(window);
