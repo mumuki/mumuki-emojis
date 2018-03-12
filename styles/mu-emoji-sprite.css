@@ -33,6 +33,11 @@ body * {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  display: none;
+}
+
+.mu-emoji-dropdown-menu.open {
+  display: block;
 }
 
 .mu-emoji-dropdown-menu-tabs,
@@ -99,7 +104,7 @@ body * {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: 100%;
+  height: 309px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -124,12 +129,9 @@ body * {
 }
 
 .mu-emoji-dropdown-menu-emojis-item:hover {
-  filter: brightness(0.90);
+  filter: brightness(0.75);
   cursor: pointer;
-  background-color: white;
-  border-radius: 5px;
 }
-
 
 .mu-emoji-dropdown-menu-emojis::-webkit-scrollbar {
   position: absolute;
