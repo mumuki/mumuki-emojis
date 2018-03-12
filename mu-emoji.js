@@ -89,17 +89,19 @@ mumuki.load(function () {
   function generateSearch($ddm) {
     return $([
       '<div class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH +'">',
-      '  <input class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT +'" placeholder="' + window.searchEmojiPlaceholder + '">',
-      '  <i class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_ICON +' fa fa-fw fa-search"></i>',
+      '  <i class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_ICON +' fa fa-fw fa-search"/>',
+      '  <input class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT +'" placeholder="' + window.searchEmojiPlaceholder + '"/>',
       '</div>',
     ].join(''));
   }
 
   function generateEmojiList($ddm, $dd) {
     $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS)).detach();
+    $ddm.find($class('emoji-one-legend')).detach();
     var $emojis = $('<ul class="'+ MU_EMOJI_DROPDOWN_MENU_EMOJIS +'"></ul>');
     populateEmojiList($ddm, $emojis, $dd);
-    return $emojis;
+    $ddm.append($emojis);
+    $ddm.append('<div class="emoji-one-legend">' + window.emojiOneLegend + ' <a href="https://www.emojione.com/" target="_blank">EmojiOne</a></div>');
   }
 
   function populateEmojiList($ddm, $emojis, $dd) {
@@ -178,7 +180,7 @@ mumuki.load(function () {
       window.muEmojis.categories.forEach(function (category) {
         category.list = muEmojis.filterEmojisBy(category, searchQuery(querytext));
       })
-      $ddm.append(generateEmojiList($ddm, $dd));
+      generateEmojiList($ddm, $dd);
       $input.focus();
 
     }, 500);
