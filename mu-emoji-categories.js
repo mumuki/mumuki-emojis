@@ -26,6 +26,15 @@
 
   window.muEmojis._categories_ = [
     {
+      name: "mumoji",
+      icon_class: "da da-mumuki-circle",
+      caption: {
+        en: "Mumoji",
+        es: "Mumoji",
+        pt: "Mumoji",
+      }
+    },
+    {
       name: "people",
       icon_class: "fa fa-fw fa-smile-o",
       caption: {

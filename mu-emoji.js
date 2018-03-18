@@ -166,7 +166,7 @@ mumuki.load(function () {
     return function (emoji) {
       return !querytext.trim() ? true :
         [emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) {
-          return s.toLowerCase().indexOf(querytext.toLowerCase()) >= 0;
+          return s && s.toLowerCase().indexOf(querytext.toLowerCase()) >= 0;
         });
     }
   }

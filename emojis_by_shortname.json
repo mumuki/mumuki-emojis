@@ -1,4 +1,2464 @@
 {
+  "advertencia": {
+    "name": "advertencia",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":advertencia:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "advertencia",
+      "fully_qualified": "advertencia",
+      "non_fully_qualified": "advertencia",
+      "output": "advertencia",
+      "default_matches": [
+        "advertencia"
+      ],
+      "greedy_matches": [
+        "advertencia"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "advertencia"
+    ]
+  },
+  "alegria": {
+    "name": "alegria",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":alegria:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "alegria",
+      "fully_qualified": "alegria",
+      "non_fully_qualified": "alegria",
+      "output": "alegria",
+      "default_matches": [
+        "alegria"
+      ],
+      "greedy_matches": [
+        "alegria"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "alegria"
+    ]
+  },
+  "aliviado": {
+    "name": "aliviado",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":aliviado:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "aliviado",
+      "fully_qualified": "aliviado",
+      "non_fully_qualified": "aliviado",
+      "output": "aliviado",
+      "default_matches": [
+        "aliviado"
+      ],
+      "greedy_matches": [
+        "aliviado"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "aliviado"
+    ]
+  },
+  "antena": {
+    "name": "antena",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":antena:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "antena",
+      "fully_qualified": "antena",
+      "non_fully_qualified": "antena",
+      "output": "antena",
+      "default_matches": [
+        "antena"
+      ],
+      "greedy_matches": [
+        "antena"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "antena"
+    ]
+  },
+  "aplauso2": {
+    "name": "aplauso2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":aplauso2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "aplauso2",
+      "fully_qualified": "aplauso2",
+      "non_fully_qualified": "aplauso2",
+      "output": "aplauso2",
+      "default_matches": [
+        "aplauso2"
+      ],
+      "greedy_matches": [
+        "aplauso2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "aplauso2"
+    ]
+  },
+  "aplauso3": {
+    "name": "aplauso3",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":aplauso3:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "aplauso3",
+      "fully_qualified": "aplauso3",
+      "non_fully_qualified": "aplauso3",
+      "output": "aplauso3",
+      "default_matches": [
+        "aplauso3"
+      ],
+      "greedy_matches": [
+        "aplauso3"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "aplauso3"
+    ]
+  },
+  "beso_corazon": {
+    "name": "beso_corazon",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":beso_corazon:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "beso_corazon",
+      "fully_qualified": "beso_corazon",
+      "non_fully_qualified": "beso_corazon",
+      "output": "beso_corazon",
+      "default_matches": [
+        "beso_corazon"
+      ],
+      "greedy_matches": [
+        "beso_corazon"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "beso_corazon"
+    ]
+  },
+  "boca_abierta": {
+    "name": "boca_abierta",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":boca_abierta:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "boca_abierta",
+      "fully_qualified": "boca_abierta",
+      "non_fully_qualified": "boca_abierta",
+      "output": "boca_abierta",
+      "default_matches": [
+        "boca_abierta"
+      ],
+      "greedy_matches": [
+        "boca_abierta"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "boca_abierta"
+    ]
+  },
+  "bolsa": {
+    "name": "bolsa",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":bolsa:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "bolsa",
+      "fully_qualified": "bolsa",
+      "non_fully_qualified": "bolsa",
+      "output": "bolsa",
+      "default_matches": [
+        "bolsa"
+      ],
+      "greedy_matches": [
+        "bolsa"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "bolsa"
+    ]
+  },
+  "bombilla": {
+    "name": "bombilla",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":bombilla:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "bombilla",
+      "fully_qualified": "bombilla",
+      "non_fully_qualified": "bombilla",
+      "output": "bombilla",
+      "default_matches": [
+        "bombilla"
+      ],
+      "greedy_matches": [
+        "bombilla"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "bombilla"
+    ]
+  },
+  "bum": {
+    "name": "bum",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":bum:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "bum",
+      "fully_qualified": "bum",
+      "non_fully_qualified": "bum",
+      "output": "bum",
+      "default_matches": [
+        "bum"
+      ],
+      "greedy_matches": [
+        "bum"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "bum"
+    ]
+  },
+  "calla": {
+    "name": "calla",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":calla:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "calla",
+      "fully_qualified": "calla",
+      "non_fully_qualified": "calla",
+      "output": "calla",
+      "default_matches": [
+        "calla"
+      ],
+      "greedy_matches": [
+        "calla"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "calla"
+    ]
+  },
+  "cara_lig_sonrient": {
+    "name": "cara_lig_sonrient",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":cara_lig_sonrient:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "cara_lig_sonrient",
+      "fully_qualified": "cara_lig_sonrient",
+      "non_fully_qualified": "cara_lig_sonrient",
+      "output": "cara_lig_sonrient",
+      "default_matches": [
+        "cara_lig_sonrient"
+      ],
+      "greedy_matches": [
+        "cara_lig_sonrient"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "cara_lig_sonrient"
+    ]
+  },
+  "cara_mano_boca2": {
+    "name": "cara_mano_boca2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":cara_mano_boca2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "cara_mano_boca2",
+      "fully_qualified": "cara_mano_boca2",
+      "non_fully_qualified": "cara_mano_boca2",
+      "output": "cara_mano_boca2",
+      "default_matches": [
+        "cara_mano_boca2"
+      ],
+      "greedy_matches": [
+        "cara_mano_boca2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "cara_mano_boca2"
+    ]
+  },
+  "cara_nerd": {
+    "name": "cara_nerd",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":cara_nerd:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "cara_nerd",
+      "fully_qualified": "cara_nerd",
+      "non_fully_qualified": "cara_nerd",
+      "output": "cara_nerd",
+      "default_matches": [
+        "cara_nerd"
+      ],
+      "greedy_matches": [
+        "cara_nerd"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "cara_nerd"
+    ]
+  },
+  "cara_neutra": {
+    "name": "cara_neutra",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":cara_neutra:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "cara_neutra",
+      "fully_qualified": "cara_neutra",
+      "non_fully_qualified": "cara_neutra",
+      "output": "cara_neutra",
+      "default_matches": [
+        "cara_neutra"
+      ],
+      "greedy_matches": [
+        "cara_neutra"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "cara_neutra"
+    ]
+  },
+  "cara_ojos_blanco": {
+    "name": "cara_ojos_blanco",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":cara_ojos_blanco:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "cara_ojos_blanco",
+      "fully_qualified": "cara_ojos_blanco",
+      "non_fully_qualified": "cara_ojos_blanco",
+      "output": "cara_ojos_blanco",
+      "default_matches": [
+        "cara_ojos_blanco"
+      ],
+      "greedy_matches": [
+        "cara_ojos_blanco"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "cara_ojos_blanco"
+    ]
+  },
+  "cara_pensativa2": {
+    "name": "cara_pensativa2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":cara_pensativa2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "cara_pensativa2",
+      "fully_qualified": "cara_pensativa2",
+      "non_fully_qualified": "cara_pensativa2",
+      "output": "cara_pensativa2",
+      "default_matches": [
+        "cara_pensativa2"
+      ],
+      "greedy_matches": [
+        "cara_pensativa2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "cara_pensativa2"
+    ]
+  },
+  "casa": {
+    "name": "casa",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":casa:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "casa",
+      "fully_qualified": "casa",
+      "non_fully_qualified": "casa",
+      "output": "casa",
+      "default_matches": [
+        "casa"
+      ],
+      "greedy_matches": [
+        "casa"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "casa"
+    ]
+  },
+  "cel": {
+    "name": "cel",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":cel:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "cel",
+      "fully_qualified": "cel",
+      "non_fully_qualified": "cel",
+      "output": "cel",
+      "default_matches": [
+        "cel"
+      ],
+      "greedy_matches": [
+        "cel"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "cel"
+    ]
+  },
+  "decepcionado": {
+    "name": "decepcionado",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":decepcionado:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "decepcionado",
+      "fully_qualified": "decepcionado",
+      "non_fully_qualified": "decepcionado",
+      "output": "decepcionado",
+      "default_matches": [
+        "decepcionado"
+      ],
+      "greedy_matches": [
+        "decepcionado"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "decepcionado"
+    ]
+  },
+  "desconcertado": {
+    "name": "desconcertado",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":desconcertado:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "desconcertado",
+      "fully_qualified": "desconcertado",
+      "non_fully_qualified": "desconcertado",
+      "output": "desconcertado",
+      "default_matches": [
+        "desconcertado"
+      ],
+      "greedy_matches": [
+        "desconcertado"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "desconcertado"
+    ]
+  },
+  "durmiendo": {
+    "name": "durmiendo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":durmiendo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "durmiendo",
+      "fully_qualified": "durmiendo",
+      "non_fully_qualified": "durmiendo",
+      "output": "durmiendo",
+      "default_matches": [
+        "durmiendo"
+      ],
+      "greedy_matches": [
+        "durmiendo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "durmiendo"
+    ]
+  },
+  "enfado": {
+    "name": "enfado",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":enfado:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "enfado",
+      "fully_qualified": "enfado",
+      "non_fully_qualified": "enfado",
+      "output": "enfado",
+      "default_matches": [
+        "enfado"
+      ],
+      "greedy_matches": [
+        "enfado"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "enfado"
+    ]
+  },
+  "fiesta": {
+    "name": "fiesta",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":fiesta:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "fiesta",
+      "fully_qualified": "fiesta",
+      "non_fully_qualified": "fiesta",
+      "output": "fiesta",
+      "default_matches": [
+        "fiesta"
+      ],
+      "greedy_matches": [
+        "fiesta"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "fiesta"
+    ]
+  },
+  "frustrado": {
+    "name": "frustrado",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":frustrado:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "frustrado",
+      "fully_qualified": "frustrado",
+      "non_fully_qualified": "frustrado",
+      "output": "frustrado",
+      "default_matches": [
+        "frustrado"
+      ],
+      "greedy_matches": [
+        "frustrado"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "frustrado"
+    ]
+  },
+  "gafas_sol": {
+    "name": "gafas_sol",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":gafas_sol:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "gafas_sol",
+      "fully_qualified": "gafas_sol",
+      "non_fully_qualified": "gafas_sol",
+      "output": "gafas_sol",
+      "default_matches": [
+        "gafas_sol"
+      ],
+      "greedy_matches": [
+        "gafas_sol"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "gafas_sol"
+    ]
+  },
+  "globo": {
+    "name": "globo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":globo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "globo",
+      "fully_qualified": "globo",
+      "non_fully_qualified": "globo",
+      "output": "globo",
+      "default_matches": [
+        "globo"
+      ],
+      "greedy_matches": [
+        "globo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "globo"
+    ]
+  },
+  "guinio": {
+    "name": "guinio",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":guinio:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "guinio",
+      "fully_qualified": "guinio",
+      "non_fully_qualified": "guinio",
+      "output": "guinio",
+      "default_matches": [
+        "guinio"
+      ],
+      "greedy_matches": [
+        "guinio"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "guinio"
+    ]
+  },
+  "hola2": {
+    "name": "hola2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":hola2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "hola2",
+      "fully_qualified": "hola2",
+      "non_fully_qualified": "hola2",
+      "output": "hola2",
+      "default_matches": [
+        "hola2"
+      ],
+      "greedy_matches": [
+        "hola2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "hola2"
+    ]
+  },
+  "hola3": {
+    "name": "hola3",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":hola3:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "hola3",
+      "fully_qualified": "hola3",
+      "non_fully_qualified": "hola3",
+      "output": "hola3",
+      "default_matches": [
+        "hola3"
+      ],
+      "greedy_matches": [
+        "hola3"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "hola3"
+    ]
+  },
+  "inexpresivo": {
+    "name": "inexpresivo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":inexpresivo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "inexpresivo",
+      "fully_qualified": "inexpresivo",
+      "non_fully_qualified": "inexpresivo",
+      "output": "inexpresivo",
+      "default_matches": [
+        "inexpresivo"
+      ],
+      "greedy_matches": [
+        "inexpresivo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "inexpresivo"
+    ]
+  },
+  "inocente": {
+    "name": "inocente",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":inocente:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "inocente",
+      "fully_qualified": "inocente",
+      "non_fully_qualified": "inocente",
+      "output": "inocente",
+      "default_matches": [
+        "inocente"
+      ],
+      "greedy_matches": [
+        "inocente"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "inocente"
+    ]
+  },
+  "lengua_afuera": {
+    "name": "lengua_afuera",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":lengua_afuera:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "lengua_afuera",
+      "fully_qualified": "lengua_afuera",
+      "non_fully_qualified": "lengua_afuera",
+      "output": "lengua_afuera",
+      "default_matches": [
+        "lengua_afuera"
+      ],
+      "greedy_matches": [
+        "lengua_afuera"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "lengua_afuera"
+    ]
+  },
+  "lengua_afuera2": {
+    "name": "lengua_afuera2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":lengua_afuera2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "lengua_afuera2",
+      "fully_qualified": "lengua_afuera2",
+      "non_fully_qualified": "lengua_afuera2",
+      "output": "lengua_afuera2",
+      "default_matches": [
+        "lengua_afuera2"
+      ],
+      "greedy_matches": [
+        "lengua_afuera2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "lengua_afuera2"
+    ]
+  },
+  "llamando": {
+    "name": "llamando",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":llamando:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "llamando",
+      "fully_qualified": "llamando",
+      "non_fully_qualified": "llamando",
+      "output": "llamando",
+      "default_matches": [
+        "llamando"
+      ],
+      "greedy_matches": [
+        "llamando"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "llamando"
+    ]
+  },
+  "lloros": {
+    "name": "lloros",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":lloros:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "lloros",
+      "fully_qualified": "lloros",
+      "non_fully_qualified": "lloros",
+      "output": "lloros",
+      "default_matches": [
+        "lloros"
+      ],
+      "greedy_matches": [
+        "lloros"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "lloros"
+    ]
+  },
+  "mano_aprobacion2": {
+    "name": "mano_aprobacion2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":mano_aprobacion2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "mano_aprobacion2",
+      "fully_qualified": "mano_aprobacion2",
+      "non_fully_qualified": "mano_aprobacion2",
+      "output": "mano_aprobacion2",
+      "default_matches": [
+        "mano_aprobacion2"
+      ],
+      "greedy_matches": [
+        "mano_aprobacion2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "mano_aprobacion2"
+    ]
+  },
+  "mano_aprobacion3": {
+    "name": "mano_aprobacion3",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":mano_aprobacion3:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "mano_aprobacion3",
+      "fully_qualified": "mano_aprobacion3",
+      "non_fully_qualified": "mano_aprobacion3",
+      "output": "mano_aprobacion3",
+      "default_matches": [
+        "mano_aprobacion3"
+      ],
+      "greedy_matches": [
+        "mano_aprobacion3"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "mano_aprobacion3"
+    ]
+  },
+  "mas_uno": {
+    "name": "mas_uno",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":mas_uno:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "mas_uno",
+      "fully_qualified": "mas_uno",
+      "non_fully_qualified": "mas_uno",
+      "output": "mas_uno",
+      "default_matches": [
+        "mas_uno"
+      ],
+      "greedy_matches": [
+        "mas_uno"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "mas_uno"
+    ]
+  },
+  "menos_uno": {
+    "name": "menos_uno",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":menos_uno:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "menos_uno",
+      "fully_qualified": "menos_uno",
+      "non_fully_qualified": "menos_uno",
+      "output": "menos_uno",
+      "default_matches": [
+        "menos_uno"
+      ],
+      "greedy_matches": [
+        "menos_uno"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "menos_uno"
+    ]
+  },
+  "mundo": {
+    "name": "mundo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":mundo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "mundo",
+      "fully_qualified": "mundo",
+      "non_fully_qualified": "mundo",
+      "output": "mundo",
+      "default_matches": [
+        "mundo"
+      ],
+      "greedy_matches": [
+        "mundo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "mundo"
+    ]
+  },
+  "musculo2": {
+    "name": "musculo2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":musculo2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "musculo2",
+      "fully_qualified": "musculo2",
+      "non_fully_qualified": "musculo2",
+      "output": "musculo2",
+      "default_matches": [
+        "musculo2"
+      ],
+      "greedy_matches": [
+        "musculo2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "musculo2"
+    ]
+  },
+  "musculo3": {
+    "name": "musculo3",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":musculo3:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "musculo3",
+      "fully_qualified": "musculo3",
+      "non_fully_qualified": "musculo3",
+      "output": "musculo3",
+      "default_matches": [
+        "musculo3"
+      ],
+      "greedy_matches": [
+        "musculo3"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "musculo3"
+    ]
+  },
+  "no_interesado": {
+    "name": "no_interesado",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":no_interesado:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "no_interesado",
+      "fully_qualified": "no_interesado",
+      "non_fully_qualified": "no_interesado",
+      "output": "no_interesado",
+      "default_matches": [
+        "no_interesado"
+      ],
+      "greedy_matches": [
+        "no_interesado"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "no_interesado"
+    ]
+  },
+  "nota": {
+    "name": "nota",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":nota:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "nota",
+      "fully_qualified": "nota",
+      "non_fully_qualified": "nota",
+      "output": "nota",
+      "default_matches": [
+        "nota"
+      ],
+      "greedy_matches": [
+        "nota"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "nota"
+    ]
+  },
+  "notas": {
+    "name": "notas",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":notas:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "notas",
+      "fully_qualified": "notas",
+      "non_fully_qualified": "notas",
+      "output": "notas",
+      "default_matches": [
+        "notas"
+      ],
+      "greedy_matches": [
+        "notas"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "notas"
+    ]
+  },
+  "oficina": {
+    "name": "oficina",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":oficina:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "oficina",
+      "fully_qualified": "oficina",
+      "non_fully_qualified": "oficina",
+      "output": "oficina",
+      "default_matches": [
+        "oficina"
+      ],
+      "greedy_matches": [
+        "oficina"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "oficina"
+    ]
+  },
+  "ojos": {
+    "name": "ojos",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":ojos:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "ojos",
+      "fully_qualified": "ojos",
+      "non_fully_qualified": "ojos",
+      "output": "ojos",
+      "default_matches": [
+        "ojos"
+      ],
+      "greedy_matches": [
+        "ojos"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "ojos"
+    ]
+  },
+  "ojos_corazones": {
+    "name": "ojos_corazones",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":ojos_corazones:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "ojos_corazones",
+      "fully_qualified": "ojos_corazones",
+      "non_fully_qualified": "ojos_corazones",
+      "output": "ojos_corazones",
+      "default_matches": [
+        "ojos_corazones"
+      ],
+      "greedy_matches": [
+        "ojos_corazones"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "ojos_corazones"
+    ]
+  },
+  "ordenador": {
+    "name": "ordenador",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":ordenador:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "ordenador",
+      "fully_qualified": "ordenador",
+      "non_fully_qualified": "ordenador",
+      "output": "ordenador",
+      "default_matches": [
+        "ordenador"
+      ],
+      "greedy_matches": [
+        "ordenador"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "ordenador"
+    ]
+  },
+  "pensamiento": {
+    "name": "pensamiento",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":pensamiento:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "pensamiento",
+      "fully_qualified": "pensamiento",
+      "non_fully_qualified": "pensamiento",
+      "output": "pensamiento",
+      "default_matches": [
+        "pensamiento"
+      ],
+      "greedy_matches": [
+        "pensamiento"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "pensamiento"
+    ]
+  },
+  "pensamiento2": {
+    "name": "pensamiento2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":pensamiento2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "pensamiento2",
+      "fully_qualified": "pensamiento2",
+      "non_fully_qualified": "pensamiento2",
+      "output": "pensamiento2",
+      "default_matches": [
+        "pensamiento2"
+      ],
+      "greedy_matches": [
+        "pensamiento2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "pensamiento2"
+    ]
+  },
+  "pensativo": {
+    "name": "pensativo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":pensativo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "pensativo",
+      "fully_qualified": "pensativo",
+      "non_fully_qualified": "pensativo",
+      "output": "pensativo",
+      "default_matches": [
+        "pensativo"
+      ],
+      "greedy_matches": [
+        "pensativo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "pensativo"
+    ]
+  },
+  "pergamino": {
+    "name": "pergamino",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":pergamino:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "pergamino",
+      "fully_qualified": "pergamino",
+      "non_fully_qualified": "pergamino",
+      "output": "pergamino",
+      "default_matches": [
+        "pergamino"
+      ],
+      "greedy_matches": [
+        "pergamino"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "pergamino"
+    ]
+  },
+  "play": {
+    "name": "play",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":play:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "play",
+      "fully_qualified": "play",
+      "non_fully_qualified": "play",
+      "output": "play",
+      "default_matches": [
+        "play"
+      ],
+      "greedy_matches": [
+        "play"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "play"
+    ]
+  },
+  "rayo": {
+    "name": "rayo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":rayo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "rayo",
+      "fully_qualified": "rayo",
+      "non_fully_qualified": "rayo",
+      "output": "rayo",
+      "default_matches": [
+        "rayo"
+      ],
+      "greedy_matches": [
+        "rayo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "rayo"
+    ]
+  },
+  "relajado": {
+    "name": "relajado",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":relajado:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "relajado",
+      "fully_qualified": "relajado",
+      "non_fully_qualified": "relajado",
+      "output": "relajado",
+      "default_matches": [
+        "relajado"
+      ],
+      "greedy_matches": [
+        "relajado"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "relajado"
+    ]
+  },
+  "reloj": {
+    "name": "reloj",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":reloj:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "reloj",
+      "fully_qualified": "reloj",
+      "non_fully_qualified": "reloj",
+      "output": "reloj",
+      "default_matches": [
+        "reloj"
+      ],
+      "greedy_matches": [
+        "reloj"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "reloj"
+    ]
+  },
+  "reloj_arena": {
+    "name": "reloj_arena",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":reloj_arena:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "reloj_arena",
+      "fully_qualified": "reloj_arena",
+      "non_fully_qualified": "reloj_arena",
+      "output": "reloj_arena",
+      "default_matches": [
+        "reloj_arena"
+      ],
+      "greedy_matches": [
+        "reloj_arena"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "reloj_arena"
+    ]
+  },
+  "risa": {
+    "name": "risa",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":risa:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "risa",
+      "fully_qualified": "risa",
+      "non_fully_qualified": "risa",
+      "output": "risa",
+      "default_matches": [
+        "risa"
+      ],
+      "greedy_matches": [
+        "risa"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "risa"
+    ]
+  },
+  "sabroso": {
+    "name": "sabroso",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sabroso:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sabroso",
+      "fully_qualified": "sabroso",
+      "non_fully_qualified": "sabroso",
+      "output": "sabroso",
+      "default_matches": [
+        "sabroso"
+      ],
+      "greedy_matches": [
+        "sabroso"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sabroso"
+    ]
+  },
+  "satelite": {
+    "name": "satelite",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":satelite:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "satelite",
+      "fully_qualified": "satelite",
+      "non_fully_qualified": "satelite",
+      "output": "satelite",
+      "default_matches": [
+        "satelite"
+      ],
+      "greedy_matches": [
+        "satelite"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "satelite"
+    ]
+  },
+  "silencioso": {
+    "name": "silencioso",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":silencioso:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "silencioso",
+      "fully_qualified": "silencioso",
+      "non_fully_qualified": "silencioso",
+      "output": "silencioso",
+      "default_matches": [
+        "silencioso"
+      ],
+      "greedy_matches": [
+        "silencioso"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "silencioso"
+    ]
+  },
+  "sollozo": {
+    "name": "sollozo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sollozo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sollozo",
+      "fully_qualified": "sollozo",
+      "non_fully_qualified": "sollozo",
+      "output": "sollozo",
+      "default_matches": [
+        "sollozo"
+      ],
+      "greedy_matches": [
+        "sollozo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sollozo"
+    ]
+  },
+  "sonriendo": {
+    "name": "sonriendo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sonriendo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sonriendo",
+      "fully_qualified": "sonriendo",
+      "non_fully_qualified": "sonriendo",
+      "output": "sonriendo",
+      "default_matches": [
+        "sonriendo"
+      ],
+      "greedy_matches": [
+        "sonriendo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sonriendo"
+    ]
+  },
+  "sonriendo2": {
+    "name": "sonriendo2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sonriendo2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sonriendo2",
+      "fully_qualified": "sonriendo2",
+      "non_fully_qualified": "sonriendo2",
+      "output": "sonriendo2",
+      "default_matches": [
+        "sonriendo2"
+      ],
+      "greedy_matches": [
+        "sonriendo2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sonriendo2"
+    ]
+  },
+  "sonriente": {
+    "name": "sonriente",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sonriente:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sonriente",
+      "fully_qualified": "sonriente",
+      "non_fully_qualified": "sonriente",
+      "output": "sonriente",
+      "default_matches": [
+        "sonriente"
+      ],
+      "greedy_matches": [
+        "sonriente"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sonriente"
+    ]
+  },
+  "sonrisa": {
+    "name": "sonrisa",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sonrisa:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sonrisa",
+      "fully_qualified": "sonrisa",
+      "non_fully_qualified": "sonrisa",
+      "output": "sonrisa",
+      "default_matches": [
+        "sonrisa"
+      ],
+      "greedy_matches": [
+        "sonrisa"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sonrisa"
+    ]
+  },
+  "sonrisa_burla": {
+    "name": "sonrisa_burla",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sonrisa_burla:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sonrisa_burla",
+      "fully_qualified": "sonrisa_burla",
+      "non_fully_qualified": "sonrisa_burla",
+      "output": "sonrisa_burla",
+      "default_matches": [
+        "sonrisa_burla"
+      ],
+      "greedy_matches": [
+        "sonrisa_burla"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sonrisa_burla"
+    ]
+  },
+  "sonrisa_sudor": {
+    "name": "sonrisa_sudor",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sonrisa_sudor:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sonrisa_sudor",
+      "fully_qualified": "sonrisa_sudor",
+      "non_fully_qualified": "sonrisa_sudor",
+      "output": "sonrisa_sudor",
+      "default_matches": [
+        "sonrisa_sudor"
+      ],
+      "greedy_matches": [
+        "sonrisa_sudor"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sonrisa_sudor"
+    ]
+  },
+  "sonrisita": {
+    "name": "sonrisita",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sonrisita:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sonrisita",
+      "fully_qualified": "sonrisita",
+      "non_fully_qualified": "sonrisita",
+      "output": "sonrisita",
+      "default_matches": [
+        "sonrisita"
+      ],
+      "greedy_matches": [
+        "sonrisita"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sonrisita"
+    ]
+  },
+  "sudor": {
+    "name": "sudor",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":sudor:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "sudor",
+      "fully_qualified": "sudor",
+      "non_fully_qualified": "sudor",
+      "output": "sudor",
+      "default_matches": [
+        "sudor"
+      ],
+      "greedy_matches": [
+        "sudor"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "sudor"
+    ]
+  },
+  "te_amo2": {
+    "name": "te_amo2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":te_amo2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "te_amo2",
+      "fully_qualified": "te_amo2",
+      "non_fully_qualified": "te_amo2",
+      "output": "te_amo2",
+      "default_matches": [
+        "te_amo2"
+      ],
+      "greedy_matches": [
+        "te_amo2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "te_amo2"
+    ]
+  },
+  "te_amo3": {
+    "name": "te_amo3",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":te_amo3:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "te_amo3",
+      "fully_qualified": "te_amo3",
+      "non_fully_qualified": "te_amo3",
+      "output": "te_amo3",
+      "default_matches": [
+        "te_amo3"
+      ],
+      "greedy_matches": [
+        "te_amo3"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "te_amo3"
+    ]
+  },
+  "temeroso": {
+    "name": "temeroso",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":temeroso:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "temeroso",
+      "fully_qualified": "temeroso",
+      "non_fully_qualified": "temeroso",
+      "output": "temeroso",
+      "default_matches": [
+        "temeroso"
+      ],
+      "greedy_matches": [
+        "temeroso"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "temeroso"
+    ]
+  },
+  "temeroso2": {
+    "name": "temeroso2",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":temeroso2:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "temeroso2",
+      "fully_qualified": "temeroso2",
+      "non_fully_qualified": "temeroso2",
+      "output": "temeroso2",
+      "default_matches": [
+        "temeroso2"
+      ],
+      "greedy_matches": [
+        "temeroso2"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "temeroso2"
+    ]
+  },
+  "temeroso3": {
+    "name": "temeroso3",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":temeroso3:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "temeroso3",
+      "fully_qualified": "temeroso3",
+      "non_fully_qualified": "temeroso3",
+      "output": "temeroso3",
+      "default_matches": [
+        "temeroso3"
+      ],
+      "greedy_matches": [
+        "temeroso3"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "temeroso3"
+    ]
+  },
+  "tenacidad": {
+    "name": "tenacidad",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":tenacidad:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "tenacidad",
+      "fully_qualified": "tenacidad",
+      "non_fully_qualified": "tenacidad",
+      "output": "tenacidad",
+      "default_matches": [
+        "tenacidad"
+      ],
+      "greedy_matches": [
+        "tenacidad"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "tenacidad"
+    ]
+  },
+  "triunfo": {
+    "name": "triunfo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":triunfo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "triunfo",
+      "fully_qualified": "triunfo",
+      "non_fully_qualified": "triunfo",
+      "output": "triunfo",
+      "default_matches": [
+        "triunfo"
+      ],
+      "greedy_matches": [
+        "triunfo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "triunfo"
+    ]
+  },
+  "trofeo": {
+    "name": "trofeo",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":trofeo:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "trofeo",
+      "fully_qualified": "trofeo",
+      "non_fully_qualified": "trofeo",
+      "output": "trofeo",
+      "default_matches": [
+        "trofeo"
+      ],
+      "greedy_matches": [
+        "trofeo"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "trofeo"
+    ]
+  },
+  "tele": {
+    "name": "tele",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":tele:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "tele",
+      "fully_qualified": "tele",
+      "non_fully_qualified": "tele",
+      "output": "tele",
+      "default_matches": [
+        "tele"
+      ],
+      "greedy_matches": [
+        "tele"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "tele"
+    ]
+  },
   "interrobang": {
     "name": "exclamation question mark",
     "unicode_version": 3,
