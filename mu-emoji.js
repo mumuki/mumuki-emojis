@@ -96,8 +96,8 @@ mumuki.load(function () {
   }
 
   function generateEmojiList($ddm, $dd) {
-    $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS)).detach();
-    $ddm.find($class('emoji-one-legend')).detach();
+    $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS)).remove();
+    $ddm.find($class('emoji-one-legend')).remove();
     var $emojis = $('<ul class="'+ MU_EMOJI_DROPDOWN_MENU_EMOJIS +'"></ul>');
     populateEmojiList($ddm, $emojis, $dd);
     $ddm.append($emojis);
