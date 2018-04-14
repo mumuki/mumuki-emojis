@@ -18,6 +18,7 @@ body * {
 
 .mu-emoji-dropdown-toggle {
   text-align: center;
+  cursor: pointer;
 }
 
 .mu-emoji-dropdown-menu {
