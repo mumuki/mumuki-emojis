@@ -89,6 +89,36 @@
       "aliviado"
     ]
   },
+  "amor": {
+    "name": "amor",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":amor:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "amor",
+      "fully_qualified": "amor",
+      "non_fully_qualified": "amor",
+      "output": "amor",
+      "default_matches": [
+        "amor"
+      ],
+      "greedy_matches": [
+        "amor"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "amor"
+    ]
+  },
   "antena": {
     "name": "antena",
     "unicode_version": 0,
@@ -119,13 +149,13 @@
       "antena"
     ]
   },
-  "aplauso2": {
-    "name": "aplauso2",
+  "aplausos": {
+    "name": "aplausos",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":aplauso2:",
+    "shortname": ":aplausos:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -133,50 +163,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "aplauso2",
-      "fully_qualified": "aplauso2",
-      "non_fully_qualified": "aplauso2",
-      "output": "aplauso2",
+      "base": "aplausos",
+      "fully_qualified": "aplausos",
+      "non_fully_qualified": "aplausos",
+      "output": "aplausos",
       "default_matches": [
-        "aplauso2"
+        "aplausos"
       ],
       "greedy_matches": [
-        "aplauso2"
+        "aplausos"
       ],
       "decimal": ""
     },
     "keywords": [
-      "aplauso2"
-    ]
-  },
-  "aplauso3": {
-    "name": "aplauso3",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":aplauso3:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "aplauso3",
-      "fully_qualified": "aplauso3",
-      "non_fully_qualified": "aplauso3",
-      "output": "aplauso3",
-      "default_matches": [
-        "aplauso3"
-      ],
-      "greedy_matches": [
-        "aplauso3"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "aplauso3"
+      "aplausos"
     ]
   },
   "beso_corazon": {
@@ -329,6 +329,36 @@
       "bum"
     ]
   },
+  "burlona": {
+    "name": "burlona",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":burlona:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "burlona",
+      "fully_qualified": "burlona",
+      "non_fully_qualified": "burlona",
+      "output": "burlona",
+      "default_matches": [
+        "burlona"
+      ],
+      "greedy_matches": [
+        "burlona"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "burlona"
+    ]
+  },
   "calla": {
     "name": "calla",
     "unicode_version": 0,
@@ -359,13 +389,13 @@
       "calla"
     ]
   },
-  "cara_lig_sonrient": {
-    "name": "cara_lig_sonrient",
+  "cara_mano_boca": {
+    "name": "cara_mano_boca",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":cara_lig_sonrient:",
+    "shortname": ":cara_mano_boca:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -373,29 +403,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "cara_lig_sonrient",
-      "fully_qualified": "cara_lig_sonrient",
-      "non_fully_qualified": "cara_lig_sonrient",
-      "output": "cara_lig_sonrient",
+      "base": "cara_mano_boca",
+      "fully_qualified": "cara_mano_boca",
+      "non_fully_qualified": "cara_mano_boca",
+      "output": "cara_mano_boca",
       "default_matches": [
-        "cara_lig_sonrient"
+        "cara_mano_boca"
       ],
       "greedy_matches": [
-        "cara_lig_sonrient"
+        "cara_mano_boca"
       ],
       "decimal": ""
     },
     "keywords": [
-      "cara_lig_sonrient"
+      "cara_mano_boca"
     ]
   },
-  "cara_mano_boca2": {
-    "name": "cara_mano_boca2",
+  "cara_pensativa": {
+    "name": "cara_pensativa",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":cara_mano_boca2:",
+    "shortname": ":cara_pensativa:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -403,140 +433,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "cara_mano_boca2",
-      "fully_qualified": "cara_mano_boca2",
-      "non_fully_qualified": "cara_mano_boca2",
-      "output": "cara_mano_boca2",
+      "base": "cara_pensativa",
+      "fully_qualified": "cara_pensativa",
+      "non_fully_qualified": "cara_pensativa",
+      "output": "cara_pensativa",
       "default_matches": [
-        "cara_mano_boca2"
+        "cara_pensativa"
       ],
       "greedy_matches": [
-        "cara_mano_boca2"
+        "cara_pensativa"
       ],
       "decimal": ""
     },
     "keywords": [
-      "cara_mano_boca2"
-    ]
-  },
-  "cara_nerd": {
-    "name": "cara_nerd",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":cara_nerd:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "cara_nerd",
-      "fully_qualified": "cara_nerd",
-      "non_fully_qualified": "cara_nerd",
-      "output": "cara_nerd",
-      "default_matches": [
-        "cara_nerd"
-      ],
-      "greedy_matches": [
-        "cara_nerd"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "cara_nerd"
-    ]
-  },
-  "cara_neutra": {
-    "name": "cara_neutra",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":cara_neutra:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "cara_neutra",
-      "fully_qualified": "cara_neutra",
-      "non_fully_qualified": "cara_neutra",
-      "output": "cara_neutra",
-      "default_matches": [
-        "cara_neutra"
-      ],
-      "greedy_matches": [
-        "cara_neutra"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "cara_neutra"
-    ]
-  },
-  "cara_ojos_blanco": {
-    "name": "cara_ojos_blanco",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":cara_ojos_blanco:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "cara_ojos_blanco",
-      "fully_qualified": "cara_ojos_blanco",
-      "non_fully_qualified": "cara_ojos_blanco",
-      "output": "cara_ojos_blanco",
-      "default_matches": [
-        "cara_ojos_blanco"
-      ],
-      "greedy_matches": [
-        "cara_ojos_blanco"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "cara_ojos_blanco"
-    ]
-  },
-  "cara_pensativa2": {
-    "name": "cara_pensativa2",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":cara_pensativa2:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "cara_pensativa2",
-      "fully_qualified": "cara_pensativa2",
-      "non_fully_qualified": "cara_pensativa2",
-      "output": "cara_pensativa2",
-      "default_matches": [
-        "cara_pensativa2"
-      ],
-      "greedy_matches": [
-        "cara_pensativa2"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "cara_pensativa2"
+      "cara_pensativa"
     ]
   },
   "casa": {
@@ -569,13 +479,13 @@
       "casa"
     ]
   },
-  "cel": {
-    "name": "cel",
+  "celular": {
+    "name": "celular",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":cel:",
+    "shortname": ":celular:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -583,20 +493,50 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "cel",
-      "fully_qualified": "cel",
-      "non_fully_qualified": "cel",
-      "output": "cel",
+      "base": "celular",
+      "fully_qualified": "celular",
+      "non_fully_qualified": "celular",
+      "output": "celular",
       "default_matches": [
-        "cel"
+        "celular"
       ],
       "greedy_matches": [
-        "cel"
+        "celular"
       ],
       "decimal": ""
     },
     "keywords": [
-      "cel"
+      "celular"
+    ]
+  },
+  "deal": {
+    "name": "deal",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":deal:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "deal",
+      "fully_qualified": "deal",
+      "non_fully_qualified": "deal",
+      "output": "deal",
+      "default_matches": [
+        "deal"
+      ],
+      "greedy_matches": [
+        "deal"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "deal"
     ]
   },
   "decepcionado": {
@@ -689,6 +629,36 @@
       "durmiendo"
     ]
   },
+  "emocion": {
+    "name": "emocion",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":emocion:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "emocion",
+      "fully_qualified": "emocion",
+      "non_fully_qualified": "emocion",
+      "output": "emocion",
+      "default_matches": [
+        "emocion"
+      ],
+      "greedy_matches": [
+        "emocion"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "emocion"
+    ]
+  },
   "enfado": {
     "name": "enfado",
     "unicode_version": 0,
@@ -779,13 +749,13 @@
       "frustrado"
     ]
   },
-  "gafas_sol": {
-    "name": "gafas_sol",
+  "gato": {
+    "name": "gato",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":gafas_sol:",
+    "shortname": ":gato:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -793,29 +763,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "gafas_sol",
-      "fully_qualified": "gafas_sol",
-      "non_fully_qualified": "gafas_sol",
-      "output": "gafas_sol",
+      "base": "gato",
+      "fully_qualified": "gato",
+      "non_fully_qualified": "gato",
+      "output": "gato",
       "default_matches": [
-        "gafas_sol"
+        "gato"
       ],
       "greedy_matches": [
-        "gafas_sol"
+        "gato"
       ],
       "decimal": ""
     },
     "keywords": [
-      "gafas_sol"
+      "gato"
     ]
   },
-  "globo": {
-    "name": "globo",
+  "globo_terraqueo": {
+    "name": "globo_terraqueo",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":globo:",
+    "shortname": ":globo_terraqueo:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -823,20 +793,50 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "globo",
-      "fully_qualified": "globo",
-      "non_fully_qualified": "globo",
-      "output": "globo",
+      "base": "globo_terraqueo",
+      "fully_qualified": "globo_terraqueo",
+      "non_fully_qualified": "globo_terraqueo",
+      "output": "globo_terraqueo",
       "default_matches": [
-        "globo"
+        "globo_terraqueo"
       ],
       "greedy_matches": [
-        "globo"
+        "globo_terraqueo"
       ],
       "decimal": ""
     },
     "keywords": [
-      "globo"
+      "globo_terraqueo"
+    ]
+  },
+  "grito": {
+    "name": "grito",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":grito:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "grito",
+      "fully_qualified": "grito",
+      "non_fully_qualified": "grito",
+      "output": "grito",
+      "default_matches": [
+        "grito"
+      ],
+      "greedy_matches": [
+        "grito"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "grito"
     ]
   },
   "guinio": {
@@ -869,13 +869,13 @@
       "guinio"
     ]
   },
-  "hola2": {
-    "name": "hola2",
+  "guinio_lengua": {
+    "name": "guinio_lengua",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":hola2:",
+    "shortname": ":guinio_lengua:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -883,29 +883,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "hola2",
-      "fully_qualified": "hola2",
-      "non_fully_qualified": "hola2",
-      "output": "hola2",
+      "base": "guinio_lengua",
+      "fully_qualified": "guinio_lengua",
+      "non_fully_qualified": "guinio_lengua",
+      "output": "guinio_lengua",
       "default_matches": [
-        "hola2"
+        "guinio_lengua"
       ],
       "greedy_matches": [
-        "hola2"
+        "guinio_lengua"
       ],
       "decimal": ""
     },
     "keywords": [
-      "hola2"
+      "guinio_lengua"
     ]
   },
-  "hola3": {
-    "name": "hola3",
+  "hola": {
+    "name": "hola",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":hola3:",
+    "shortname": ":hola:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -913,20 +913,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "hola3",
-      "fully_qualified": "hola3",
-      "non_fully_qualified": "hola3",
-      "output": "hola3",
+      "base": "hola",
+      "fully_qualified": "hola",
+      "non_fully_qualified": "hola",
+      "output": "hola",
       "default_matches": [
-        "hola3"
+        "hola"
       ],
       "greedy_matches": [
-        "hola3"
+        "hola"
       ],
       "decimal": ""
     },
     "keywords": [
-      "hola3"
+      "hola"
     ]
   },
   "inexpresivo": {
@@ -989,13 +989,13 @@
       "inocente"
     ]
   },
-  "lengua_afuera": {
-    "name": "lengua_afuera",
+  "lengua_rie": {
+    "name": "lengua_rie",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":lengua_afuera:",
+    "shortname": ":lengua_rie:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1003,29 +1003,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "lengua_afuera",
-      "fully_qualified": "lengua_afuera",
-      "non_fully_qualified": "lengua_afuera",
-      "output": "lengua_afuera",
+      "base": "lengua_rie",
+      "fully_qualified": "lengua_rie",
+      "non_fully_qualified": "lengua_rie",
+      "output": "lengua_rie",
       "default_matches": [
-        "lengua_afuera"
+        "lengua_rie"
       ],
       "greedy_matches": [
-        "lengua_afuera"
+        "lengua_rie"
       ],
       "decimal": ""
     },
     "keywords": [
-      "lengua_afuera"
+      "lengua_rie"
     ]
   },
-  "lengua_afuera2": {
-    "name": "lengua_afuera2",
+  "llamanda_entrante": {
+    "name": "llamanda_entrante",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":lengua_afuera2:",
+    "shortname": ":llamanda_entrante:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1033,29 +1033,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "lengua_afuera2",
-      "fully_qualified": "lengua_afuera2",
-      "non_fully_qualified": "lengua_afuera2",
-      "output": "lengua_afuera2",
+      "base": "llamanda_entrante",
+      "fully_qualified": "llamanda_entrante",
+      "non_fully_qualified": "llamanda_entrante",
+      "output": "llamanda_entrante",
       "default_matches": [
-        "lengua_afuera2"
+        "llamanda_entrante"
       ],
       "greedy_matches": [
-        "lengua_afuera2"
+        "llamanda_entrante"
       ],
       "decimal": ""
     },
     "keywords": [
-      "lengua_afuera2"
+      "llamanda_entrante"
     ]
   },
-  "llamando": {
-    "name": "llamando",
+  "llanto": {
+    "name": "llanto",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":llamando:",
+    "shortname": ":llanto:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1063,20 +1063,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "llamando",
-      "fully_qualified": "llamando",
-      "non_fully_qualified": "llamando",
-      "output": "llamando",
+      "base": "llanto",
+      "fully_qualified": "llanto",
+      "non_fully_qualified": "llanto",
+      "output": "llanto",
       "default_matches": [
-        "llamando"
+        "llanto"
       ],
       "greedy_matches": [
-        "llamando"
+        "llanto"
       ],
       "decimal": ""
     },
     "keywords": [
-      "llamando"
+      "llanto"
     ]
   },
   "lloros": {
@@ -1109,13 +1109,13 @@
       "lloros"
     ]
   },
-  "mano_aprobacion2": {
-    "name": "mano_aprobacion2",
+  "mano_aprobacion": {
+    "name": "mano_aprobacion",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":mano_aprobacion2:",
+    "shortname": ":mano_aprobacion:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1123,50 +1123,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "mano_aprobacion2",
-      "fully_qualified": "mano_aprobacion2",
-      "non_fully_qualified": "mano_aprobacion2",
-      "output": "mano_aprobacion2",
+      "base": "mano_aprobacion",
+      "fully_qualified": "mano_aprobacion",
+      "non_fully_qualified": "mano_aprobacion",
+      "output": "mano_aprobacion",
       "default_matches": [
-        "mano_aprobacion2"
+        "mano_aprobacion"
       ],
       "greedy_matches": [
-        "mano_aprobacion2"
+        "mano_aprobacion"
       ],
       "decimal": ""
     },
     "keywords": [
-      "mano_aprobacion2"
-    ]
-  },
-  "mano_aprobacion3": {
-    "name": "mano_aprobacion3",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":mano_aprobacion3:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "mano_aprobacion3",
-      "fully_qualified": "mano_aprobacion3",
-      "non_fully_qualified": "mano_aprobacion3",
-      "output": "mano_aprobacion3",
-      "default_matches": [
-        "mano_aprobacion3"
-      ],
-      "greedy_matches": [
-        "mano_aprobacion3"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "mano_aprobacion3"
+      "mano_aprobacion"
     ]
   },
   "mas_uno": {
@@ -1197,6 +1167,36 @@
     },
     "keywords": [
       "mas_uno"
+    ]
+  },
+  "meh": {
+    "name": "meh",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":meh:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "meh",
+      "fully_qualified": "meh",
+      "non_fully_qualified": "meh",
+      "output": "meh",
+      "default_matches": [
+        "meh"
+      ],
+      "greedy_matches": [
+        "meh"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "meh"
     ]
   },
   "menos_uno": {
@@ -1259,13 +1259,13 @@
       "mundo"
     ]
   },
-  "musculo2": {
-    "name": "musculo2",
+  "musculo": {
+    "name": "musculo",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":musculo2:",
+    "shortname": ":musculo:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1273,29 +1273,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "musculo2",
-      "fully_qualified": "musculo2",
-      "non_fully_qualified": "musculo2",
-      "output": "musculo2",
+      "base": "musculo",
+      "fully_qualified": "musculo",
+      "non_fully_qualified": "musculo",
+      "output": "musculo",
       "default_matches": [
-        "musculo2"
+        "musculo"
       ],
       "greedy_matches": [
-        "musculo2"
+        "musculo"
       ],
       "decimal": ""
     },
     "keywords": [
-      "musculo2"
+      "musculo"
     ]
   },
-  "musculo3": {
-    "name": "musculo3",
+  "nerd": {
+    "name": "nerd",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":musculo3:",
+    "shortname": ":nerd:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1303,20 +1303,50 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "musculo3",
-      "fully_qualified": "musculo3",
-      "non_fully_qualified": "musculo3",
-      "output": "musculo3",
+      "base": "nerd",
+      "fully_qualified": "nerd",
+      "non_fully_qualified": "nerd",
+      "output": "nerd",
       "default_matches": [
-        "musculo3"
+        "nerd"
       ],
       "greedy_matches": [
-        "musculo3"
+        "nerd"
       ],
       "decimal": ""
     },
     "keywords": [
-      "musculo3"
+      "nerd"
+    ]
+  },
+  "neutra": {
+    "name": "neutra",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":neutra:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "neutra",
+      "fully_qualified": "neutra",
+      "non_fully_qualified": "neutra",
+      "output": "neutra",
+      "default_matches": [
+        "neutra"
+      ],
+      "greedy_matches": [
+        "neutra"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "neutra"
     ]
   },
   "no_interesado": {
@@ -1469,13 +1499,13 @@
       "ojos"
     ]
   },
-  "ojos_corazones": {
-    "name": "ojos_corazones",
+  "ojos_blanco": {
+    "name": "ojos_blanco",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":ojos_corazones:",
+    "shortname": ":ojos_blanco:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1483,20 +1513,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "ojos_corazones",
-      "fully_qualified": "ojos_corazones",
-      "non_fully_qualified": "ojos_corazones",
-      "output": "ojos_corazones",
+      "base": "ojos_blanco",
+      "fully_qualified": "ojos_blanco",
+      "non_fully_qualified": "ojos_blanco",
+      "output": "ojos_blanco",
       "default_matches": [
-        "ojos_corazones"
+        "ojos_blanco"
       ],
       "greedy_matches": [
-        "ojos_corazones"
+        "ojos_blanco"
       ],
       "decimal": ""
     },
     "keywords": [
-      "ojos_corazones"
+      "ojos_blanco"
     ]
   },
   "ordenador": {
@@ -1559,13 +1589,13 @@
       "pensamiento"
     ]
   },
-  "pensamiento2": {
-    "name": "pensamiento2",
+  "pensativo2": {
+    "name": "pensativo2",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":pensamiento2:",
+    "shortname": ":pensativo2:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1573,50 +1603,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "pensamiento2",
-      "fully_qualified": "pensamiento2",
-      "non_fully_qualified": "pensamiento2",
-      "output": "pensamiento2",
+      "base": "pensativo2",
+      "fully_qualified": "pensativo2",
+      "non_fully_qualified": "pensativo2",
+      "output": "pensativo2",
       "default_matches": [
-        "pensamiento2"
+        "pensativo2"
       ],
       "greedy_matches": [
-        "pensamiento2"
+        "pensativo2"
       ],
       "decimal": ""
     },
     "keywords": [
-      "pensamiento2"
-    ]
-  },
-  "pensativo": {
-    "name": "pensativo",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":pensativo:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "pensativo",
-      "fully_qualified": "pensativo",
-      "non_fully_qualified": "pensativo",
-      "output": "pensativo",
-      "default_matches": [
-        "pensativo"
-      ],
-      "greedy_matches": [
-        "pensativo"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "pensativo"
+      "pensativo2"
     ]
   },
   "pergamino": {
@@ -1647,6 +1647,66 @@
     },
     "keywords": [
       "pergamino"
+    ]
+  },
+  "perro": {
+    "name": "perro",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":perro:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "perro",
+      "fully_qualified": "perro",
+      "non_fully_qualified": "perro",
+      "output": "perro",
+      "default_matches": [
+        "perro"
+      ],
+      "greedy_matches": [
+        "perro"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "perro"
+    ]
+  },
+  "picante": {
+    "name": "picante",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":picante:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "picante",
+      "fully_qualified": "picante",
+      "non_fully_qualified": "picante",
+      "output": "picante",
+      "default_matches": [
+        "picante"
+      ],
+      "greedy_matches": [
+        "picante"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "picante"
     ]
   },
   "play": {
@@ -1707,36 +1767,6 @@
     },
     "keywords": [
       "rayo"
-    ]
-  },
-  "relajado": {
-    "name": "relajado",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":relajado:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "relajado",
-      "fully_qualified": "relajado",
-      "non_fully_qualified": "relajado",
-      "output": "relajado",
-      "default_matches": [
-        "relajado"
-      ],
-      "greedy_matches": [
-        "relajado"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "relajado"
     ]
   },
   "reloj": {
@@ -1829,6 +1859,36 @@
       "risa"
     ]
   },
+  "rubor": {
+    "name": "rubor",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":rubor:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "rubor",
+      "fully_qualified": "rubor",
+      "non_fully_qualified": "rubor",
+      "output": "rubor",
+      "default_matches": [
+        "rubor"
+      ],
+      "greedy_matches": [
+        "rubor"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "rubor"
+    ]
+  },
   "sabroso": {
     "name": "sabroso",
     "unicode_version": 0,
@@ -1919,13 +1979,13 @@
       "silencioso"
     ]
   },
-  "sollozo": {
-    "name": "sollozo",
+  "sonrie1": {
+    "name": "sonrie1",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":sollozo:",
+    "shortname": ":sonrie1:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -1933,20 +1993,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "sollozo",
-      "fully_qualified": "sollozo",
-      "non_fully_qualified": "sollozo",
-      "output": "sollozo",
+      "base": "sonrie1",
+      "fully_qualified": "sonrie1",
+      "non_fully_qualified": "sonrie1",
+      "output": "sonrie1",
       "default_matches": [
-        "sollozo"
+        "sonrie1"
       ],
       "greedy_matches": [
-        "sollozo"
+        "sonrie1"
       ],
       "decimal": ""
     },
     "keywords": [
-      "sollozo"
+      "sonrie1"
     ]
   },
   "sonriendo": {
@@ -1977,36 +2037,6 @@
     },
     "keywords": [
       "sonriendo"
-    ]
-  },
-  "sonriendo2": {
-    "name": "sonriendo2",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":sonriendo2:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "sonriendo2",
-      "fully_qualified": "sonriendo2",
-      "non_fully_qualified": "sonriendo2",
-      "output": "sonriendo2",
-      "default_matches": [
-        "sonriendo2"
-      ],
-      "greedy_matches": [
-        "sonriendo2"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "sonriendo2"
     ]
   },
   "sonriente": {
@@ -2069,13 +2099,13 @@
       "sonrisa"
     ]
   },
-  "sonrisa_burla": {
-    "name": "sonrisa_burla",
+  "sonrisa_burlona": {
+    "name": "sonrisa_burlona",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":sonrisa_burla:",
+    "shortname": ":sonrisa_burlona:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -2083,20 +2113,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "sonrisa_burla",
-      "fully_qualified": "sonrisa_burla",
-      "non_fully_qualified": "sonrisa_burla",
-      "output": "sonrisa_burla",
+      "base": "sonrisa_burlona",
+      "fully_qualified": "sonrisa_burlona",
+      "non_fully_qualified": "sonrisa_burlona",
+      "output": "sonrisa_burlona",
       "default_matches": [
-        "sonrisa_burla"
+        "sonrisa_burlona"
       ],
       "greedy_matches": [
-        "sonrisa_burla"
+        "sonrisa_burlona"
       ],
       "decimal": ""
     },
     "keywords": [
-      "sonrisa_burla"
+      "sonrisa_burlona"
     ]
   },
   "sonrisa_sudor": {
@@ -2129,36 +2159,6 @@
       "sonrisa_sudor"
     ]
   },
-  "sonrisita": {
-    "name": "sonrisita",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":sonrisita:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "sonrisita",
-      "fully_qualified": "sonrisita",
-      "non_fully_qualified": "sonrisita",
-      "output": "sonrisita",
-      "default_matches": [
-        "sonrisita"
-      ],
-      "greedy_matches": [
-        "sonrisita"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "sonrisita"
-    ]
-  },
   "sudor": {
     "name": "sudor",
     "unicode_version": 0,
@@ -2189,13 +2189,13 @@
       "sudor"
     ]
   },
-  "te_amo2": {
-    "name": "te_amo2",
+  "susto": {
+    "name": "susto",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":te_amo2:",
+    "shortname": ":susto:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -2203,29 +2203,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "te_amo2",
-      "fully_qualified": "te_amo2",
-      "non_fully_qualified": "te_amo2",
-      "output": "te_amo2",
+      "base": "susto",
+      "fully_qualified": "susto",
+      "non_fully_qualified": "susto",
+      "output": "susto",
       "default_matches": [
-        "te_amo2"
+        "susto"
       ],
       "greedy_matches": [
-        "te_amo2"
+        "susto"
       ],
       "decimal": ""
     },
     "keywords": [
-      "te_amo2"
+      "susto"
     ]
   },
-  "te_amo3": {
-    "name": "te_amo3",
+  "susto2": {
+    "name": "susto2",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":te_amo3:",
+    "shortname": ":susto2:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -2233,29 +2233,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "te_amo3",
-      "fully_qualified": "te_amo3",
-      "non_fully_qualified": "te_amo3",
-      "output": "te_amo3",
+      "base": "susto2",
+      "fully_qualified": "susto2",
+      "non_fully_qualified": "susto2",
+      "output": "susto2",
       "default_matches": [
-        "te_amo3"
+        "susto2"
       ],
       "greedy_matches": [
-        "te_amo3"
+        "susto2"
       ],
       "decimal": ""
     },
     "keywords": [
-      "te_amo3"
+      "susto2"
     ]
   },
-  "temeroso": {
-    "name": "temeroso",
+  "te_amo": {
+    "name": "te_amo",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":temeroso:",
+    "shortname": ":te_amo:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -2263,29 +2263,29 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "temeroso",
-      "fully_qualified": "temeroso",
-      "non_fully_qualified": "temeroso",
-      "output": "temeroso",
+      "base": "te_amo",
+      "fully_qualified": "te_amo",
+      "non_fully_qualified": "te_amo",
+      "output": "te_amo",
       "default_matches": [
-        "temeroso"
+        "te_amo"
       ],
       "greedy_matches": [
-        "temeroso"
+        "te_amo"
       ],
       "decimal": ""
     },
     "keywords": [
-      "temeroso"
+      "te_amo"
     ]
   },
-  "temeroso2": {
-    "name": "temeroso2",
+  "tele": {
+    "name": "tele",
     "unicode_version": 0,
     "category": "mumoji",
     "order": 0,
     "display": 1,
-    "shortname": ":temeroso2:",
+    "shortname": ":tele:",
     "shorname_alternates": [],
     "ascii": [],
     "diversity": null,
@@ -2293,50 +2293,20 @@
     "gender": null,
     "genders": [],
     "code_points": {
-      "base": "temeroso2",
-      "fully_qualified": "temeroso2",
-      "non_fully_qualified": "temeroso2",
-      "output": "temeroso2",
+      "base": "tele",
+      "fully_qualified": "tele",
+      "non_fully_qualified": "tele",
+      "output": "tele",
       "default_matches": [
-        "temeroso2"
+        "tele"
       ],
       "greedy_matches": [
-        "temeroso2"
+        "tele"
       ],
       "decimal": ""
     },
     "keywords": [
-      "temeroso2"
-    ]
-  },
-  "temeroso3": {
-    "name": "temeroso3",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":temeroso3:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "temeroso3",
-      "fully_qualified": "temeroso3",
-      "non_fully_qualified": "temeroso3",
-      "output": "temeroso3",
-      "default_matches": [
-        "temeroso3"
-      ],
-      "greedy_matches": [
-        "temeroso3"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "temeroso3"
+      "tele"
     ]
   },
   "tenacidad": {
@@ -2367,6 +2337,36 @@
     },
     "keywords": [
       "tenacidad"
+    ]
+  },
+  "triste": {
+    "name": "triste",
+    "unicode_version": 0,
+    "category": "mumoji",
+    "order": 0,
+    "display": 1,
+    "shortname": ":triste:",
+    "shorname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "triste",
+      "fully_qualified": "triste",
+      "non_fully_qualified": "triste",
+      "output": "triste",
+      "default_matches": [
+        "triste"
+      ],
+      "greedy_matches": [
+        "triste"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "triste"
     ]
   },
   "triunfo": {
@@ -2429,36 +2429,7 @@
       "trofeo"
     ]
   },
-  "tele": {
-    "name": "tele",
-    "unicode_version": 0,
-    "category": "mumoji",
-    "order": 0,
-    "display": 1,
-    "shortname": ":tele:",
-    "shorname_alternates": [],
-    "ascii": [],
-    "diversity": null,
-    "diversities": [],
-    "gender": null,
-    "genders": [],
-    "code_points": {
-      "base": "tele",
-      "fully_qualified": "tele",
-      "non_fully_qualified": "tele",
-      "output": "tele",
-      "default_matches": [
-        "tele"
-      ],
-      "greedy_matches": [
-        "tele"
-      ],
-      "decimal": ""
-    },
-    "keywords": [
-      "tele"
-    ]
-  },
+
   "interrobang": {
     "name": "exclamation question mark",
     "unicode_version": 3,
