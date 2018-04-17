@@ -33,7 +33,16 @@ mumuki.load(function () {
   var OPEN_CLASS = 'open';
   var ACTIVE_CLASS = 'active';
 
-  var emojiTone;
+  var TONE_0 = '1f3fa';
+  var TONE_1 = '1f3fb';
+  var TONE_2 = '1f3fc';
+  var TONE_3 = '1f3fd';
+  var TONE_4 = '1f3fe';
+  var TONE_5 = '1f3ff';
+
+  var TONES = [TONE_1, TONE_2, TONE_3, TONE_4, TONE_5];
+
+  var emojiTone = TONE_0;
   var searchInterval;
 
   function $class(clazz) { return '.' + clazz }
@@ -124,8 +133,8 @@ mumuki.load(function () {
   function populateCategory($ddm, $emojis, $categoryItem, category, $dd) {
     category.list.forEach(function (emoji) {
       if (emoji.diversity) return;
-      var category = hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
-      emoji = hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]]
+      var category = !hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
+      emoji = !hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]];
       var $emoji = $([
         '<li class="' + MU_EMOJI_DROPDOWN_MENU_EMOJI + '">',
         '  <i title="' + emoji.name + '" class="mu-emoji px24 ' + category + ' _' + emoji.code_points.base + '" data-code="' + emoji.shortname + '"/>',
@@ -140,11 +149,11 @@ mumuki.load(function () {
   }
 
   function toneIndex() {
-    return ['1f3fb', '1f3fc', '1f3fd', '1f3fe', '1f3ff'].indexOf(emojiTone);
+    return TONES.indexOf(emojiTone);
   }
 
   function hasDiversity(emoji) {
-    return emoji.diversities.length == 0 || !emojiTone;
+    return emoji.diversities.length !== 0 && toneIndex() >= 0;
   }
 
   function hideAllDropdownMenues() {
