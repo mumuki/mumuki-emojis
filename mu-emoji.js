@@ -106,11 +106,25 @@ mumuki.load(function () {
 
   function generateEmojiList($ddm, $dd) {
     $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS)).remove();
-    $ddm.find($class('emoji-one-legend')).remove();
+    $ddm.find($class('mu-emojis-footer')).remove();
     var $emojis = $('<ul class="'+ MU_EMOJI_DROPDOWN_MENU_EMOJIS +'"></ul>');
     populateEmojiList($ddm, $emojis, $dd);
     $ddm.append($emojis);
-    $ddm.append('<div class="emoji-one-legend">' + window.emojiOneLegend + ' <a href="https://www.emojione.com/" target="_blank">EmojiOne</a></div>');
+    var $footer = $('<div class="mu-emojis-footer"></div>')
+    var $diversities = $('<div class="mu-emoji-diversities"></div>')
+    if (!!$dd.data('with-diversity')) {
+      $footer.append($diversities);
+      [TONE_0].concat(TONES).forEach(function (tone) {
+        var $icon = $('<i class="mu-emoji diversity _' + tone + '"></i>');
+        $diversities.append($icon.click(function (e) {
+          e.stopPropagation();
+          emojiTone = tone;
+          generateEmojiList($ddm, $dd);
+        }));
+      });
+    }
+    $footer.append('<div class="emoji-one-legend">' + window.emojiOneLegend + ' <a href="https://www.emojione.com/" target="_blank">EmojiOne</a></div>');
+    $ddm.append($footer);
   }
 
   function populateEmojiList($ddm, $emojis, $dd) {
@@ -133,8 +147,8 @@ mumuki.load(function () {
   function populateCategory($ddm, $emojis, $categoryItem, category, $dd) {
     category.list.forEach(function (emoji) {
       if (emoji.diversity) return;
-      var category = !hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
-      emoji = !hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]];
+      var category = !hasDiversity(emoji, $dd) ? (emoji.sprite_category || emoji.category) : 'diversity';
+      emoji = !hasDiversity(emoji, $dd) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]];
       var $emoji = $([
         '<li class="' + MU_EMOJI_DROPDOWN_MENU_EMOJI + '">',
         '  <i title="' + emoji.name + '" class="mu-emoji px24 ' + category + ' _' + emoji.code_points.base + '" data-code="' + emoji.shortname + '"/>',
@@ -152,8 +166,8 @@ mumuki.load(function () {
     return TONES.indexOf(emojiTone);
   }
 
-  function hasDiversity(emoji) {
-    return emoji.diversities.length !== 0 && toneIndex() >= 0;
+  function hasDiversity(emoji, $dd) {
+    return emoji.diversities.length !== 0 && toneIndex() >= 0 && !!$dd.data('with-diversity');
   }
 
   function hideAllDropdownMenues() {
