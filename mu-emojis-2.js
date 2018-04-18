@@ -21,6 +21,7 @@ mumuki.load(function () {
   var TONES = [TONE_1, TONE_2, TONE_3, TONE_4, TONE_5];
 
   function noop() {}
+  function id(x) { return x }
   function $class(clazz) { return '.' + clazz }
 
   function $$(array) {
@@ -39,7 +40,7 @@ mumuki.load(function () {
   MuEmoji.DROPDOWN_MENU_ALIGNMENT_CENTER = MuEmoji.DROPDOWN_MENU_ALIGNMENT + '-center';
 
   MuEmoji.DROPDOWN_MENU_TABS = MuEmoji.DROPDOWN_MENU + '-tabs';
-  MuEmoji.DROPDOWN_MENU_TAB = MuEmoji.DROPDOWN_MENU_TABS + '-tab';
+  MuEmoji.DROPDOWN_MENU_TAB = MuEmoji.DROPDOWN_MENU_TABS + '-item';
 
   MuEmoji.DROPDOWN_MENU_SEARCH = MuEmoji.DROPDOWN_MENU + '-search';
   MuEmoji.DROPDOWN_MENU_SEARCH_ICON = MuEmoji.DROPDOWN_MENU_SEARCH + '-icon';
@@ -47,9 +48,9 @@ mumuki.load(function () {
 
   MuEmoji.DROPDOWN_MENU_EMOJIS = MuEmoji.DROPDOWN_MENU + '-emojis';
   MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORIES = MuEmoji.DROPDOWN_MENU_EMOJIS + '-categories';
-  MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORY = MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORIES + '-category';
+  MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORY = MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORIES + '-item';
 
-  MuEmoji.DROPDOWN_MENU_EMOJI = MuEmoji.DROPDOWN_MENU_EMOJIS + '-emoji';
+  MuEmoji.DROPDOWN_MENU_EMOJI = MuEmoji.DROPDOWN_MENU_EMOJIS + '-item';
 
   function MuEmoji($element, index) {
     this.$element = $element;
@@ -110,12 +111,11 @@ mumuki.load(function () {
   MuEmojiDropdownToggle.prototype = {
 
     create: function () {
-      this.$element = $('<a>', {
+      return this.$element = $('<a>', {
         class: MuEmoji.DROPDOWN_TOGGLE,
         html: this.icon(),
         click: this.parent.openDropdownIfClosed.bind(this.parent)
       });
-      return this.$element;
     },
 
     icon: function () {
@@ -173,12 +173,70 @@ mumuki.load(function () {
 
   function MuEmojiDropdownMenuTabs(parent) {
     this.parent = parent;
+    this.tabs = [];
   }
 
   MuEmojiDropdownMenuTabs.prototype = {
 
     create: function () {
-      return '';
+      this.$element = $('<ul>', {
+        class: MuEmoji.DROPDOWN_MENU_TABS
+      });
+      this.createCategories();
+      return this.$element;
+    },
+
+    createCategories: function () {
+      var self = this;
+      window.muEmojis.categories.forEach(function (category, index) {
+        var tab = new MuEmojiDropdownMenuTab(self, category, index);
+        self.tabs.push(tab);
+        self.$element.append(tab.create());
+      });
+    },
+
+    clickedOnTab: function (clickedTab) {
+      this.tabs.forEach(function (tab) {
+        tab.deactivate();
+      });
+    },
+
+  }
+
+
+  function MuEmojiDropdownMenuTab(parent, category, index) {
+    this.parent = parent;
+    this.category = category;
+    this.index = index;
+  }
+
+  MuEmojiDropdownMenuTab.prototype = {
+
+    create: function () {
+      return this.$element = $('<li>', {
+        class: [MuEmoji.DROPDOWN_MENU_TAB, this.index === 0 && 'active'].filter(id).join(' '),
+        title: this.category.description,
+        html: this.icon(),
+        click: function (event) {
+          this.parent.clickedOnTab(this);
+          this.activate();
+          event.stopPropagation();
+        }.bind(this)
+      });
+    },
+
+    icon: function () {
+      return $('<i>', {
+        class: this.category.icon_class
+      });
+    },
+
+    deactivate: function () {
+      this.$element.removeClass(ACTIVE_CLASS);
+    },
+
+    activate: function () {
+      this.$element.addClass(ACTIVE_CLASS);
     },
 
   }
@@ -227,7 +285,9 @@ mumuki.load(function () {
   $.fn.renderEmojis = function () {
     var self = this;
     self.each(function (i) {
-      new MuEmoji($(self[i]), i).create();
+      var $element = $(self[i]);
+      $element.empty();
+      new MuEmoji($element, i).create();
     });
     return self;
   }
