@@ -52,6 +52,10 @@ mumuki.load(function () {
 
   MuEmoji.DROPDOWN_MENU_EMOJI = MuEmoji.DROPDOWN_MENU_EMOJIS + '-item';
 
+  MuEmoji.DROPDOWN_MENU_FOOTER = 'mu-emojis-footer';
+  MuEmoji.DROPDOWN_MENU_FOOTER_DIVERSITIES = 'mu-emoji-diversities';
+  MuEmoji.DROPDOWN_MENU_FOOTER_EMOJI_ONE_LEGEND = 'emoji-one-legend';
+
   function MuEmoji($element, index) {
     this.$element = $element;
     this.index = index;
@@ -141,6 +145,7 @@ mumuki.load(function () {
       this.createTabs();
       this.createSearch();
       this.createEmojis();
+      this.createFooter();
       return this.$element;
     },
 
@@ -166,6 +171,10 @@ mumuki.load(function () {
     createFooter: function () {
       this.footer = new MuEmojiDropdownMenuFooter(this);
       this.$element.append(this.footer.create());
+    },
+
+    clickedOnTone: function (clickedTone) {
+      // TODO
     },
 
     open: function () {
@@ -295,7 +304,41 @@ mumuki.load(function () {
   MuEmojiDropdownMenuFooter.prototype = {
 
     create: function () {
-      return '';
+      this.$element = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_FOOTER,
+
+      });
+      this.createDiversities();
+      this.createEmojiOneLegend();
+      return this.$element;
+    },
+
+    createDiversities: function () {
+      this.$diversities = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_FOOTER_DIVERSITIES,
+      });
+      this.createDiversityItems();
+      this.$element.append(this.$diversities);
+    },
+
+    createDiversityItems: function () {
+      var self = this;
+      [TONE_0].concat(TONES).forEach(function (tone) {
+        self.$diversities.append($('<i>', {
+          class: 'mu-emoji diversity _' + tone,
+          click: function (tone) {
+            self.parent.clickedOnTone(tone);
+          }
+        }));
+      });
+    },
+
+    createEmojiOneLegend: function () {
+      this.$emojiOneLegend = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_FOOTER_EMOJI_ONE_LEGEND,
+        html: window.emojiOneLegend + ' <a href="https://www.emojione.com/" target="_blank">EmojiOne</a></div>'
+      });
+      this.$element.append(this.$emojiOneLegend);
     },
 
   }
