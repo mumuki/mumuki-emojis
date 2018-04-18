@@ -90,15 +90,15 @@ mumuki.load(function () {
     },
 
     openDropdown: function () {
-      this.$element.addClass(OPEN_CLASS);
-      this.$element.find($class(MuEmoji.DROPDOWN_MENU_SEARCH_INPUT)).focus();
+      this.menu.open();
     },
 
-    openDropdownIfClosed: function (event) {
-      if (!this.$element.hasClass(OPEN_CLASS)) {
-        this.openDropdown();
-        event.stopPropagation();
-      }
+    closeDropdown: function () {
+      this.menu.close();
+    },
+
+    toggleDropdown: function (event) {
+      this.menu.toggleDropdown(event);
     },
   }
 
@@ -114,7 +114,7 @@ mumuki.load(function () {
       return this.$element = $('<a>', {
         class: MuEmoji.DROPDOWN_TOGGLE,
         html: this.icon(),
-        click: this.parent.openDropdownIfClosed.bind(this.parent)
+        click: this.parent.toggleDropdown.bind(this.parent)
       });
     },
 
@@ -166,6 +166,26 @@ mumuki.load(function () {
     createFooter: function () {
       this.footer = new MuEmojiDropdownMenuFooter(this);
       this.$element.append(this.footer.create());
+    },
+
+    open: function () {
+      this.$element.addClass(OPEN_CLASS);
+    },
+
+    isOpen: function () {
+      return this.$element.hasClass(OPEN_CLASS);
+    },
+
+    close: function () {
+      this.$element.removeClass(OPEN_CLASS);
+    },
+
+    isClosed: function () {
+      return !this.isOpen();
+    },
+
+    toggleDropdown: function () {
+      this.$element.toggleClass(OPEN_CLASS);
     },
 
   }
