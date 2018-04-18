@@ -117,9 +117,11 @@ mumuki.load(function () {
       [TONE_0].concat(TONES).forEach(function (tone) {
         var $icon = $('<i class="mu-emoji diversity _' + tone + '"></i>');
         $diversities.append($icon.click(function (e) {
+          var scroll = $dd.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS))[0].scrollTop;
           e.stopPropagation();
           emojiTone = tone;
           generateEmojiList($ddm, $dd);
+          $dd.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS)).scrollTop(scroll);
         }));
       });
     }
@@ -196,7 +198,6 @@ mumuki.load(function () {
 
   function filterSearch($ddm, $input, $dd) {
     var querytext = $input.val();
-    console.log(querytext);
     searchInterval && clearTimeout(searchInterval);
     searchInterval = setTimeout(function () {
 

@@ -208,6 +208,7 @@ body * {
   color: #AAAAAA;
   cursor: default;
   text-align: right;
+  width: 100%;
 }
 
 .mu-emojis-footer > .emoji-one-legend a,
