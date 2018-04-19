@@ -10,6 +10,7 @@ mumuki.load(function () {
 
   var OPEN_CLASS = 'open';
   var ACTIVE_CLASS = 'active';
+  var DISABLED_CLASS = 'disabled';
 
   var TONE_0 = '1f3fa';
   var TONE_1 = '1f3fb';
@@ -215,6 +216,14 @@ mumuki.load(function () {
 
     scrollToCategory(category) {
       this.emojis.scrollToCategory(category);
+    },
+
+    updateEmojis: function () {
+      this.emojis.createEmojis();
+    },
+
+    updateActiveTabs: function () {
+      this.tabs.updateActiveTabs();
     }
   }
 
@@ -248,6 +257,18 @@ mumuki.load(function () {
         tab.deactivate();
       });
       this.parent.scrollToCategory(clickedTab.category);
+    },
+
+    updateActiveTabs: function () {
+      this.tabs.forEach(function (tab, i) {
+        window.muEmojis.categories[i].list.length === 0 ?
+          tab.disable() : tab.enable();
+      });
+      var tab = this.tabs.find(function (tab) { return tab.isEnable() });
+      this.tabs.forEach(function (tab) {
+        tab.deactivate();
+      });
+      tab.activate();
     },
 
   }
@@ -288,6 +309,18 @@ mumuki.load(function () {
     activate: function () {
       this.$element.addClass(ACTIVE_CLASS);
     },
+
+    enable: function () {
+      this.$element.removeClass(DISABLED_CLASS);
+    },
+
+    isEnable: function () {
+      return !this.$element.hasClass(DISABLED_CLASS);
+    },
+
+    disable: function () {
+      this.$element.addClass(DISABLED_CLASS);
+    }
 
   }
 
@@ -336,7 +369,15 @@ mumuki.load(function () {
     },
 
     _doSearch: function (query) {
-      console.log(query);
+      window.muEmojis.categories.forEach(function (category) {
+        category.list = muEmojis.filterEmojisBy(category, function (emoji) {
+          return !query ? true :
+            [emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) {
+              return s && s.toLowerCase().indexOf(query.toLowerCase()) >= 0;
+            });
+        });
+      });
+      this.parent.updateEmojis();
     },
 
   }
@@ -362,7 +403,9 @@ mumuki.load(function () {
       var self = this
       self.$element.empty();
       self.categories = [];
+      self.parent.updateActiveTabs();
       window.muEmojis.categories.forEach(function (cat) {
+        if (cat.list.length === 0) return;
         var category = new MuEmojiDropdownMenuEmojisCategory(self, cat);
         self.categories.push(category);
         self.$element.append(category.create());

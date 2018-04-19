@@ -79,6 +79,12 @@ body * {
   cursor: pointer;
 }
 
+.mu-emoji-dropdown-menu-tabs-item.disabled {
+  cursor: default;
+  color: #AAAAAA;
+  pointer-events: none;
+}
+
 .mu-emoji-dropdown-menu-tabs-item.active {
   border: 1px solid #AAAAAA;
   border-radius: 5px 5px 0 0;
