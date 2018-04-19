@@ -213,6 +213,9 @@ mumuki.load(function () {
       return this.parent.hasDiversityEnable();
     },
 
+    scrollToCategory(category) {
+      this.emojis.scrollToCategory(category);
+    }
   }
 
 
@@ -244,6 +247,7 @@ mumuki.load(function () {
       this.tabs.forEach(function (tab) {
         tab.deactivate();
       });
+      this.parent.scrollToCategory(clickedTab.category);
     },
 
   }
@@ -363,6 +367,15 @@ mumuki.load(function () {
         self.categories.push(category);
         self.$element.append(category.create());
       });
+    },
+
+    scrollToCategory(category) {
+      var firstCategory = this.categories[0];
+      var categoryToScroll = this.categories.find(function (cat) {
+        return cat.category.name === category.name;
+      });
+      var scrollTop = categoryToScroll.$element.position().top - firstCategory.$element.position().top;
+      this.$element.scrollTop(scrollTop);
     },
 
     clickedOnTone: function (clickedTone) {
