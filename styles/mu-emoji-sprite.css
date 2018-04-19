@@ -81,7 +81,7 @@ body * {
 
 .mu-emoji-dropdown-menu-tabs-item.disabled {
   cursor: default;
-  color: #AAAAAA;
+  color: #CCCCCC;
   pointer-events: none;
 }
 

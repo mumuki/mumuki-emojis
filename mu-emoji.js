@@ -6,32 +6,11 @@ var mumuki = {
 
 mumuki.load(function () {
 
-  var MU_EMOJI_DROPDOWN = 'mu-emoji-dropdown';
-
-  var MU_EMOJI_DROPDOWN_TOGGLE = MU_EMOJI_DROPDOWN + '-toggle';
-
-  var MU_EMOJI_DROPDOWN_MENU = MU_EMOJI_DROPDOWN + '-menu';
-  var MU_EMOJI_DROPDOWN_MENU_TABS = MU_EMOJI_DROPDOWN_MENU + '-tabs';
-  var MU_EMOJI_DROPDOWN_MENU_CATEGORY = MU_EMOJI_DROPDOWN_MENU_TABS + '-item';
-
-  var MU_EMOJI_DROPDOWN_MENU_ALIGNMENT = MU_EMOJI_DROPDOWN_MENU + '-alignment';
-  var MU_EMOJI_DROPDOWN_MENU_ALIGNMENT_LEFT = MU_EMOJI_DROPDOWN_MENU_ALIGNMENT + '-left';
-  var MU_EMOJI_DROPDOWN_MENU_ALIGNMENT_RIGHT = MU_EMOJI_DROPDOWN_MENU_ALIGNMENT + '-right';
-  var MU_EMOJI_DROPDOWN_MENU_ALIGNMENT_CENTER = MU_EMOJI_DROPDOWN_MENU_ALIGNMENT + '-center';
-
-  var MU_EMOJI_DROPDOWN_MENU_SEARCH = MU_EMOJI_DROPDOWN_MENU + '-search';
-  var MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT = MU_EMOJI_DROPDOWN_MENU_SEARCH + '-input';
-  var MU_EMOJI_DROPDOWN_MENU_SEARCH_ICON = MU_EMOJI_DROPDOWN_MENU_SEARCH + '-icon';
-
-  var MU_EMOJI_DROPDOWN_MENU_EMOJIS = MU_EMOJI_DROPDOWN_MENU + '-emojis';
-  var MU_EMOJI_DROPDOWN_MENU_EMOJIS_CATEGORIES = MU_EMOJI_DROPDOWN_MENU_EMOJIS + '-categories';
-  var MU_EMOJI_DROPDOWN_MENU_EMOJIS_CATEGORY = MU_EMOJI_DROPDOWN_MENU_EMOJIS_CATEGORIES + '-item';
-  var MU_EMOJI_DROPDOWN_MENU_EMOJI = MU_EMOJI_DROPDOWN_MENU_EMOJIS + '-item';
-
   var ESCAPE_KEY = 27;
 
   var OPEN_CLASS = 'open';
   var ACTIVE_CLASS = 'active';
+  var DISABLED_CLASS = 'disabled';
 
   var TONE_0 = '1f3fa';
   var TONE_1 = '1f3fb';
@@ -42,220 +21,572 @@ mumuki.load(function () {
 
   var TONES = [TONE_1, TONE_2, TONE_3, TONE_4, TONE_5];
 
-  var emojiTone = TONE_0;
-  var searchInterval;
-
+  function noop() {}
+  function id(x) { return x }
   function $class(clazz) { return '.' + clazz }
-  function categoryClass(category) { return MU_EMOJI_DROPDOWN_MENU + '-category-' + category.name }
 
-  function generateDropdownToggle($dd) {
-    var iconClass = $dd.data('icon-class') || 'fa fa-fw fa-smile-o';
-    var $ddt = $([
-      '<a class="' + MU_EMOJI_DROPDOWN_TOGGLE + '">',
-      '  <i class="' + iconClass + '"></i>',
-      '</a>',
-    ].join(''));
-    return $ddt;
+  function $$(array) {
+    return $(array.join('\n'));
   }
 
-  function generateDropdownMenu($dd) {
-    return $('<div class="' + MU_EMOJI_DROPDOWN_MENU + ' ' + alignmentClass($dd) + '"></div>');
-  }
+  MuEmoji.DROPDOWN = 'mu-emoji-dropdown';
 
-  function alignmentClass($dd) {
-    switch ($dd.data('dropdown-alignment')) {
-      case 'right': return MU_EMOJI_DROPDOWN_MENU_ALIGNMENT_RIGHT;
-      case 'center': return MU_EMOJI_DROPDOWN_MENU_ALIGNMENT_CENTER;
-      default: return MU_EMOJI_DROPDOWN_MENU_ALIGNMENT_LEFT;
-    }
-  }
+  MuEmoji.DROPDOWN_MENU = MuEmoji.DROPDOWN + '-menu';
 
-  function generateTabs($ddm) {
-    var $ddmt = $('<ul class="' + MU_EMOJI_DROPDOWN_MENU_TABS + '"></ul>');
-    window.muEmojis.categories.forEach(function (category, index) {
-      $ddmt.append(generateTabFor($ddm, category, index));
-    });
-    return $ddmt;
-  }
+  MuEmoji.DROPDOWN_TOGGLE = MuEmoji.DROPDOWN + '-toggle';
 
-  function generateTabFor($ddm, category, index) {
-    var $tabCategory = $([
-      '<li class="' + MU_EMOJI_DROPDOWN_MENU_CATEGORY + (index === 0 ? ' active' : ''), '" title="' + category.caption + '">',
-      '  <i class="' + category.icon_class + '"></i>',
-      '</li>'
-    ].join(''));
-    $tabCategory.click(function (e) {
-      var $ddmt = $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_TABS));
-      var $category = $ddm.find($class(categoryClass(window.muEmojis.categories[index])));
-      var $emojis = $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS));
-      $ddmt.children().removeClass(ACTIVE_CLASS);
-      $tabCategory.addClass(ACTIVE_CLASS);
-      scrollToAnchor($emojis, $category, $emojis.children().first());
-    })
-    return $tabCategory;
-  }
+  MuEmoji.DROPDOWN_MENU_ALIGNMENT = MuEmoji.DROPDOWN_MENU + '-alignment';
+  MuEmoji.DROPDOWN_MENU_ALIGNMENT_LEFT = MuEmoji.DROPDOWN_MENU_ALIGNMENT + '-left';
+  MuEmoji.DROPDOWN_MENU_ALIGNMENT_RIGHT = MuEmoji.DROPDOWN_MENU_ALIGNMENT + '-right';
+  MuEmoji.DROPDOWN_MENU_ALIGNMENT_CENTER = MuEmoji.DROPDOWN_MENU_ALIGNMENT + '-center';
 
-  function generateSearch($ddm) {
-    return $([
-      '<div class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH +'">',
-      '  <i class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_ICON +' fa fa-fw fa-search"/>',
-      '  <input class="'+ MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT +'" placeholder="' + window.searchEmojiPlaceholder + '"/>',
-      '</div>',
-    ].join(''));
-  }
+  MuEmoji.DROPDOWN_MENU_TABS = MuEmoji.DROPDOWN_MENU + '-tabs';
+  MuEmoji.DROPDOWN_MENU_TAB = MuEmoji.DROPDOWN_MENU_TABS + '-item';
 
-  function generateEmojiList($ddm, $dd) {
-    $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS)).remove();
-    $ddm.find($class('mu-emojis-footer')).remove();
-    var $emojis = $('<ul class="'+ MU_EMOJI_DROPDOWN_MENU_EMOJIS +'"></ul>');
-    populateEmojiList($ddm, $emojis, $dd);
-    $ddm.append($emojis);
-    var $footer = $('<div class="mu-emojis-footer"></div>')
-    var $diversities = $('<div class="mu-emoji-diversities"></div>')
-    if (!!$dd.data('with-diversity')) {
-      $footer.append($diversities);
-      [TONE_0].concat(TONES).forEach(function (tone) {
-        var $icon = $('<i class="mu-emoji diversity _' + tone + '"></i>');
-        $diversities.append($icon.click(function (e) {
-          var scroll = $dd.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS))[0].scrollTop;
-          e.stopPropagation();
-          emojiTone = tone;
-          generateEmojiList($ddm, $dd);
-          $dd.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS)).scrollTop(scroll);
-        }));
-      });
-    }
-    $footer.append('<div class="emoji-one-legend">' + window.emojiOneLegend + ' <a href="https://www.emojione.com/" target="_blank">EmojiOne</a></div>');
-    $ddm.append($footer);
-  }
+  MuEmoji.DROPDOWN_MENU_SEARCH = MuEmoji.DROPDOWN_MENU + '-search';
+  MuEmoji.DROPDOWN_MENU_SEARCH_ICON = MuEmoji.DROPDOWN_MENU_SEARCH + '-icon';
+  MuEmoji.DROPDOWN_MENU_SEARCH_INPUT = MuEmoji.DROPDOWN_MENU_SEARCH + '-input';
 
-  function populateEmojiList($ddm, $emojis, $dd) {
-    window.muEmojis.categories.forEach(function (category) {
-      $emojis.append(generateCategoryList($ddm, $emojis, category, $dd));
-    });
-  }
+  MuEmoji.DROPDOWN_MENU_EMOJIS = MuEmoji.DROPDOWN_MENU + '-emojis';
+  MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORIES = MuEmoji.DROPDOWN_MENU_EMOJIS + '-categories';
+  MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORY = MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORIES + '-item';
 
-  function generateCategoryList($ddm, $emojis, category, $dd) {
-    var $category = $('<li class="' + MU_EMOJI_DROPDOWN_MENU_EMOJIS_CATEGORIES + ' ' + categoryClass(category) + '"></li>');
-    if (category.list.length > 0) {
-      var $categoryItem = $('<ul class="' + MU_EMOJI_DROPDOWN_MENU_EMOJIS_CATEGORY + '"></ul>');
-      $category.append('<h4>' + category.caption + '</h4>');
-      $category.append($categoryItem);
-      populateCategory($ddm, $emojis, $categoryItem, category, $dd);
-    }
-    return $category;
-  }
+  MuEmoji.DROPDOWN_MENU_EMOJI = MuEmoji.DROPDOWN_MENU_EMOJIS + '-item';
 
-  function populateCategory($ddm, $emojis, $categoryItem, category, $dd) {
-    category.list.forEach(function (emoji) {
-      if (emoji.diversity) return;
-      var category = !hasDiversity(emoji, $dd) ? (emoji.sprite_category || emoji.category) : 'diversity';
-      emoji = !hasDiversity(emoji, $dd) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]];
-      var $emoji = $([
-        '<li class="' + MU_EMOJI_DROPDOWN_MENU_EMOJI + '">',
-        '  <i title="' + emoji.name + '" class="mu-emoji px24 ' + category + ' _' + emoji.code_points.base + '" data-code="' + emoji.shortname + '"/>',
-        '</li>'
-      ].join(''));
-      $emoji.click(function () {
-        hideAllDropdownMenues();
-        eval($dd.data('on-emoji-click'))(emoji);
-      });
-      $categoryItem.append($emoji);
-    });
-  }
-
-  function toneIndex() {
-    return TONES.indexOf(emojiTone);
-  }
-
-  function hasDiversity(emoji, $dd) {
-    return emoji.diversities.length !== 0 && toneIndex() >= 0 && !!$dd.data('with-diversity');
-  }
+  MuEmoji.DROPDOWN_MENU_FOOTER = 'mu-emojis-footer';
+  MuEmoji.DROPDOWN_MENU_FOOTER_DIVERSITIES = 'mu-emoji-diversities';
+  MuEmoji.DROPDOWN_MENU_FOOTER_EMOJI_ONE_LEGEND = 'emoji-one-legend';
 
   function hideAllDropdownMenues() {
-    $($class(MU_EMOJI_DROPDOWN_MENU)).removeClass(OPEN_CLASS);
+    $($class(MuEmoji.DROPDOWN_MENU)).removeClass(OPEN_CLASS);
   }
 
-  function populateDropdownMenu($ddm, $dd) {
-    $ddm.append(generateTabs($ddm));
-    $ddm.append(generateSearch($ddm));
-    $ddm.append(generateEmojiList($ddm, $dd));
+  $(document).keydown(function (e) {
+    if (e.keyCode === ESCAPE_KEY) hideAllDropdownMenues();
+  });
+
+  $(document).click(function (e) {
+    var clazz = $class(MuEmoji.DROPDOWN_MENU);
+    if (!$(e.target).is(clazz + ', ' + clazz + ' *')) hideAllDropdownMenues();
+  });
+
+  function MuEmoji($element, index) {
+    this.$element = $element;
+    this.index = index;
   }
 
-  function scrollToAnchor($parent, $element, $firstElement) {
-    var scrollTop = $element.position().top - $firstElement.position().top;
-    $parent.scrollTop(scrollTop);
+  MuEmoji.prototype = {
+
+    create: function () {
+      this.$element.empty();
+      this.createDropdownToggle();
+      this.createDropdownMenu();
+    },
+
+    createDropdownToggle: function () {
+      this.toggle = new MuEmojiDropdownToggle(this);
+      this.$element.append(this.toggle.create());
+    },
+
+    createDropdownMenu: function () {
+      this.menu = new MuEmojiDropdownMenu(this);
+      this.$element.append(this.menu.create());
+    },
+
+    dropdownToggleIconClass: function () {
+      return this.$element.data('icon-class') || 'fa fa-fw fa-smile-o';
+    },
+
+    dropdownMenuAlignmentClass: function () {
+      switch (this.$element.data('dropdown-alignment')) {
+        case 'right': return MuEmoji.DROPDOWN_MENU_ALIGNMENT_RIGHT;
+        case 'center': return MuEmoji.DROPDOWN_MENU_ALIGNMENT_CENTER;
+        default: return MuEmoji.DROPDOWN_MENU_ALIGNMENT_LEFT;
+      }
+    },
+
+    openDropdown: function () {
+      this.menu.open();
+    },
+
+    closeDropdown: function () {
+      this.menu.close();
+    },
+
+    toggleDropdown: function (event) {
+      this.menu.toggleDropdown(event);
+    },
+
+    clickedOnEmoji: function (emoji) {
+      eval(this.$element.data('on-emoji-click'))(emoji);
+      this.closeDropdown();
+    },
+
+    hasDiversityEnable: function () {
+      return this.$element.data('with-diversity');
+    },
+
   }
 
-  function searchQuery (querytext) {
-    return function (emoji) {
-      return !querytext.trim() ? true :
-        [emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) {
-          return s && s.toLowerCase().indexOf(querytext.toLowerCase()) >= 0;
-        });
+
+
+  function MuEmojiDropdownToggle(parent) {
+    this.parent = parent;
+  }
+
+  MuEmojiDropdownToggle.prototype = {
+
+    create: function () {
+      return this.$element = $('<a>', {
+        class: MuEmoji.DROPDOWN_TOGGLE,
+        html: this.icon(),
+        click: this.parent.toggleDropdown.bind(this.parent)
+      });
+    },
+
+    icon: function () {
+      return $('<i>', {
+        class: this.parent.dropdownToggleIconClass()
+      });
+    }
+
+  }
+
+
+
+  function MuEmojiDropdownMenu(parent) {
+    this.parent = parent;
+  }
+
+  MuEmojiDropdownMenu.prototype = {
+
+    create: function () {
+      this.$element = $('<div>', {
+        class: [MuEmoji.DROPDOWN_MENU, this.alignmentClass()].join(' '),
+      });
+      this.createTabs();
+      this.createSearch();
+      this.createEmojis();
+      this.createFooter();
+      return this.$element;
+    },
+
+    alignmentClass: function () {
+      return this.parent.dropdownMenuAlignmentClass();
+    },
+
+    createTabs: function () {
+      this.tabs = new MuEmojiDropdownMenuTabs(this);
+      this.$element.append(this.tabs.create());
+    },
+
+    createSearch: function () {
+      this.search = new MuEmojiDropdownMenuSearch(this);
+      this.$element.append(this.search.create());
+    },
+
+    createEmojis: function () {
+      this.emojis = new MuEmojiDropdownMenuEmojis(this);
+      this.$element.append(this.emojis.create());
+    },
+
+    createFooter: function () {
+      this.footer = new MuEmojiDropdownMenuFooter(this);
+      this.$element.append(this.footer.create());
+    },
+
+    clickedOnTone: function (clickedTone) {
+      this.emojis.clickedOnTone(clickedTone);
+    },
+
+    open: function () {
+      this.$element.addClass(OPEN_CLASS);
+      this.search.$input.focus();
+    },
+
+    isOpen: function () {
+      return this.$element.hasClass(OPEN_CLASS);
+    },
+
+    close: function () {
+      this.$element.removeClass(OPEN_CLASS);
+    },
+
+    isClosed: function () {
+      return !this.isOpen();
+    },
+
+    toggleDropdown: function (event) {
+      hideAllDropdownMenues();
+      if (this.isClosed()) {
+        this.open();
+        event.stopPropagation();
+      }
+    },
+
+    clickedOnEmoji: function (emoji) {
+      this.parent.clickedOnEmoji(emoji);
+    },
+
+    hasDiversityEnable: function () {
+      return this.parent.hasDiversityEnable();
+    },
+
+    scrollToCategory(category) {
+      this.emojis.scrollToCategory(category);
+    },
+
+    updateEmojis: function () {
+      this.emojis.createEmojis();
+    },
+
+    updateActiveTabs: function () {
+      this.tabs.updateActiveTabs();
     }
   }
 
-  function filterSearch($ddm, $input, $dd) {
-    var querytext = $input.val();
-    searchInterval && clearTimeout(searchInterval);
-    searchInterval = setTimeout(function () {
 
+  function MuEmojiDropdownMenuTabs(parent) {
+    this.parent = parent;
+    this.tabs = [];
+  }
+
+  MuEmojiDropdownMenuTabs.prototype = {
+
+    create: function () {
+      this.$element = $('<ul>', {
+        class: MuEmoji.DROPDOWN_MENU_TABS
+      });
+      this.createCategories();
+      return this.$element;
+    },
+
+    createCategories: function () {
+      var self = this;
+      window.muEmojis.categories.forEach(function (category, index) {
+        var tab = new MuEmojiDropdownMenuTab(self, category, index);
+        self.tabs.push(tab);
+        self.$element.append(tab.create());
+      });
+    },
+
+    clickedOnTab: function (clickedTab) {
+      this.tabs.forEach(function (tab) {
+        tab.deactivate();
+      });
+      this.parent.scrollToCategory(clickedTab.category);
+    },
+
+    updateActiveTabs: function () {
+      this.tabs.forEach(function (tab, i) {
+        window.muEmojis.categories[i].list.length === 0 ?
+          tab.disable() : tab.enable();
+      });
+      var tab = this.tabs.find(function (tab) { return tab.isEnable() });
+      this.tabs.forEach(function (tab) {
+        tab.deactivate();
+      });
+      tab.activate();
+    },
+
+  }
+
+
+  function MuEmojiDropdownMenuTab(parent, category, index) {
+    this.parent = parent;
+    this.category = category;
+    this.index = index;
+  }
+
+  MuEmojiDropdownMenuTab.prototype = {
+
+    create: function () {
+      var self = this
+      return self.$element = $('<li>', {
+        class: [MuEmoji.DROPDOWN_MENU_TAB, self.index === 0 && 'active'].filter(id).join(' '),
+        title: self.category.description,
+        html: self.icon(),
+        click: function (event) {
+          self.parent.clickedOnTab(self);
+          self.activate();
+          event.stopPropagation();
+        }
+      });
+    },
+
+    icon: function () {
+      return $('<i>', {
+        class: this.category.icon_class
+      });
+    },
+
+    deactivate: function () {
+      this.$element.removeClass(ACTIVE_CLASS);
+    },
+
+    activate: function () {
+      this.$element.addClass(ACTIVE_CLASS);
+    },
+
+    enable: function () {
+      this.$element.removeClass(DISABLED_CLASS);
+    },
+
+    isEnable: function () {
+      return !this.$element.hasClass(DISABLED_CLASS);
+    },
+
+    disable: function () {
+      this.$element.addClass(DISABLED_CLASS);
+    }
+
+  }
+
+
+  function MuEmojiDropdownMenuSearch(parent) {
+    this.parent = parent;
+    this.searchTimeout = setTimeout(noop);
+  }
+
+  MuEmojiDropdownMenuSearch.prototype = {
+
+    create: function () {
+      this.$element = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_SEARCH
+      });
+      this.createIcon();
+      this.createInput();
+      return this.$element;
+    },
+
+    createIcon: function () {
+      this.$icon = $('<i>', {
+        class: [MuEmoji.DROPDOWN_MENU_SEARCH_ICON, 'fa fa-fw fa-search'].join(' '),
+      });
+      this.$element.append(this.$icon);
+    },
+
+    createInput: function () {
+      var self = this;
+      this.$input = $('<input>', {
+        class: MuEmoji.DROPDOWN_MENU_SEARCH_INPUT,
+        placeholder: window.searchEmojiPlaceholder,
+        keyup: function (event) {
+          self.search();
+        }
+      });
+      this.$element.append(this.$input);
+    },
+
+    search: function () {
+      var self = this;
+      clearTimeout(this.searchTimeout);
+      this.searchTimeout = setTimeout(function () {
+        self._doSearch(self.$input.val().trim());
+      }, 500);
+    },
+
+    _doSearch: function (query) {
       window.muEmojis.categories.forEach(function (category) {
-        category.list = muEmojis.filterEmojisBy(category, searchQuery(querytext));
-      })
-      generateEmojiList($ddm, $dd);
-      $input.focus();
+        category.list = muEmojis.filterEmojisBy(category, function (emoji) {
+          return !query ? true :
+            [emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) {
+              return s && s.toLowerCase().indexOf(query.toLowerCase()) >= 0;
+            });
+        });
+      });
+      this.parent.updateEmojis();
+    },
 
-    }, 500);
   }
 
-  function addEventsListeners($dd) {
-    var $ddt = $dd.find($class(MU_EMOJI_DROPDOWN_TOGGLE));
-    var $ddm = $dd.find($class(MU_EMOJI_DROPDOWN_MENU));
-    var $ddmc = $dd.find($class(MU_EMOJI_DROPDOWN_MENU_CATEGORY));
-    var $ddmes = $dd.find($class(MU_EMOJI_DROPDOWN_MENU_EMOJIS));
-    var $ddminput = $dd.find($class(MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT));
 
-    $ddt.click(function (e) {
-      var isClosed = !$ddm.hasClass(OPEN_CLASS);
-      hideAllDropdownMenues();
-      if (isClosed) {
-        $ddm.addClass(OPEN_CLASS);
-        $ddm.find($class(MU_EMOJI_DROPDOWN_MENU_SEARCH_INPUT)).focus();
-        e.stopPropagation();
+  function MuEmojiDropdownMenuEmojis(parent) {
+    this.parent = parent;
+    this.categories = [];
+    this.emojiTone = TONE_0;
+  }
+
+  MuEmojiDropdownMenuEmojis.prototype = {
+
+    create: function () {
+      this.$element = $('<ul>', {
+        class: MuEmoji.DROPDOWN_MENU_EMOJIS
+      });
+      this.createEmojis();
+      return this.$element;
+    },
+
+    createEmojis: function () {
+      var self = this
+      self.$element.empty();
+      self.categories = [];
+      self.parent.updateActiveTabs();
+      window.muEmojis.categories.forEach(function (cat) {
+        if (cat.list.length === 0) return;
+        var category = new MuEmojiDropdownMenuEmojisCategory(self, cat);
+        self.categories.push(category);
+        self.$element.append(category.create());
+      });
+    },
+
+    scrollToCategory(category) {
+      var firstCategory = this.categories[0];
+      var categoryToScroll = this.categories.find(function (cat) {
+        return cat.category.name === category.name;
+      });
+      var scrollTop = categoryToScroll.$element.position().top - firstCategory.$element.position().top;
+      this.$element.scrollTop(scrollTop);
+    },
+
+    clickedOnTone: function (clickedTone) {
+      this.emojiTone = clickedTone;
+      this.createEmojis();
+    },
+
+    clickedOnEmoji: function (emoji) {
+      this.parent.clickedOnEmoji(emoji)
+    },
+
+    hasDiversityEnable: function () {
+      return this.parent.hasDiversityEnable();
+    },
+
+  }
+
+
+  function MuEmojiDropdownMenuEmojisCategory(parent, category) {
+    this.parent = parent;
+    this.category = category;
+  }
+
+  MuEmojiDropdownMenuEmojisCategory.prototype = {
+
+    create: function () {
+      this.$element = $('<li>', {
+        class: MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORIES,
+      });
+      this.createTitle();
+      this.createEmojis();
+      return this.$element;
+    },
+
+    createTitle: function () {
+      this.$title = $('<h4>', {
+        text: this.category.caption
+      });
+      this.$element.append(this.$title);
+    },
+
+    createEmojis: function () {
+      this.$emojis = $('<ul>', {
+        class: MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORY
+      });
+      this.populate();
+      this.$element.append(this.$emojis);
+    },
+
+    populate: function () {
+      var self = this
+      self.category.list.forEach(function (emoji) {
+        if (emoji.diversity) return;
+        var categoryName = !self.hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
+        emoji = !self.hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[self.toneIndex()]];
+        var $emoji = $('<li>', {
+          class: MuEmoji.DROPDOWN_MENU_EMOJI,
+          html: self.icon(categoryName, emoji),
+          click: function () {
+            self.parent.clickedOnEmoji(emoji);
+          }
+        });
+        self.$emojis.append($emoji);
+      });
+    },
+
+    icon: function (categoryName, emoji) {
+      return $('<i>', {
+        class: ['mu-emoji', 'px24', categoryName,  '_' + emoji.code_points.base].join(' '),
+        title: emoji.name,
+        data: {
+          code: emoji.shortname
+        }
+      });
+    },
+
+    toneIndex: function () {
+      return TONES.indexOf(this.parent.emojiTone);
+    },
+
+    hasDiversity: function (emoji) {
+      return emoji.diversities.length !== 0 && this.toneIndex() >= 0 && this.hasDiversityEnable();
+    },
+
+    hasDiversityEnable: function () {
+      return this.parent.hasDiversityEnable();
+    }
+
+  }
+
+
+  function MuEmojiDropdownMenuFooter(parent) {
+    this.parent = parent;
+  }
+
+  MuEmojiDropdownMenuFooter.prototype = {
+
+    create: function () {
+      this.$element = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_FOOTER,
+      });
+      if (this.parent.hasDiversityEnable()) {
+        this.createDiversities();
       }
-    });
+      this.createEmojiOneLegend();
+      return this.$element;
+    },
 
-    $(document).keydown(function (e) {
-      if (e.keyCode === ESCAPE_KEY) hideAllDropdownMenues();
-    });
+    createDiversities: function () {
+      this.$diversities = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_FOOTER_DIVERSITIES,
+      });
+      this.createDiversityItems();
+      this.$element.append(this.$diversities);
+    },
 
-    $(document).click(function (e) {
-      var clazz = $class(MU_EMOJI_DROPDOWN_MENU);
-      if (!$(e.target).is(clazz + ', ' + clazz + ' *')) hideAllDropdownMenues();
-    });
+    createDiversityItems: function () {
+      var self = this;
+      [TONE_0].concat(TONES).forEach(function (tone) {
+        self.$diversities.append($('<i>', {
+          class: 'mu-emoji diversity _' + tone,
+          click: function (event) {
+            self.parent.clickedOnTone(tone);
+          }
+        }));
+      });
+    },
 
-    $ddminput.on('keyup', function () {
-      filterSearch($ddm, $ddminput, $dd);
-    })
+    createEmojiOneLegend: function () {
+      this.$emojiOneLegend = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_FOOTER_EMOJI_ONE_LEGEND,
+        html: window.emojiOneLegend + ' <a href="https://www.emojione.com/" target="_blank">EmojiOne</a></div>'
+      });
+      this.$element.append(this.$emojiOneLegend);
+    },
 
   }
+
+
 
   $.fn.renderEmojis = function () {
     var self = this;
     self.each(function (i) {
-      var $dd = $(self[i]);
-      var $ddt = generateDropdownToggle($dd);
-      var $ddm = generateDropdownMenu($dd);
-      $dd.append($ddt);
-      populateDropdownMenu($ddm, $dd);
-      $dd.append($ddm);
-      addEventsListeners($dd);
+      var $element = $(self[i]);
+      $element.empty();
+      new MuEmoji($element, i).create();
     });
     return self;
   }
 
-  $($class(MU_EMOJI_DROPDOWN)).renderEmojis();
+  $($class(MuEmoji.DROPDOWN)).renderEmojis();
 
 });
