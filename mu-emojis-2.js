@@ -59,8 +59,6 @@ mumuki.load(function () {
   function MuEmoji($element, index) {
     this.$element = $element;
     this.index = index;
-    this.emojiTone = TONE_0;
-    this.searchTimeout = setTimeout(noop);
   }
 
   MuEmoji.prototype = {
@@ -104,6 +102,16 @@ mumuki.load(function () {
     toggleDropdown: function (event) {
       this.menu.toggleDropdown(event);
     },
+
+    clickedOnEmoji: function (emoji) {
+      eval(this.$element.data('on-emoji-click'))(emoji);
+      this.closeDropdown();
+    },
+
+    hasDiversityEnable: function () {
+      return this.$element.data('with-diversity');
+    },
+
   }
 
 
@@ -174,7 +182,7 @@ mumuki.load(function () {
     },
 
     clickedOnTone: function (clickedTone) {
-      // TODO
+      this.emojis.clickedOnTone(clickedTone);
     },
 
     open: function () {
@@ -195,6 +203,14 @@ mumuki.load(function () {
 
     toggleDropdown: function () {
       this.$element.toggleClass(OPEN_CLASS);
+    },
+
+    clickedOnEmoji: function (emoji) {
+      this.parent.clickedOnEmoji(emoji);
+    },
+
+    hasDiversityEnable: function () {
+      return this.parent.hasDiversityEnable();
     },
 
   }
@@ -324,13 +340,115 @@ mumuki.load(function () {
 
   function MuEmojiDropdownMenuEmojis(parent) {
     this.parent = parent;
+    this.categories = [];
+    this.emojiTone = TONE_0;
   }
 
   MuEmojiDropdownMenuEmojis.prototype = {
 
     create: function () {
-      return '';
+      this.$element = $('<ul>', {
+        class: MuEmoji.DROPDOWN_MENU_EMOJIS
+      });
+      this.createEmojis();
+      return this.$element;
     },
+
+    createEmojis: function () {
+      var self = this
+      self.$element.empty();
+      self.categories = [];
+      window.muEmojis.categories.forEach(function (category) {
+        var category = new MuEmojiDropdownMenuEmojisCategory(self, category);
+        self.categories.push(category);
+        self.$element.append(category.create());
+      });
+    },
+
+    clickedOnTone: function (clickedTone) {
+      this.emojiTone = tone
+    },
+
+    clickedOnEmoji: function (emoji) {
+      this.parent.clickedOnEmoji(emoji)
+    },
+
+    hasDiversityEnable: function () {
+      return this.parent.hasDiversityEnable();
+    },
+
+  }
+
+
+  function MuEmojiDropdownMenuEmojisCategory(parent, category) {
+    this.parent = parent;
+    this.category = category;
+  }
+
+  MuEmojiDropdownMenuEmojisCategory.prototype = {
+
+    create: function () {
+      this.$element = $('<li>', {
+        class: MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORIES,
+      });
+      this.createTitle();
+      this.createEmojis();
+      return this.$element;
+    },
+
+    createTitle: function () {
+      this.$title = $('<h4>', {
+        text: this.category.caption
+      });
+      this.$element.append(this.$title);
+    },
+
+    createEmojis: function () {
+      this.$emojis = $('<ul>', {
+        class: MuEmoji.DROPDOWN_MENU_EMOJIS_CATEGORY
+      });
+      this.populate();
+      this.$element.append(this.$emojis);
+    },
+
+    populate: function () {
+      var self = this
+      self.category.list.forEach(function (emoji) {
+        if (emoji.diversity) return;
+        var category = !self.hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
+        emoji = !self.hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]];
+        var $emoji = $('<li>', {
+          class: MuEmoji.DROPDOWN_MENU_EMOJI,
+          html: self.icon(emoji),
+          click: function () {
+            self.parent.clickedOnEmoji(emoji);
+          }
+        });
+        self.$emojis.append($emoji);
+      });
+    },
+
+    icon: function (emoji) {
+      return $('<i>', {
+        class: ['mu-emoji', 'px24', this.category.name,  ' _' + emoji.code_points.base].join(' '),
+        title: emoji.name,
+        data: {
+          code: emoji.shortname
+        }
+      });
+    },
+
+    toneIndex: function () {
+      return TONES.indexOf(this.parent.emojiTone);
+    },
+
+    hasDiversity: function (emoji) {
+      return emoji.diversities.length !== 0 && this.toneIndex() >= 0 && this.hasDiversityEnable();
+    },
+
+    hasDiversityEnable: function () {
+      return this.parent.hasDiversityEnable();
+    }
 
   }
 
