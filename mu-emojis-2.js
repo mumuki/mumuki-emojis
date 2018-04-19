@@ -242,15 +242,16 @@ mumuki.load(function () {
   MuEmojiDropdownMenuTab.prototype = {
 
     create: function () {
-      return this.$element = $('<li>', {
-        class: [MuEmoji.DROPDOWN_MENU_TAB, this.index === 0 && 'active'].filter(id).join(' '),
-        title: this.category.description,
-        html: this.icon(),
+      var self = this
+      return self.$element = $('<li>', {
+        class: [MuEmoji.DROPDOWN_MENU_TAB, self.index === 0 && 'active'].filter(id).join(' '),
+        title: self.category.description,
+        html: self.icon(),
         click: function (event) {
-          this.parent.clickedOnTab(this);
-          this.activate();
+          self.parent.clickedOnTab(self);
+          self.activate();
           event.stopPropagation();
-        }.bind(this)
+        }
       });
     },
 
@@ -273,12 +274,49 @@ mumuki.load(function () {
 
   function MuEmojiDropdownMenuSearch(parent) {
     this.parent = parent;
+    this.searchTimeout = setTimeout(noop);
   }
 
   MuEmojiDropdownMenuSearch.prototype = {
 
     create: function () {
-      return '';
+      this.$element = $('<div>', {
+        class: MuEmoji.DROPDOWN_MENU_SEARCH
+      });
+      this.createIcon();
+      this.createInput();
+      return this.$element;
+    },
+
+    createIcon: function () {
+      this.$icon = $('<i>', {
+        class: [MuEmoji.DROPDOWN_MENU_SEARCH_ICON, 'fa fa-fw fa-search'].join(' '),
+      });
+      this.$element.append(this.$icon);
+    },
+
+    createInput: function () {
+      var self = this;
+      this.$input = $('<input>', {
+        class: MuEmoji.DROPDOWN_MENU_SEARCH_INPUT,
+        placeholder: window.searchEmojiPlaceholder,
+        keyup: function (event) {
+          self.search();
+        }
+      });
+      this.$element.append(this.$input);
+    },
+
+    search: function () {
+      var self = this;
+      clearTimeout(this.searchTimeout);
+      this.searchTimeout = setTimeout(function () {
+        self._doSearch(self.$input.val().trim());
+      }, 500);
+    },
+
+    _doSearch: function (query) {
+      console.log(query);
     },
 
   }
