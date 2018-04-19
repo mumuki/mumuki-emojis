@@ -362,8 +362,8 @@ mumuki.load(function () {
       var self = this
       self.$element.empty();
       self.categories = [];
-      window.muEmojis.categories.forEach(function (category) {
-        var category = new MuEmojiDropdownMenuEmojisCategory(self, category);
+      window.muEmojis.categories.forEach(function (cat) {
+        var category = new MuEmojiDropdownMenuEmojisCategory(self, cat);
         self.categories.push(category);
         self.$element.append(category.create());
       });
@@ -379,7 +379,8 @@ mumuki.load(function () {
     },
 
     clickedOnTone: function (clickedTone) {
-      this.emojiTone = tone
+      this.emojiTone = clickedTone;
+      this.createEmojis();
     },
 
     clickedOnEmoji: function (emoji) {
@@ -428,11 +429,11 @@ mumuki.load(function () {
       var self = this
       self.category.list.forEach(function (emoji) {
         if (emoji.diversity) return;
-        var category = !self.hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
-        emoji = !self.hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[toneIndex()]];
+        var categoryName = !self.hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
+        emoji = !self.hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[self.toneIndex()]];
         var $emoji = $('<li>', {
           class: MuEmoji.DROPDOWN_MENU_EMOJI,
-          html: self.icon(emoji),
+          html: self.icon(categoryName, emoji),
           click: function () {
             self.parent.clickedOnEmoji(emoji);
           }
@@ -441,9 +442,9 @@ mumuki.load(function () {
       });
     },
 
-    icon: function (emoji) {
+    icon: function (categoryName, emoji) {
       return $('<i>', {
-        class: ['mu-emoji', 'px24', this.category.name,  ' _' + emoji.code_points.base].join(' '),
+        class: ['mu-emoji', 'px24', categoryName,  '_' + emoji.code_points.base].join(' '),
         title: emoji.name,
         data: {
           code: emoji.shortname
@@ -475,7 +476,6 @@ mumuki.load(function () {
     create: function () {
       this.$element = $('<div>', {
         class: MuEmoji.DROPDOWN_MENU_FOOTER,
-
       });
       this.createDiversities();
       this.createEmojiOneLegend();
@@ -495,7 +495,7 @@ mumuki.load(function () {
       [TONE_0].concat(TONES).forEach(function (tone) {
         self.$diversities.append($('<i>', {
           class: 'mu-emoji diversity _' + tone,
-          click: function (tone) {
+          click: function (event) {
             self.parent.clickedOnTone(tone);
           }
         }));
