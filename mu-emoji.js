@@ -156,6 +156,7 @@ mumuki.load(function () {
 
   function MuEmojiDropdownMenu(parent) {
     this.parent = parent;
+    this.categories = JSON.parse(JSON.stringify(window.window.muEmojis.categories));
   }
 
   MuEmojiDropdownMenu.prototype = {
@@ -263,7 +264,7 @@ mumuki.load(function () {
 
     createCategories: function () {
       var self = this;
-      window.muEmojis.categories.forEach(function (category, index) {
+      this.parent.categories.forEach(function (category, index) {
         var tab = new MuEmojiDropdownMenuTab(self, category, index);
         self.tabs.push(tab);
         self.$element.append(tab.create());
@@ -278,12 +279,13 @@ mumuki.load(function () {
     },
 
     updateActiveTabs: function () {
-      this.tabs.forEach(function (tab, i) {
-        window.muEmojis.categories[i].list.length === 0 ?
+      var self = this;
+      self.tabs.forEach(function (tab, i) {
+        self.parent.categories[i].list.length === 0 ?
           tab.disable() : tab.enable();
       });
-      var tab = this.tabs.find(function (tab) { return tab.isEnable() });
-      this.tabs.forEach(function (tab) {
+      var tab = self.tabs.find(function (tab) { return tab.isEnable() });
+      self.tabs.forEach(function (tab) {
         tab.deactivate();
       });
       tab.activate();
@@ -387,8 +389,8 @@ mumuki.load(function () {
     },
 
     _doSearch: function (query) {
-      window.muEmojis.categories.forEach(function (category) {
-        category.list = muEmojis.filterEmojisBy(category, function (emoji) {
+      this.parent.categories.forEach(function (category) {
+        category.list = window.muEmojis.filterEmojisBy(category, function (emoji) {
           return !query ? true :
             [emoji.name, emoji.shortname].concat(emoji.shortname_alternates).concat(emoji.keywords).some(function (s) {
               return s && s.toLowerCase().indexOf(query.toLowerCase()) >= 0;
@@ -422,7 +424,7 @@ mumuki.load(function () {
       self.$element.empty();
       self.categories = [];
       self.parent.updateActiveTabs();
-      window.muEmojis.categories.forEach(function (cat) {
+      this.parent.categories.forEach(function (cat) {
         if (cat.list.length === 0) return;
         var category = new MuEmojiDropdownMenuEmojisCategory(self, cat);
         self.categories.push(category);
