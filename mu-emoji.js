@@ -288,7 +288,7 @@ mumuki.load(function () {
       self.tabs.forEach(function (tab) {
         tab.deactivate();
       });
-      tab.activate();
+      tab && tab.activate();
     },
 
   }
