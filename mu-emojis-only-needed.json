@@ -1232,6 +1232,7 @@
   "2602": {
     "n": "umbrella",
     "ca": "nature",
+    "sc": "people",
     "o": 1175,
     "s": ":umbrella2:",
     "ss": [],
@@ -1433,6 +1434,7 @@
   "2640": {
     "n": "female sign",
     "ca": "symbols",
+    "sc": "people",
     "o": 2508,
     "s": ":female_sign:",
     "ss": [],
@@ -1446,6 +1448,7 @@
   "2642": {
     "n": "male sign",
     "ca": "symbols",
+    "sc": "people",
     "o": 2509,
     "s": ":male_sign:",
     "ss": [],
@@ -1663,6 +1666,7 @@
   "2695": {
     "n": "medical symbol",
     "ca": "symbols",
+    "sc": "people",
     "o": 2510,
     "s": ":medical_symbol:",
     "ss": [],
@@ -16958,6 +16962,7 @@
   "1f931": {
     "n": "breast-feeding",
     "ca": "people",
+    "sc": "activity",
     "o": 833,
     "s": ":breast_feeding:",
     "ss": [],
@@ -42201,6 +42206,7 @@
   "1f3fb": {
     "n": "light skin tone",
     "ca": "modifier",
+    "sc": "diversity",
     "o": 2470,
     "s": ":tone1:",
     "ss": [],
@@ -42214,6 +42220,7 @@
   "1f3fc": {
     "n": "medium-light skin tone",
     "ca": "modifier",
+    "sc": "diversity",
     "o": 2471,
     "s": ":tone2:",
     "ss": [],
@@ -42227,6 +42234,7 @@
   "1f3fd": {
     "n": "medium skin tone",
     "ca": "modifier",
+    "sc": "diversity",
     "o": 2472,
     "s": ":tone3:",
     "ss": [],
@@ -42240,6 +42248,7 @@
   "1f3fe": {
     "n": "medium-dark skin tone",
     "ca": "modifier",
+    "sc": "diversity",
     "o": 2473,
     "s": ":tone4:",
     "ss": [],
@@ -42253,6 +42262,7 @@
   "1f3ff": {
     "n": "dark skin tone",
     "ca": "modifier",
+    "sc": "diversity",
     "o": 2474,
     "s": ":tone5:",
     "ss": [],
@@ -42713,6 +42723,7 @@
   "1f9d6": {
     "n": "person in steamy room",
     "ca": "people",
+    "sc": "activity",
     "o": 2512,
     "s": ":person_in_steamy_room:",
     "ss": [],
@@ -42817,6 +42828,7 @@
   "1f9d6-2640": {
     "n": "woman in steamy room",
     "ca": "people",
+    "sc": "activity",
     "o": 2518,
     "s": ":woman_in_steamy_room:",
     "ss": [],
@@ -42922,6 +42934,7 @@
   "1f9d6-2642": {
     "n": "man in steamy room",
     "ca": "people",
+    "sc": "activity",
     "o": 2524,
     "s": ":man_in_steamy_room:",
     "ss": [],

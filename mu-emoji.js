@@ -493,7 +493,7 @@ mumuki.load(function () {
       self.category.list.forEach(function (emoji) {
         if (emoji.diversity) return;
         var categoryName = !self.hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
-        emoji = !self.hasDiversity(emoji) ? emoji : window.muEmojis.object[emoji.diversities[self.toneIndex()]];
+        emoji = !self.hasDiversity(emoji) ? emoji : self.diversityEmoji(emoji);
         var $emoji = $('<li>', {
           class: MuEmoji.DROPDOWN_MENU_EMOJI,
           html: self.icon(categoryName, emoji),
@@ -517,6 +517,12 @@ mumuki.load(function () {
 
     toneIndex: function () {
       return TONES.indexOf(this.parent.emojiTone);
+    },
+
+    diversityEmoji(emoji) {
+      var diversityKey = emoji.diversities[this.toneIndex()];
+      var diversityEmoji = window.muEmojis.object[diversityKey];
+      return window.muEmojis.fullEmoji(diversityEmoji);
     },
 
     hasDiversity: function (emoji) {
