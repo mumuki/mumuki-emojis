@@ -249,17 +249,17 @@ body * {
 .mu-emoji.px32 { transform: scale(1.00) }
 .mu-emoji.px64 { transform: scale(2.00) }
 
-.mu-emoji.mumoji { background-image: url(../assets/mu-emojis/mumoji.png) }
-.mu-emoji.people { background-image: url(../assets/mu-emojis/people.png) }
-.mu-emoji.nature { background-image: url(../assets/mu-emojis/nature.png) }
-.mu-emoji.food { background-image: url(../assets/mu-emojis/food.png) }
-.mu-emoji.activity { background-image: url(../assets/mu-emojis/activity.png) }
-.mu-emoji.travel { background-image: url(../assets/mu-emojis/travel.png) }
-.mu-emoji.objects { background-image: url(../assets/mu-emojis/objects.png) }
-.mu-emoji.symbols { background-image: url(../assets/mu-emojis/symbols.png) }
-.mu-emoji.flags { background-image: url(../assets/mu-emojis/flags.png) }
-.mu-emoji.regional { background-image: url(../assets/mu-emojis/regional.png) }
-.mu-emoji.diversity { background-image: url(../assets/mu-emojis/diversity.png) }
+.mu-emoji.mumoji { background-image: url(../images/emojis/mumoji.png) }
+.mu-emoji.people { background-image: url(../images/emojis/people.png) }
+.mu-emoji.nature { background-image: url(../images/emojis/nature.png) }
+.mu-emoji.food { background-image: url(../images/emojis/food.png) }
+.mu-emoji.activity { background-image: url(../images/emojis/activity.png) }
+.mu-emoji.travel { background-image: url(../images/emojis/travel.png) }
+.mu-emoji.objects { background-image: url(../images/emojis/objects.png) }
+.mu-emoji.symbols { background-image: url(../images/emojis/symbols.png) }
+.mu-emoji.flags { background-image: url(../images/emojis/flags.png) }
+.mu-emoji.regional { background-image: url(../images/emojis/regional.png) }
+.mu-emoji.diversity { background-image: url(../images/emojis/diversity.png) }
 
 
 .mu-emoji.diversity._1f3fb,
