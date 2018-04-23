@@ -1,15 +1,12 @@
-body {
-  font-family: Lato;
+.mu-emoji-dropdown {
+  font-family: Lato, sans-serif;
   line-height: 1.8;
   font-size: 17px;
 }
 
-body * {
+.mu-emoji-dropdown * {
   box-sizing: border-box;
 }
-
-
-
 
 .mu-emoji-dropdown {
   position: relative;
@@ -30,7 +27,6 @@ body * {
   border-radius: 5px;
   background-color: white;
   z-index: 500;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   display: none;
@@ -102,7 +98,6 @@ body * {
   width: 100%;
   height: 34px;
   padding: 5px 10px 5px 32px;
-  border-width: 1px;
   border: 1px solid #AAAAAA;
   border-radius: 5px;
 }
@@ -138,15 +133,13 @@ body * {
   padding-bottom: 10px;
 }
 
-.mu-emoji-dropdown-menu-emojis-categories:last-child >
-.mu-emoji-dropdown-menu-emojis-categories-item {
+.mu-emoji-dropdown-menu-emojis-categories:last-child > .mu-emoji-dropdown-menu-emojis-categories-item {
   padding-bottom: unset;
 }
 
 .mu-emoji-dropdown-menu-emojis-categories > h4 {
-  padding: 0;
   margin: 0;
-  padding-left: 6px;
+  padding: 0 0 0 6px;
 }
 
 .mu-emoji-dropdown-menu-emojis-item:hover {
@@ -238,10 +231,14 @@ body * {
   width: 32px;
   position: relative;
   display: inline-block;
-  margin: 2px;
+  margin: -5px -2px 0 -2px;
   line-height: normal;
   vertical-align: middle;
   background-repeat: no-repeat;
+}
+
+.mu-emoji-dropdown-menu-emojis .mu-emoji {
+  margin: 2px;
 }
 
 .mu-emoji.px16 { transform: scale(0.50) }
@@ -249,17 +246,18 @@ body * {
 .mu-emoji.px32 { transform: scale(1.00) }
 .mu-emoji.px64 { transform: scale(2.00) }
 
-.mu-emoji.mumoji { background-image: url(../images/emojis/mumoji.png) }
-.mu-emoji.people { background-image: url(../images/emojis/people.png) }
-.mu-emoji.nature { background-image: url(../images/emojis/nature.png) }
-.mu-emoji.food { background-image: url(../images/emojis/food.png) }
-.mu-emoji.activity { background-image: url(../images/emojis/activity.png) }
-.mu-emoji.travel { background-image: url(../images/emojis/travel.png) }
-.mu-emoji.objects { background-image: url(../images/emojis/objects.png) }
-.mu-emoji.symbols { background-image: url(../images/emojis/symbols.png) }
-.mu-emoji.flags { background-image: url(../images/emojis/flags.png) }
-.mu-emoji.regional { background-image: url(../images/emojis/regional.png) }
-.mu-emoji.diversity { background-image: url(../images/emojis/diversity.png) }
+
+.mu-emoji.mumoji { background-image: url("/assets/images/emojis/mumoji.png") }
+.mu-emoji.people { background-image: url("/assets/images/emojis/people.png") }
+.mu-emoji.nature { background-image: url("/assets/images/emojis/nature.png") }
+.mu-emoji.food { background-image: url("/assets/images/emojis/food.png") }
+.mu-emoji.activity { background-image: url("/assets/images/emojis/activity.png") }
+.mu-emoji.travel { background-image: url("/assets/images/emojis/travel.png") }
+.mu-emoji.objects { background-image: url("/assets/images/emojis/objects.png") }
+.mu-emoji.symbols { background-image: url("/assets/images/emojis/symbols.png") }
+.mu-emoji.flags { background-image: url("/assets/images/emojis/flags.png") }
+.mu-emoji.regional { background-image: url("/assets/images/emojis/regional.png") }
+.mu-emoji.diversity { background-image: url("/assets/images/emojis/diversity.png") }
 
 
 .mu-emoji.diversity._1f3fb,
@@ -281,8 +279,7 @@ body * {
 .mu-emoji.diversity._1f3fe { background-position: -109px -307px }
 .mu-emoji.diversity._1f3ff { background-position: -142px -307px }
 .mu-emoji.diversity._1f3fa {
-  background-image: unset;
-  background-color: #ffcf11;
+  background: #ffcf11;
   border-radius: 50%;
 }
 
