@@ -1,1055 +1,967 @@
 {
-  "advertencia": {
-    "n": "advertencia",
+  "mu_nerd": {
+    "n": "mumuki nerd face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":advertencia:",
-    "ss": [],
+    "o": 28,
+    "s":":mu_nerd:",
+    "ss": [
+      ":mu_nerd_face:"
+    ],
     "d": null,
     "ds": [],
-    "co": "advertencia",
-    "k": [
-      "advertencia"
-    ]
-  },
-  "alegria": {
-    "n": "alegria",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":alegria:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "alegria",
-    "k": [
-      "alegria"
-    ]
-  },
-  "aliviado": {
-    "n": "aliviado",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":aliviado:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "aliviado",
-    "k": [
-      "aliviado"
-    ]
-  },
-  "amor": {
-    "n": "amor",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":amor:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "amor",
-    "k": [
-      "amor"
-    ]
-  },
-  "antena": {
-    "n": "antena",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":antena:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "antena",
-    "k": [
-      "antena"
-    ]
-  },
-  "aplausos": {
-    "n": "aplausos",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":aplausos:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "aplausos",
-    "k": [
-      "aplausos"
-    ]
-  },
-  "beso_corazon": {
-    "n": "beso_corazon",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":beso_corazon:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "beso_corazon",
-    "k": [
-      "beso_corazon"
-    ]
-  },
-  "boca_abierta": {
-    "n": "boca_abierta",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":boca_abierta:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "boca_abierta",
-    "k": [
-      "boca_abierta"
-    ]
-  },
-  "bolsa": {
-    "n": "bolsa",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":bolsa:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "bolsa",
-    "k": [
-      "bolsa"
-    ]
-  },
-  "bombilla": {
-    "n": "bombilla",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":bombilla:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "bombilla",
-    "k": [
-      "bombilla"
-    ]
-  },
-  "bum": {
-    "n": "bum",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":bum:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "bum",
-    "k": [
-      "bum"
-    ]
-  },
-  "burlona": {
-    "n": "burlona",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":burlona:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "burlona",
-    "k": [
-      "burlona"
-    ]
-  },
-  "calla": {
-    "n": "calla",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":calla:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "calla",
-    "k": [
-      "calla"
-    ]
-  },
-  "cara_mano_boca": {
-    "n": "cara_mano_boca",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":cara_mano_boca:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "cara_mano_boca",
-    "k": [
-      "cara_mano_boca"
-    ]
-  },
-  "cara_pensativa": {
-    "n": "cara_pensativa",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":cara_pensativa:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "cara_pensativa",
-    "k": [
-      "cara_pensativa"
-    ]
-  },
-  "casa": {
-    "n": "casa",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":casa:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "casa",
-    "k": [
-      "casa"
-    ]
-  },
-  "celular": {
-    "n": "celular",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":celular:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "celular",
-    "k": [
-      "celular"
-    ]
-  },
-  "deal": {
-    "n": "deal",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":deal:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "deal",
-    "k": [
-      "deal"
-    ]
-  },
-  "decepcionado": {
-    "n": "decepcionado",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":decepcionado:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "decepcionado",
-    "k": [
-      "decepcionado"
-    ]
-  },
-  "desconcertado": {
-    "n": "desconcertado",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":desconcertado:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "desconcertado",
-    "k": [
-      "desconcertado"
-    ]
-  },
-  "durmiendo": {
-    "n": "durmiendo",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":durmiendo:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "durmiendo",
-    "k": [
-      "durmiendo"
-    ]
-  },
-  "emocion": {
-    "n": "emocion",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":emocion:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "emocion",
-    "k": [
-      "emocion"
-    ]
-  },
-  "enfado": {
-    "n": "enfado",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":enfado:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "enfado",
-    "k": [
-      "enfado"
-    ]
-  },
-  "fiesta": {
-    "n": "fiesta",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":fiesta:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "fiesta",
-    "k": [
-      "fiesta"
-    ]
-  },
-  "frustrado": {
-    "n": "frustrado",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":frustrado:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "frustrado",
-    "k": [
-      "frustrado"
-    ]
-  },
-  "gato": {
-    "n": "gato",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":gato:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "gato",
-    "k": [
-      "gato"
-    ]
-  },
-  "globo_terraqueo": {
-    "n": "globo_terraqueo",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":globo_terraqueo:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "globo_terraqueo",
-    "k": [
-      "globo_terraqueo"
-    ]
-  },
-  "grito": {
-    "n": "grito",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":grito:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "grito",
-    "k": [
-      "grito"
-    ]
-  },
-  "guinio": {
-    "n": "guinio",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":guinio:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "guinio",
-    "k": [
-      "guinio"
-    ]
-  },
-  "guinio_lengua": {
-    "n": "guinio_lengua",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":guinio_lengua:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "guinio_lengua",
-    "k": [
-      "guinio_lengua"
-    ]
-  },
-  "hola": {
-    "n": "hola",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":hola:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "hola",
-    "k": [
-      "hola"
-    ]
-  },
-  "inexpresivo": {
-    "n": "inexpresivo",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":inexpresivo:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "inexpresivo",
-    "k": [
-      "inexpresivo"
-    ]
-  },
-  "inocente": {
-    "n": "inocente",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":inocente:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "inocente",
-    "k": [
-      "inocente"
-    ]
-  },
-  "lengua_rie": {
-    "n": "lengua_rie",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":lengua_rie:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "lengua_rie",
-    "k": [
-      "lengua_rie"
-    ]
-  },
-  "llamanda_entrante": {
-    "n": "llamanda_entrante",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":llamanda_entrante:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "llamanda_entrante",
-    "k": [
-      "llamanda_entrante"
-    ]
-  },
-  "llanto": {
-    "n": "llanto",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":llanto:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "llanto",
-    "k": [
-      "llanto"
-    ]
-  },
-  "lloros": {
-    "n": "lloros",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":lloros:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "lloros",
-    "k": [
-      "lloros"
-    ]
-  },
-  "mano_aprobacion": {
-    "n": "mano_aprobacion",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":mano_aprobacion:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "mano_aprobacion",
-    "k": [
-      "mano_aprobacion"
-    ]
-  },
-  "mas_uno": {
-    "n": "mas_uno",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":mas_uno:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "mas_uno",
-    "k": [
-      "mas_uno"
-    ]
-  },
-  "meh": {
-    "n": "meh",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":meh:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "meh",
-    "k": [
-      "meh"
-    ]
-  },
-  "menos_uno": {
-    "n": "menos_uno",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":menos_uno:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "menos_uno",
-    "k": [
-      "menos_uno"
-    ]
-  },
-  "mundo": {
-    "n": "mundo",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":mundo:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "mundo",
-    "k": [
-      "mundo"
-    ]
-  },
-  "musculo": {
-    "n": "musculo",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":musculo:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "musculo",
-    "k": [
-      "musculo"
-    ]
-  },
-  "nerd": {
-    "n": "nerd",
-    "ca": "mumoji",
-    "o": 0,
-    "s": ":nerd:",
-    "ss": [],
-    "d": null,
-    "ds": [],
-    "co": "nerd",
+    "co": "mu_nerd",
     "k": [
       "nerd"
     ]
   },
-  "neutra": {
-    "n": "neutra",
+  "mu_grinning": {
+    "n": "mumuki grinning face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":neutra:",
+    "o": 1,
+    "s":":mu_grinning:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "neutra",
+    "co": "mu_grinning",
     "k": [
-      "neutra"
+      "grinning"
     ]
   },
-  "no_interesado": {
-    "n": "no_interesado",
+  "mu_smiley": {
+    "n": "mumuki smiling face with open mouth",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":no_interesado:",
+    "o": 2,
+    "s":":mu_smiley:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "no_interesado",
+    "co": "mu_smiley",
     "k": [
-      "no_interesado"
+      "smiley"
     ]
   },
-  "nota": {
-    "n": "nota",
+  "mu_smile": {
+    "n": "mumuki smiling face with open mouth & smiling eyes",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":nota:",
+    "o": 3,
+    "s":":mu_smile:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "nota",
+    "co": "mu_smile",
     "k": [
-      "nota"
+      "smile"
     ]
   },
-  "notas": {
-    "n": "notas",
+  "mu_grin": {
+    "n": "mumuki grinning face with smiling eyes",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":notas:",
+    "o": 4,
+    "s":":mu_grin:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "notas",
+    "co": "mu_grin",
     "k": [
-      "notas"
+      "grin"
     ]
   },
-  "oficina": {
-    "n": "oficina",
+  "mu_laughing": {
+    "n": "mumuki smiling face with open mouth & closed eyes",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":oficina:",
-    "ss": [],
+    "o": 5,
+    "s":":mu_laughing:",
+    "ss": [
+      ":mu_satisfied:"
+    ],
     "d": null,
     "ds": [],
-    "co": "oficina",
+    "co": "mu_laughing",
     "k": [
-      "oficina"
+      "laughing"
     ]
   },
-  "ojos": {
-    "n": "ojos",
+  "mu_sweat_smile": {
+    "n": "mumuki smiling face with open mouth & cold sweat",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":ojos:",
+    "o": 6,
+    "s":":mu_sweat_smile:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "ojos",
+    "co": "mu_sweat_smile",
     "k": [
-      "ojos"
+      "sweat_smile"
     ]
   },
-  "ojos_blanco": {
-    "n": "ojos_blanco",
+  "mu_joy": {
+    "n": "mumuki face with tears of joy",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":ojos_blanco:",
+    "o": 7,
+    "s":":mu_joy:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "ojos_blanco",
+    "co": "mu_joy",
     "k": [
-      "ojos_blanco"
+      "joy"
     ]
   },
-  "ordenador": {
-    "n": "ordenador",
+  "mu_relaxed": {
+    "n": "mumuki smiling face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":ordenador:",
+    "o": 9,
+    "s":":mu_relaxed:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "ordenador",
+    "co": "mu_relaxed",
     "k": [
-      "ordenador"
+      "relaxed"
     ]
   },
-  "pensamiento": {
-    "n": "pensamiento",
+  "mu_blush": {
+    "n": "mumuki smiling face with smiling eyes",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":pensamiento:",
+    "o": 10,
+    "s":":mu_blush:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "pensamiento",
+    "co": "mu_blush",
     "k": [
-      "pensamiento"
+      "blush"
     ]
   },
-  "pensativo2": {
-    "n": "pensativo2",
+  "mu_innocent": {
+    "n": "mumuki smiling face with halo",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":pensativo2:",
+    "o": 11,
+    "s":":mu_innocent:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "pensativo2",
+    "co": "mu_innocent",
     "k": [
-      "pensativo2"
+      "innocent"
     ]
   },
-  "pergamino": {
-    "n": "pergamino",
+  "mu_slight_smile": {
+    "n": "mumuki slightly smiling face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":pergamino:",
-    "ss": [],
+    "o": 12,
+    "s":":mu_slight_smile:",
+    "ss": [
+      ":mu_slightly_smiling_face:"
+    ],
     "d": null,
     "ds": [],
-    "co": "pergamino",
+    "co": "mu_slight_smile",
     "k": [
-      "pergamino"
+      "slight_smile"
     ]
   },
-  "perro": {
-    "n": "perro",
+  "mu_wink": {
+    "n": "mumuki winking face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":perro:",
+    "o": 14,
+    "s":":mu_wink:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "perro",
+    "co": "mu_wink",
     "k": [
-      "perro"
+      "wink"
     ]
   },
-  "picante": {
-    "n": "picante",
+  "mu_relieved": {
+    "n": "mumuki relieved face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":picante:",
+    "o": 15,
+    "s":":mu_relieved:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "picante",
+    "co": "mu_relieved",
     "k": [
-      "picante"
+      "relieved"
     ]
   },
-  "play": {
-    "n": "play",
+  "mu_kissing_heart": {
+    "n": "mumuki face blowing a kiss",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":play:",
+    "o": 17,
+    "s":":mu_kissing_heart:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "play",
+    "co": "mu_kissing_heart",
     "k": [
-      "play"
+      "kissing_heart"
     ]
   },
-  "rayo": {
-    "n": "rayo",
+  "mu_yum": {
+    "n": "mumuki face savouring delicious food",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":rayo:",
+    "o": 21,
+    "s":":mu_yum:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "rayo",
+    "co": "mu_yum",
     "k": [
-      "rayo"
+      "yum"
     ]
   },
-  "reloj": {
-    "n": "reloj",
+  "mu_stuck_out_tongue": {
+    "n": "mumuki face with stuck-out tongue",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":reloj:",
+    "o": 22,
+    "s":":mu_stuck_out_tongue:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "reloj",
+    "co": "mu_stuck_out_tongue",
     "k": [
-      "reloj"
+      "stuck_out_tongue"
     ]
   },
-  "reloj_arena": {
-    "n": "reloj_arena",
+  "mu_stuck_out_tongue_winking_eye": {
+    "n": "mumuki face with stuck-out tongue & winking eye",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":reloj_arena:",
+    "o": 24,
+    "s":":mu_stuck_out_tongue_winking_eye:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "reloj_arena",
+    "co": "mu_stuck_out_tongue_winking_eye",
     "k": [
-      "reloj_arena"
+      "stuck_out_tongue_winking_eye"
     ]
   },
-  "risa": {
-    "n": "risa",
+  "mu_sunglasses": {
+    "n": "mumuki smiling face with sunglasses",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":risa:",
+    "o": 29,
+    "s":":mu_sunglasses:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "risa",
+    "co": "mu_sunglasses",
     "k": [
-      "risa"
+      "sunglasses"
     ]
   },
-  "rubor": {
-    "n": "rubor",
+  "mu_smirk": {
+    "n": "mumuki smirking face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":rubor:",
+    "o": 31,
+    "s":":mu_smirk:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "rubor",
+    "co": "mu_smirk",
     "k": [
-      "rubor"
+      "smirk"
     ]
   },
-  "sabroso": {
-    "n": "sabroso",
+  "mu_unamused": {
+    "n": "mumuki unamused face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sabroso:",
+    "o": 32,
+    "s":":mu_unamused:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sabroso",
+    "co": "mu_unamused",
     "k": [
-      "sabroso"
+      "unamused"
     ]
   },
-  "satelite": {
-    "n": "satelite",
+  "mu_disappointed": {
+    "n": "mumuki disappointed face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":satelite:",
+    "o": 33,
+    "s":":mu_disappointed:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "satelite",
+    "co": "mu_disappointed",
     "k": [
-      "satelite"
+      "disappointed"
     ]
   },
-  "silencioso": {
-    "n": "silencioso",
+  "mu_pensive": {
+    "n": "mumuki pensive face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":silencioso:",
+    "o": 34,
+    "s":":mu_pensive:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "silencioso",
+    "co": "mu_pensive",
     "k": [
-      "silencioso"
+      "pensive"
     ]
   },
-  "sonrie1": {
-    "n": "sonrie1",
+  "mu_worried": {
+    "n": "mumuki worried face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sonrie1:",
+    "o": 35,
+    "s":":mu_worried:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sonrie1",
+    "co": "mu_worried",
     "k": [
-      "sonrie1"
+      "worried"
     ]
   },
-  "sonriendo": {
-    "n": "sonriendo",
+  "mu_confused": {
+    "n": "mumuki confused face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sonriendo:",
+    "o": 36,
+    "s":":mu_confused:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sonriendo",
+    "co": "mu_confused",
     "k": [
-      "sonriendo"
+      "confused"
     ]
   },
-  "sonriente": {
-    "n": "sonriente",
+  "mu_persevere": {
+    "n": "mumuki persevering face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sonriente:",
+    "o": 39,
+    "s":":mu_persevere:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sonriente",
+    "co": "mu_persevere",
     "k": [
-      "sonriente"
+      "persevere"
     ]
   },
-  "sonrisa": {
-    "n": "sonrisa",
+  "mu_cry": {
+    "n": "mumuki crying face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sonrisa:",
+    "o": 43,
+    "s":":mu_cry:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sonrisa",
+    "co": "mu_cry",
     "k": [
-      "sonrisa"
+      "cry"
     ]
   },
-  "sonrisa_burlona": {
-    "n": "sonrisa_burlona",
+  "mu_sob": {
+    "n": "mumuki loudly crying face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sonrisa_burlona:",
+    "o": 44,
+    "s":":mu_sob:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sonrisa_burlona",
+    "co": "mu_sob",
     "k": [
-      "sonrisa_burlona"
+      "sob"
     ]
   },
-  "sonrisa_sudor": {
-    "n": "sonrisa_sudor",
+  "mu_triumph": {
+    "n": "mumuki face with steam from nose",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sonrisa_sudor:",
+    "o": 45,
+    "s":":mu_triumph:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sonrisa_sudor",
+    "co": "mu_triumph",
     "k": [
-      "sonrisa_sudor"
+      "triumph"
     ]
   },
-  "sudor": {
-    "n": "sudor",
+  "mu_rage": {
+    "n": "mumuki pouting face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":sudor:",
+    "o": 47,
+    "s":":mu_rage:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "sudor",
+    "co": "mu_rage",
     "k": [
-      "sudor"
+      "rage"
     ]
   },
-  "susto": {
-    "n": "susto",
+  "mu_flushed": {
+    "n": "mumuki flushed face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":susto:",
+    "o": 50,
+    "s":":mu_flushed:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "susto",
+    "co": "mu_flushed",
     "k": [
-      "susto"
+      "flushed"
     ]
   },
-  "susto2": {
-    "n": "susto2",
+  "mu_scream": {
+    "n": "mumuki face screaming in fear",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":susto2:",
+    "o": 51,
+    "s":":mu_scream:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "susto2",
+    "co": "mu_scream",
     "k": [
-      "susto2"
+      "scream"
     ]
   },
-  "te_amo": {
-    "n": "te_amo",
+  "mu_fearful": {
+    "n": "mumuki fearful face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":te_amo:",
+    "o": 52,
+    "s":":mu_fearful:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "te_amo",
+    "co": "mu_fearful",
     "k": [
-      "te_amo"
+      "fearful"
     ]
   },
-  "tele": {
-    "n": "tele",
+  "mu_disappointed_relieved": {
+    "n": "mumuki disappointed but relieved face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":tele:",
+    "o": 54,
+    "s":":mu_disappointed_relieved:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "tele",
+    "co": "mu_disappointed_relieved",
     "k": [
-      "tele"
+      "disappointed_relieved"
     ]
   },
-  "tenacidad": {
-    "n": "tenacidad",
+  "mu_sweat": {
+    "n": "mumuki face with cold sweat",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":tenacidad:",
+    "o": 55,
+    "s":":mu_sweat:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "tenacidad",
+    "co": "mu_sweat",
     "k": [
-      "tenacidad"
+      "sweat"
     ]
   },
-  "triste": {
-    "n": "triste",
+  "mu_face_with_hand_over_mouth": {
+    "n": "mumuki face with hand over mouth",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":triste:",
+    "o": 58,
+    "s":":mu_face_with_hand_over_mouth:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "triste",
+    "co": "mu_face_with_hand_over_mouth",
     "k": [
-      "triste"
+      "face_with_hand_over_mouth"
     ]
   },
-  "triunfo": {
-    "n": "triunfo",
+  "mu_shushing_face": {
+    "n": "mumuki shushing face",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":triunfo:",
+    "o": 59,
+    "s":":mu_shushing_face:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "triunfo",
+    "co": "mu_shushing_face",
     "k": [
-      "triunfo"
+      "shushing_face"
     ]
   },
-  "trofeo": {
-    "n": "trofeo",
+  "mu_no_mouth": {
+    "n": "mumuki face without mouth",
     "ca": "mumoji",
-    "o": 0,
-    "s": ":trofeo:",
+    "o": 61,
+    "s":":mu_no_mouth:",
     "ss": [],
     "d": null,
     "ds": [],
-    "co": "trofeo",
+    "co": "mu_no_mouth",
     "k": [
-      "trofeo"
+      "no_mouth"
+    ]
+  },
+  "mu_neutral_face": {
+    "n": "mumuki neutral face",
+    "ca": "mumoji",
+    "o": 62,
+    "s":":mu_neutral_face:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_neutral_face",
+    "k": [
+      "neutral_face"
+    ]
+  },
+  "mu_expressionless": {
+    "n": "mumuki expressionless face",
+    "ca": "mumoji",
+    "o": 63,
+    "s":":mu_expressionless:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_expressionless",
+    "k": [
+      "expressionless"
+    ]
+  },
+  "mu_hushed": {
+    "n": "mumuki hushed face",
+    "ca": "mumoji",
+    "o": 66,
+    "s":":mu_hushed:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_hushed",
+    "k": [
+      "hushed"
+    ]
+  },
+  "mu_anguished": {
+    "n": "mumuki anguished face",
+    "ca": "mumoji",
+    "o": 68,
+    "s":":mu_anguished:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_anguished",
+    "k": [
+      "anguished"
+    ]
+  },
+  "mu_open_mouth": {
+    "n": "mumuki face with open mouth",
+    "ca": "mumoji",
+    "o": 69,
+    "s":":mu_open_mouth:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_open_mouth",
+    "k": [
+      "open_mouth"
+    ]
+  },
+  "mu_sleeping": {
+    "n": "mumuki sleeping face",
+    "ca": "mumoji",
+    "o": 71,
+    "s":":mu_sleeping:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_sleeping",
+    "k": [
+      "sleeping"
+    ]
+  },
+  "mu_clap": {
+    "n": "mumuki clapping hands",
+    "ca": "mumoji",
+    "o": 124,
+    "s":":mu_clap:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_clap",
+    "k": [
+      "clap"
+    ]
+  },
+  "mu_thumbsup": {
+    "n": "mumuki thumbs up",
+    "ca": "mumoji",
+    "o": 131,
+    "s":":mu_thumbsup:",
+    "ss": [
+      ":mu_+1:",
+      ":mu_thumbup:"
+    ],
+    "d": null,
+    "ds": [],
+    "co": "mu_thumbsup",
+    "k": [
+      "thumbsup"
+    ]
+  },
+  "mu_thumbsdown": {
+    "n": "mumuki thumbs down",
+    "ca": "mumoji",
+    "o": 137,
+    "s":":mu_thumbsdown:",
+    "ss": [
+      ":mu_-1:",
+      ":mu_thumbdown:"
+    ],
+    "d": null,
+    "ds": [],
+    "co": "mu_thumbsdown",
+    "k": [
+      "thumbsdown"
+    ]
+  },
+  "mu_love_you_gesture": {
+    "n": "mumuki love-you gesture",
+    "ca": "mumoji",
+    "o": 179,
+    "s":":mu_love_you_gesture:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_love_you_gesture",
+    "k": [
+      "love_you_gesture"
+    ]
+  },
+  "mu_ok_hand": {
+    "n": "mumuki OK hand",
+    "ca": "mumoji",
+    "o": 191,
+    "s":":mu_ok_hand:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_ok_hand",
+    "k": [
+      "ok_hand"
+    ]
+  },
+  "mu_wave": {
+    "n": "mumuki waving hand",
+    "ca": "mumoji",
+    "o": 251,
+    "s":":mu_wave:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_wave",
+    "k": [
+      "wave"
+    ]
+  },
+  "mu_muscle": {
+    "n": "mumuki flexed biceps",
+    "ca": "mumoji",
+    "o": 263,
+    "s":":mu_muscle:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_muscle",
+    "k": [
+      "muscle"
+    ]
+  },
+  "mu_dog": {
+    "n": "mumuki dog face",
+    "ca": "mumoji",
+    "o": 1012,
+    "s":":mu_dog:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_dog",
+    "k": [
+      "dog"
+    ]
+  },
+  "mu_cat": {
+    "n": "mumuki cat face",
+    "ca": "mumoji",
+    "o": 1013,
+    "s":":mu_cat:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_cat",
+    "k": [
+      "cat"
+    ]
+  },
+  "mu_earth_americas": {
+    "n": "mumuki globe showing Americas",
+    "ca": "mumoji",
+    "o": 1144,
+    "s":":mu_earth_americas:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_earth_americas",
+    "k": [
+      "earth_americas"
+    ]
+  },
+  "mu_zap": {
+    "n": "mumuki high voltage",
+    "ca": "mumoji",
+    "o": 1151,
+    "s":":mu_zap:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_zap",
+    "k": [
+      "zap"
+    ]
+  },
+  "mu_boom": {
+    "n": "mumuki collision",
+    "ca": "mumoji",
+    "o": 1153,
+    "s":":mu_boom:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_boom",
+    "k": [
+      "boom"
+    ]
+  },
+  "mu_trophy": {
+    "n": "mumuki trophy",
+    "ca": "mumoji",
+    "o": 1551,
+    "s":":mu_trophy:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_trophy",
+    "k": [
+      "trophy"
+    ]
+  },
+  "mu_satellite_orbital": {
+    "n": "mumuki satellite",
+    "ca": "mumoji",
+    "o": 1663,
+    "s":":mu_satellite_orbital:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_satellite_orbital",
+    "k": [
+      "satellite_orbital"
+    ]
+  },
+  "mu_house": {
+    "n": "mumuki house",
+    "ca": "mumoji",
+    "o": 1701,
+    "s":":mu_house:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_house",
+    "k": [
+      "house"
+    ]
+  },
+  "mu_office": {
+    "n": "mumuki office building",
+    "ca": "mumoji",
+    "o": 1707,
+    "s":":mu_office:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_office",
+    "k": [
+      "office"
+    ]
+  },
+  "mu_watch": {
+    "n": "mumuki watch",
+    "ca": "mumoji",
+    "o": 1741,
+    "s":":mu_watch:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_watch",
+    "k": [
+      "watch"
+    ]
+  },
+  "mu_calling": {
+    "n": "mumuki mobile phone with arrow",
+    "ca": "mumoji",
+    "o": 1743,
+    "s":":mu_calling:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_calling",
+    "k": [
+      "calling"
+    ]
+  },
+  "mu_desktop": {
+    "n": "mumuki desktop computer",
+    "ca": "mumoji",
+    "o": 1746,
+    "s":":mu_desktop:",
+    "ss": [
+      ":mu_desktop_computer:"
+    ],
+    "d": null,
+    "ds": [],
+    "co": "mu_desktop",
+    "k": [
+      "desktop"
+    ]
+  },
+  "mu_tv": {
+    "n": "mumuki television",
+    "ca": "mumoji",
+    "o": 1767,
+    "s":":mu_tv:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_tv",
+    "k": [
+      "tv"
+    ]
+  },
+  "mu_hourglass": {
+    "n": "mumuki hourglass",
+    "ca": "mumoji",
+    "o": 1776,
+    "s":":mu_hourglass:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_hourglass",
+    "k": [
+      "hourglass"
+    ]
+  },
+  "mu_bulb": {
+    "n": "mumuki light bulb",
+    "ca": "mumoji",
+    "o": 1781,
+    "s":":mu_bulb:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_bulb",
+    "k": [
+      "bulb"
+    ]
+  },
+  "mu_moneybag": {
+    "n": "mumuki money bag",
+    "ca": "mumoji",
+    "o": 1791,
+    "s":":mu_moneybag:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_moneybag",
+    "k": [
+      "moneybag"
+    ]
+  },
+  "mu_scroll": {
+    "n": "mumuki scroll",
+    "ca": "mumoji",
+    "o": 1872,
+    "s":":mu_scroll:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_scroll",
+    "k": [
+      "scroll"
+    ]
+  },
+  "mu_pencil": {
+    "n": "mumuki memo",
+    "ca": "mumoji",
+    "o": 1916,
+    "s":":mu_pencil:",
+    "ss": [
+      ":mu_memo:"
+    ],
+    "d": null,
+    "ds": [],
+    "co": "mu_pencil",
+    "k": [
+      "pencil"
+    ]
+  },
+  "mu_warning": {
+    "n": "mumuki warning",
+    "ca": "mumoji",
+    "o": 2018,
+    "s":":mu_warning:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_warning",
+    "k": [
+      "warning"
+    ]
+  },
+  "mu_globe_with_meridians": {
+    "n": "mumuki globe with meridians",
+    "ca": "mumoji",
+    "o": 2030,
+    "s":":mu_globe_with_meridians:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_globe_with_meridians",
+    "k": [
+      "globe_with_meridians"
+    ]
+  },
+  "mu_arrow_forward": {
+    "n": "mumuki play button",
+    "ca": "mumoji",
+    "o": 2079,
+    "s":":mu_arrow_forward:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_arrow_forward",
+    "k": [
+      "arrow_forward"
+    ]
+  },
+  "mu_notes": {
+    "n": "mumuki musical notes",
+    "ca": "mumoji",
+    "o": 2113,
+    "s":":mu_notes:",
+    "ss": [],
+    "d": null,
+    "ds": [],
+    "co": "mu_notes",
+    "k": [
+      "notes"
     ]
   },
   "2049": {
