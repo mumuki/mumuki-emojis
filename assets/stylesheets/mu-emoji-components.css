@@ -142,13 +142,18 @@
   padding: 0 0 0 6px;
 }
 
-.mu-emoji-dropdown-menu-emojis-item:hover {
-  cursor: pointer;
+.mu-emoji-dropdown-menu-emojis-item {
+  line-height: 1.4;
+  border-radius: 5px;
 }
 
-.mu-emoji-dropdown-menu-emojis-item:hover > span {
+.mu-emoji-dropdown-menu-emojis-item:hover {
+  cursor: pointer;
+  background-color: #BBBBBB;
+}
+
+.mu-emoji-dropdown-menu-emojis-item:hover > i {
   filter: brightness(0.90);
-  transform: scale(1.000);
 }
 
 .mu-emoji-dropdown-menu-emojis::-webkit-scrollbar {
