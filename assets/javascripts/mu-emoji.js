@@ -12,15 +12,6 @@ mumuki.load(function () {
   var ACTIVE_CLASS = 'active';
   var DISABLED_CLASS = 'disabled';
 
-  var TONE_0 = '1f3fa';
-  var TONE_1 = '1f3fb';
-  var TONE_2 = '1f3fc';
-  var TONE_3 = '1f3fd';
-  var TONE_4 = '1f3fe';
-  var TONE_5 = '1f3ff';
-
-  var TONES = [TONE_1, TONE_2, TONE_3, TONE_4, TONE_5];
-
   function noop() {}
   function id(x) { return x }
   function $class(clazz) { return '.' + clazz }
@@ -54,8 +45,6 @@ mumuki.load(function () {
   MuEmoji.DROPDOWN_MENU_EMOJI = MuEmoji.DROPDOWN_MENU_EMOJIS + '-item';
 
   MuEmoji.DROPDOWN_MENU_FOOTER = 'mu-emojis-footer';
-  MuEmoji.DROPDOWN_MENU_FOOTER_DIVERSITIES = 'mu-emoji-diversities';
-  MuEmoji.DROPDOWN_MENU_FOOTER_EMOJI_ONE_LEGEND = 'emoji-one-legend';
 
   function hideAllDropdownMenues() {
     $($class(MuEmoji.DROPDOWN_MENU)).removeClass(OPEN_CLASS);
@@ -120,10 +109,6 @@ mumuki.load(function () {
     clickedOnEmoji: function (emoji) {
       eval(this.$element.data('on-emoji-click'))(emoji);
       this.closeDropdown();
-    },
-
-    hasDiversityEnable: function () {
-      return this.$element.data('with-diversity');
     },
 
   }
@@ -196,10 +181,6 @@ mumuki.load(function () {
       this.$element.append(this.footer.create());
     },
 
-    clickedOnTone: function (clickedTone) {
-      this.emojis.clickedOnTone(clickedTone);
-    },
-
     open: function () {
       this.$element.addClass(OPEN_CLASS);
       this.search.$input.focus();
@@ -227,10 +208,6 @@ mumuki.load(function () {
 
     clickedOnEmoji: function (emoji) {
       this.parent.clickedOnEmoji(emoji);
-    },
-
-    hasDiversityEnable: function () {
-      return this.parent.hasDiversityEnable();
     },
 
     scrollToCategory(category) {
@@ -406,7 +383,6 @@ mumuki.load(function () {
   function MuEmojiDropdownMenuEmojis(parent) {
     this.parent = parent;
     this.categories = [];
-    this.emojiTone = TONE_0;
   }
 
   MuEmojiDropdownMenuEmojis.prototype = {
@@ -441,17 +417,8 @@ mumuki.load(function () {
       this.$element.scrollTop(scrollTop);
     },
 
-    clickedOnTone: function (clickedTone) {
-      this.emojiTone = clickedTone;
-      this.createEmojis();
-    },
-
     clickedOnEmoji: function (emoji) {
       this.parent.clickedOnEmoji(emoji)
-    },
-
-    hasDiversityEnable: function () {
-      return this.parent.hasDiversityEnable();
     },
 
   }
@@ -492,8 +459,7 @@ mumuki.load(function () {
       var self = this
       self.category.list.forEach(function (emoji) {
         if (emoji.diversity) return;
-        var categoryName = !self.hasDiversity(emoji) ? (emoji.sprite_category || emoji.category) : 'diversity';
-        emoji = !self.hasDiversity(emoji) ? emoji : self.diversityEmoji(emoji);
+        var categoryName = (emoji.sprite_category || emoji.category);
         var $emoji = $('<li>', {
           class: MuEmoji.DROPDOWN_MENU_EMOJI,
           html: self.icon(categoryName, emoji),
@@ -515,24 +481,6 @@ mumuki.load(function () {
       });
     },
 
-    toneIndex: function () {
-      return TONES.indexOf(this.parent.emojiTone);
-    },
-
-    diversityEmoji(emoji) {
-      var diversityKey = emoji.diversities[this.toneIndex()];
-      var diversityEmoji = window.muEmojis.object[diversityKey];
-      return window.muEmojis.fullEmoji(diversityEmoji);
-    },
-
-    hasDiversity: function (emoji) {
-      return emoji.diversities.length !== 0 && this.toneIndex() >= 0 && this.hasDiversityEnable();
-    },
-
-    hasDiversityEnable: function () {
-      return this.parent.hasDiversityEnable();
-    }
-
   }
 
 
@@ -546,39 +494,7 @@ mumuki.load(function () {
       this.$element = $('<div>', {
         class: MuEmoji.DROPDOWN_MENU_FOOTER,
       });
-      if (this.parent.hasDiversityEnable()) {
-        this.createDiversities();
-      }
-      this.createEmojiOneLegend();
       return this.$element;
-    },
-
-    createDiversities: function () {
-      this.$diversities = $('<div>', {
-        class: MuEmoji.DROPDOWN_MENU_FOOTER_DIVERSITIES,
-      });
-      this.createDiversityItems();
-      this.$element.append(this.$diversities);
-    },
-
-    createDiversityItems: function () {
-      var self = this;
-      [TONE_0].concat(TONES).forEach(function (tone) {
-        self.$diversities.append($('<i>', {
-          class: 'mu-emoji diversity _' + tone,
-          click: function (event) {
-            self.parent.clickedOnTone(tone);
-          }
-        }));
-      });
-    },
-
-    createEmojiOneLegend: function () {
-      this.$emojiOneLegend = $('<div>', {
-        class: MuEmoji.DROPDOWN_MENU_FOOTER_EMOJI_ONE_LEGEND,
-        html: window.emojiOneLegend + ' <a href="https://www.emojione.com/" target="_blank">EmojiOne</a></div>'
-      });
-      this.$element.append(this.$emojiOneLegend);
     },
 
   }
