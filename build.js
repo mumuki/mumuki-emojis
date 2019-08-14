@@ -21,10 +21,10 @@ Object.values(emojis).forEach(function (e) {
 
   codepoints[e.code_points.fully_qualified] = value;
 
-  shortnames[e.shortname] = value;
-  if (e.shortname_alternates && e.shortname_alternates.length) e.shortname_alternates.forEach((n) => shortnames[n] = value);
-  if (e.keywords && e.keywords.length) e.keywords.forEach((n) => shortnames[n] = value);
-
+  shortnames[e.shortname.replace(/:/g, '')] = value;
+  if (e.shortname_alternates && e.shortname_alternates.length) {
+    e.shortname_alternates.forEach((n) => shortnames[n.replace(/:/g, '')] = value);
+  }
 });
 
 fs.writeFileSync("./mu-emojis-by-codepoints.json", JSON.stringify(codepoints, null, 2));
