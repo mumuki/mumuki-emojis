@@ -1,4 +1,4 @@
-function loadMuemoji() {
+function renderMumukiEmojis() {
 
   var ESCAPE_KEY = 27;
 
