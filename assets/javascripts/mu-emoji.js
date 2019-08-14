@@ -1,10 +1,4 @@
-var mumuki = {
-  load: function (callback) {
-    return callback();
-  }
-}
-
-mumuki.load(function () {
+function loadMuemoji() {
 
   var ESCAPE_KEY = 27;
 
@@ -512,4 +506,4 @@ mumuki.load(function () {
 
   $($class(MuEmoji.DROPDOWN)).renderEmojis();
 
-});
+}

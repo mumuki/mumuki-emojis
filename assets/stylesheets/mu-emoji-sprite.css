@@ -21,7 +21,7 @@
 .mu-emoji-dropdown-menu {
   box-sizing: border-box;
   position: absolute;
-  width: 370px;
+  width: 375px;
   height: 390px;
   border: 1px solid #AAAAAA;
   border-radius: 5px;
@@ -145,6 +145,8 @@
 .mu-emoji-dropdown-menu-emojis-item {
   line-height: 1.4;
   border-radius: 5px;
+  width: 40px;
+  height: 40px;
 }
 
 .mu-emoji-dropdown-menu-emojis-item:hover {
