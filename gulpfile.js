@@ -39,17 +39,17 @@ function clean() {
 };
 
 function images() {
-  return gulp.src('src/images/**')
+  return gulp.src('assets/images/**')
     .pipe(gulp.dest('dist/images'));
 };
 
 function css() {
-  return gulp.src('src/stylesheets/**/*.css')
+  return gulp.src('assets/stylesheets/**/*.css')
     .pipe(gulp.dest('dist/stylesheets'));
 };
 
 function js() {
-  return gulp.src('src/javascripts/**/*.js')
+  return gulp.src('assets/javascripts/**/*.js')
     .pipe(concat('mumuki-emojis.js'))
     .pipe(replace(/window\.muEmojis\.object = (.*);/, `window.muEmojis.object = ${JSON.stringify(codepoints)};`))
     .pipe(gulp.dest('dist/javascripts/'));
