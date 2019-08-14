@@ -1,0 +1,28 @@
+{
+  "name": "mumuki-emojis",
+  "version": "1.0.0",
+  "description": "Mumuki Emojis",
+  "main": "build.js",
+  "scripts": {
+    "dev": "./devstart",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mumuki/mumuki-emojis.git"
+  },
+  "author": "Federico Scarpa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mumuki/mumuki-emojis/issues"
+  },
+  "homepage": "https://github.com/mumuki/mumuki-emojis#readme",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-replace": "^1.0.0"
+  }
+}

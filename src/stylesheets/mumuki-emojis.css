@@ -5449,7 +5449,7 @@ i.mu-emoji {
   line-height: normal;
   vertical-align: middle;
   background-repeat: no-repeat;
-  background-image: url("/assets/images/emojis/mumoji.png");
+  background-image: url("../images/emojis/mumoji.png");
 }
 
 .mu-emoji.mumoji._mu_warning { background-position: 0 0 }

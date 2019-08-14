@@ -1,7 +1,5 @@
 (function (window) {
 
-  // Emoji icons provided free by [EmojiOne](https://www.emojione.com)
-
   window.muEmojis = window.muEmojis || {};
 
   var availableLanguages = ['en', 'es', 'pt'];
@@ -108,12 +106,6 @@
     }
   ]
 
-  window._emojiOneLegend = {
-    en: 'Emoji icons provided free by',
-    es: 'Los emojis son proporcionados gratuitamente por',
-    pt: 'Emoji ícones fornecidos gratuitamente pelo',
-  }
-
   window._searchEmojiPlaceholder = {
     en: 'Search emoji',
     es: 'Buscar emoticón',
@@ -149,7 +141,6 @@
   })
 
   window.muEmojis.inputPlaceholder = window.muEmojis._inputPlaceholder_[currentLanguage()];
-  window.emojiOneLegend = window._emojiOneLegend[currentLanguage()];
   window.searchEmojiPlaceholder = window._searchEmojiPlaceholder[currentLanguage()];
 
 })(window);

@@ -1,4 +1,8 @@
 var fs = require('fs');
+var del = require('del');
+var gulp = require('gulp');
+var concat = require('gulp-concat');
+var replace = require('gulp-replace');
 
 var emojis = JSON.parse(fs.readFileSync("./mumuki-emojis.json", "utf8"));
 
@@ -30,7 +34,25 @@ Object.values(emojis).forEach(function (e) {
 fs.writeFileSync("./mumuki-emojis-codepoints.json", JSON.stringify(codepoints, null, 2));
 fs.writeFileSync("./mumuki-emojis-shortnames.json", JSON.stringify(shortnames, null, 2));
 
-var availables = fs.readFileSync("./assets/javascripts/mumuki-emojis-availables.js", "utf8");
-var replace = availables.replace(/window\.muEmojis\.object = (.*);/, `window.muEmojis.object = ${JSON.stringify(codepoints)};`);
+function clean() {
+  return del('dist');
+};
 
-fs.writeFileSync("./assets/javascripts/mumuki-emojis-availables.js", replace);
+function images() {
+  return gulp.src('src/images/**')
+    .pipe(gulp.dest('dist/images'));
+};
+
+function css() {
+  return gulp.src('src/stylesheets/**/*.css')
+    .pipe(gulp.dest('dist/stylesheets'));
+};
+
+function js() {
+  return gulp.src('src/javascripts/**/*.js')
+    .pipe(concat('mumuki-emojis.js'))
+    .pipe(replace(/window\.muEmojis\.object = (.*);/, `window.muEmojis.object = ${JSON.stringify(codepoints)};`))
+    .pipe(gulp.dest('dist/javascripts/'));
+};
+
+exports.build = gulp.series(clean, gulp.parallel(css, js, images));

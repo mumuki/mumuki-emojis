@@ -1,2 +1,5 @@
+dist/
+node_modules/
+
 mumuki-emojis-codepoints.json
 mumuki-emojis-shortnames.json
