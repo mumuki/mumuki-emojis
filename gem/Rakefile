@@ -1,0 +1,22 @@
+require "bundler/gem_tasks"
+require "rspec/core/rake_task"
+
+RSpec::Core::RakeTask.new(:spec)
+
+task :default => :spec
+
+namespace :wrapper do
+  desc 'Wrap emojis assets into this gem'
+  task wrap: :clean do
+    cp_r '../assets', 'app'
+    cp '../mumuki-emojis-shortnames.json', 'app/assets/json'
+  end
+
+  task :clean do
+    rm_rf 'app'
+    mkdir_p 'app/assets/json'
+    mkdir_p 'app/assets/images'
+    mkdir_p 'app/assets/javascripts'
+    mkdir_p 'app/assets/stylesheets'
+  end
+end
