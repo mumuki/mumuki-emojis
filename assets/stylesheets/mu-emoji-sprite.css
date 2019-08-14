@@ -2361,8 +2361,8 @@ i.mu-emoji {
 .mu-emoji._1f9c3:before { /* beverage box */
   content: "\01F9C3";
 }
-.mu-emoji._1f9c9:before { /* mate */
-  content: "\01F9C9";
+.mu-emoji._1f9c9-fe0f:before { /* mate */
+  content: "\01F9C9\0fe0f";
 }
 .mu-emoji._1f9ca:before { /* ice */
   content: "\01F9CA";

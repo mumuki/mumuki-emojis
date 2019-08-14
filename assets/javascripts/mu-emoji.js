@@ -459,10 +459,9 @@ mumuki.load(function () {
       var self = this
       self.category.list.forEach(function (emoji) {
         if (emoji.diversity) return;
-        var categoryName = (emoji.sprite_category || emoji.category);
         var $emoji = $('<li>', {
           class: MuEmoji.DROPDOWN_MENU_EMOJI,
-          html: self.icon(categoryName, emoji),
+          html: self.icon(emoji.category, emoji),
           click: function () {
             self.parent.clickedOnEmoji(emoji);
           }

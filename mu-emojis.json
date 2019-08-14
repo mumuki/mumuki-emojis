@@ -95860,5 +95860,39 @@
     "keywords": [
       "cloud"
     ]
+  },
+  "1f9c9-fe0f": {
+    "name": "mate",
+    "unicode_version": 12,
+    "category": "food",
+    "order": 1261,
+    "display": 1,
+    "shortname": ":mate:",
+    "shortname_alternates": [],
+    "ascii": [],
+    "diversity": null,
+    "diversities": [],
+    "gender": null,
+    "genders": [],
+    "code_points": {
+      "base": "1f9c9",
+      "fully_qualified": "1f9c9-fe0f",
+      "non_fully_qualified": "1f9c9",
+      "output": "1f9c9-fe0f",
+      "default_matches": [
+        "1f9c9-fe0f",
+        "1f9c9"
+      ],
+      "greedy_matches": [
+        "1f9c9-fe0f",
+        "1f9c9"
+      ],
+      "decimal": ""
+    },
+    "keywords": [
+      "mate",
+      "matienzo",
+      "mateico"
+    ]
   }
 }
