@@ -15,7 +15,6 @@ namespace :wrapper do
   task :clean do
     rm_rf 'app'
     mkdir_p 'app/assets/json'
-    mkdir_p 'app/assets/images'
     mkdir_p 'app/assets/javascripts'
     mkdir_p 'app/assets/stylesheets'
   end
