@@ -1,4 +1,4 @@
-function renderMumukiEmojis() {
+$.fn.renderMumukiEmojis = function () {
 
   var ESCAPE_KEY = 27;
 
