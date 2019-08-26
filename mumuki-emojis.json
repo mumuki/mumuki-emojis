@@ -3247,7 +3247,9 @@
     "order": 26,
     "display": 1,
     "shortname": ":face_with_raised_eyebrow:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":suspect:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -6736,7 +6738,8 @@
     "shortname": ":thumbsup:",
     "shortname_alternates": [
       ":+1:",
-      ":thumbup:"
+      ":thumbup:",
+      ":plus1:"
     ],
     "ascii": [
       "(y)"
@@ -7190,7 +7193,9 @@
     "order": 143,
     "display": 1,
     "shortname": ":punch:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":facepunch:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [
@@ -10186,7 +10191,9 @@
     "order": 227,
     "display": 1,
     "shortname": ":raised_hand:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":hand:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [
@@ -40990,8 +40997,10 @@
     "category": "nature",
     "order": 1046,
     "display": 1,
-    "shortname": ":bee:",
-    "shortname_alternates": [],
+    "shortname": ":honeybee:",
+    "shortname_alternates": [
+      ":bee:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -44247,8 +44256,10 @@
     "category": "nature",
     "order": 1153,
     "display": 1,
-    "shortname": ":boom:",
-    "shortname_alternates": [],
+    "shortname": ":collision:",
+    "shortname_alternates": [
+      ":boom:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -61107,7 +61118,9 @@
     "order": 1621,
     "display": 1,
     "shortname": ":red_car:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":car:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -62565,7 +62578,9 @@
     "order": 1668,
     "display": 1,
     "shortname": ":sailboat:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":boat:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -76099,7 +76114,9 @@
     "order": 2137,
     "display": 1,
     "shortname": ":blue_circle:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      "large_blue_circle"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -77198,7 +77215,9 @@
     "order": 2175,
     "display": 1,
     "shortname": ":clock2:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":2:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -77303,7 +77322,9 @@
     "order": 2178,
     "display": 1,
     "shortname": ":clock5:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":5:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -77478,7 +77499,9 @@
     "order": 2183,
     "display": 1,
     "shortname": ":clock10:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":10:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -90459,7 +90482,8 @@
     "display": 1,
     "shortname": ":person_running:",
     "shortname_alternates": [
-      ":runner:"
+      ":runner:",
+      ":running:"
     ],
     "ascii": [],
     "diversity": null,
@@ -92760,7 +92784,9 @@
     "order": 2646,
     "display": 1,
     "shortname": ":boot:",
-    "shortname_alternates": [],
+    "shortname_alternates": [
+      ":shoe:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -93303,8 +93329,10 @@
     "category": "people",
     "order": 2663,
     "display": 1,
-    "shortname": ":eyeglasses:",
-    "shortname_alternates": [],
+    "shortname": ":glasses:",
+    "shortname_alternates": [
+      ":eyeglasses:"
+    ],
     "ascii": [],
     "diversity": null,
     "diversities": [],
@@ -93459,8 +93487,13 @@
     },
     "keywords": [
       "mate",
+      "mateico",
       "matienzo",
-      "mateico"
+      "materazzi",
+      "matuidi",
+      "material",
+      "mateo",
+      "matias"
     ]
   }
 }
