@@ -77,7 +77,7 @@ $.fn.renderMumukiEmojis = function () {
     },
 
     dropdownToggleIconClass: function () {
-      return this.$element.data('icon-class') || 'fa fa-fw fa-smile-o';
+      return this.$element.data('icon-class') || 'far fa-fw fa-smile';
     },
 
     dropdownMenuAlignmentClass: function () {
@@ -334,7 +334,7 @@ $.fn.renderMumukiEmojis = function () {
 
     createIcon: function () {
       this.$icon = $('<i>', {
-        class: [MuEmoji.DROPDOWN_MENU_SEARCH_ICON, 'fa fa-fw fa-search'].join(' '),
+        class: [MuEmoji.DROPDOWN_MENU_SEARCH_ICON, 'fas fa-fw fa-search'].join(' '),
       });
       this.$element.append(this.$icon);
     },
