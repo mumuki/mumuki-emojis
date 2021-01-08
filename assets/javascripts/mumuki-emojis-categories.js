@@ -20,12 +20,12 @@
     en: "Search emojis",
     es: "Buscar emoticón",
     pt: "Emoticon de busca",
-  }
+  };
 
   window.muEmojis._categories_ = [
     {
       name: "people",
-      icon_class: "fa fa-fw fa-smile-o",
+      icon_class: "far fa-fw fa-smile",
       caption: {
         en: "Smileys & People",
         es: "Sonrisas y gente",
@@ -34,7 +34,7 @@
     },
     {
       name: "nature",
-      icon_class: "fa fa-fw fa-leaf",
+      icon_class: "fas fa-fw fa-leaf",
       caption: {
         en: "Animals & Nature",
         es: "Animales y naturaleza",
@@ -43,7 +43,7 @@
     },
     {
       name: "food",
-      icon_class: "fa fa-fw fa-cutlery",
+      icon_class: "fas fa-fw fa-utensils",
       caption: {
         en: "Food & Drink",
         es: "Comida y bebida",
@@ -52,7 +52,7 @@
     },
     {
       name: "activity",
-      icon_class: "fa fa-fw fa-futbol-o",
+      icon_class: "fas fa-fw fa-futbol",
       caption: {
         en: "Activity",
         es: "Actividad",
@@ -61,7 +61,7 @@
     },
     {
       name: "travel",
-      icon_class: "fa fa-fw fa-plane",
+      icon_class: "fas fa-fw fa-plane",
       caption: {
         en: "Travel & Places",
         es: "Viajes y lugares",
@@ -70,7 +70,7 @@
     },
     {
       name: "objects",
-      icon_class: "fa fa-fw fa-wrench",
+      icon_class: "fas fa-fw fa-wrench",
       caption: {
         en: "Objects",
         es: "Objetos",
@@ -79,7 +79,7 @@
     },
     {
       name: "symbols",
-      icon_class: "fa fa-fw fa-hashtag",
+      icon_class: "fas fa-fw fa-hashtag",
       caption: {
         en: "Symbols",
         es: "Símbolos",
@@ -88,20 +88,20 @@
     },
     {
       name: "flags",
-      icon_class: "fa fa-fw fa-flag-o",
+      icon_class: "far fa-fw fa-flag",
       caption: {
         en: "Flags",
         es: "Banderas",
         pt: "Bandeiras",
       }
     }
-  ]
+  ];
 
   window._searchEmojiPlaceholder = {
     en: 'Search emoji',
     es: 'Buscar emoticón',
     pt: 'Pesquisar emoji',
-  }
+  };
 
   function compareEmojis(a, b) {
     return a.order < b.order ? -1 : (a.order == b.order ? 0 : 1);
