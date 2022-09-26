@@ -22,6 +22,8 @@ jobs:
         working-directory: gem
     - name: Install JavaScript dependencies and build
       run: npm i
+    - name: Install JavaScript dependencies and build
+      run: node_modules/.bin/gulp build
     - name: Wrap gem
       run: ./bin/setup
       working-directory: gem
