@@ -8,7 +8,8 @@ task :default => :spec
 namespace :wrapper do
   desc 'Wrap emojis assets into this gem'
   task wrap: :clean do
-    cp_r '../assets', 'app'
+    cp '../dist/javascripts/mumuki-emojis.js', 'app/assets/javascripts'
+    cp '../dist/stylesheets/mumuki-emojis.css', 'app/assets/stylesheets'
     cp '../mumuki-emojis-shortnames.json', 'app/assets/json'
   end
 
